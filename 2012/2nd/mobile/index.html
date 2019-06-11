@@ -1,0 +1,1346 @@
+
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+			<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+			<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>2012 FBLA Website Design, 2nd Place | Polk County Youth Connection Mobile
+		</title>
+		<meta name="description" content="This is Polk County High School's youth connection to all the local school clubs and activities!">
+		<link href="jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.css" rel="stylesheet" type="text/css"/>
+		
+		<script src="jquery.mobile-1.0.1/jquery-1.7.1.min.js" type="text/javascript">
+		</script>
+		
+		<script type="text/javascript">
+			$(document).bind("mobileinit",function(){
+				
+				$.mobile.page.prototype.options.addBackBtn = false;
+				
+			});
+		</script>
+		
+		<script src="jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js" type="text/javascript">
+		</script>
+		
+		<!-- This reference to phonegap.js will allow for code hints as long as the current site has been configured as a mobile application. 
+			 To configure the site as a mobile application, go to Site -> Mobile Applications -> Configure Application Framework... -->
+		<script src="http://youth.pchs-fbla.com/phonegap.js" type="text/javascript">
+		</script>
+		
+		<link href="styles.css" type="text/css" rel="stylesheet" />
+
+			
+		<link href="../photoswipe.css" type="text/css" rel="stylesheet" />
+			
+		<script type="text/javascript" src="../lib/klass.min.js">
+		</script>
+		
+		<script type="text/javascript" src="../code.photoswipe-3.0.4.min.js">
+		</script>
+			
+			
+		<script type="text/javascript">
+
+			(function(window, PhotoSwipe){
+				
+				document.addEventListener('DOMContentLoaded', function(){
+					
+					var
+						options = {},
+						instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );
+					
+				}, false);
+					
+					
+			}(window, window.Code.PhotoSwipe));
+				
+		</script>
+		<style>
+			.nodecoration a:link {
+		text-decoration:none;
+		}		
+			.nodecoration a:hover {
+		text-decoration:none;
+		}
+			.nodecoration a:visited {
+		text-decoration:none;
+		}
+			.nodecoration a:active {
+		text-decoration:none;
+		}
+		</style>
+	</head> 
+	
+	<body>
+		<img src="images/fblalogo.png" width="197" height="160" alt="FBLA logo"> 
+		<div data-role="page" id="page" data-theme="d">
+			<div data-role="content" data-theme="d">
+				<div class="mobilebackground">
+					<img alt="Background" src="images/mobile_background.jpg">
+				</div>
+					
+				<div class="mobileforeground">
+					<img alt="Foreground" src="images/mobile_foreground.png">
+				</div>
+				
+				<ul data-inset="true" data-theme="b"  data-dividertheme="a" data-role="listview" style="clear:both">
+					
+					<li data-role="list-divider">Clubs
+					</li>
+						
+					<li>
+						<img src="images/fblablack.png" alt="FBLA" class="homelistitem">
+						<a href="index.html#fblainfo">FBLA</a>
+					</li>
+						
+					<li>
+						<img src="images/fca.png" alt="FCA" class="homelistitem">
+						<a href="index.html#fcainfo">FCA</a>
+					</li>
+						
+					<li>
+						<img src="images/ffablk.png" alt="FFA" class="homelistitem">
+						<a href="index.html#ffainfo">FFA</a>
+					</li>
+						
+					<li>
+						<img src="images/hosablk.png" alt="HOSA" class="homelistitem">
+						<a href="index.html#hosainfo">HOSA</a>
+					</li>
+						
+					<li>
+						<img src="images/nhsblk.png" alt="NHS" class="homelistitem">
+						<a href="index.html#nhsinfo">NHS</a>
+					</li>
+						
+					<li>
+						<img src="images/skillsblk.png" alt="Skills" class="homelistitem">
+						<a href="index.html#skillsusainfo">SkillsUSA</a>
+					</li>
+						
+					<li>
+						<img src="images/tsablk.png" alt="TSA" class="homelistitem">
+						<a href="index.html#tsainfo">TSA</a>
+					</li>
+						
+				</ul>
+					 
+				<ul data-inset="true" data-theme="b" data-role="listview"  data-dividertheme="a" style="clear:both;">
+					
+					<li data-role="list-divider">Connect
+					</li>
+							
+					<li><a href="index.html#calendar">Calendar</a>
+					</li>
+							
+					<li><a href="index.html#contact">Contact Us</a>
+					</li>
+			
+				</ul>
+			</div>
+			
+
+			
+			<div data-role="footer"  class="ui-footer ui-bar-a">
+				<div class="ui-title">
+					<a href="../index9.html" class="desktop" style="font-size:.8em; color:white;">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		<div data-role="page" id="fblainfo" data-theme="f">
+			<div data-role="header" class="ui-header ui-bar-f">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>FBLA Info</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both;">
+					
+						<li class="border"><a href="index.html#fblainfo" class="ui-btn-active ui-state-persist" style="font-size:1em;">Info</a>
+						</li>
+						
+						<li><a href="index.html#fblapic" style="font-size:1em;">Photos</a>
+						</li>
+							
+					</ul>
+				
+				</div>
+				
+				<div class="bold">
+					<p><img src="images/fblalogo.png" class="floater" alt="FBLA logo">Here at Polk County High School, FBLA is alive and well. In our chapter, we have a total of 52 members, and are always accepting more! To join our chapter, you must pay membership dues of $12. Once you become a member, you'll learn that we spend a good part of the year preparing for our competitions in spring.</p><p> During this time, we master the newest software, practice our speeches, and perfect our professional dress. All of this is a precursor to our regional, state, and national competitions held from the spring to the middle of summer. Joining you in these conferences will be your officers and your advisor, Dewey Esquinance. 
+					</p>
+				</div>
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-f">
+				<div class="ui-title">
+					<a href="../index9.html" class="desktop" style="font-size:.8em; color:white;">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		
+
+		<div data-role="page" id="fblapic" data-theme="f">
+		  
+			<div data-role="header" class="ui-header ui-bar-f">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>FBLA Photos</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar"><ul data-role="listview" style="clear:both">
+					<li class="border"><a href="index.html#fblainfo" style="font-size:1em;">Info</a>
+					</li>
+					
+					<li><a href="index.html#fblapic" class="ui-btn-active ui-state-persist" style="font-size:1em;">Photos</a>
+					</li>
+					
+				</ul>
+				
+				</div>
+				
+				<div class="MainContent">
+
+					<ul id="Gallery" class="gallery">
+						
+						<li><a href="images/goodfbla/big/1.jpg" rel="external"><img src="images/goodfbla/small/1.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/2.jpg" rel="external"><img src="images/goodfbla/small/2.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/3.jpg" rel="external"><img src="images/goodfbla/small/3.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/4.jpg" rel="external"><img src="images/goodfbla/small/4.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/5.jpg" rel="external"><img src="images/goodfbla/small/5.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/6.jpg" rel="external"><img src="images/goodfbla/small/6.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/7.jpg" rel="external"><img src="images/goodfbla/small/7.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/8.jpg" rel="external"><img src="images/goodfbla/small/8.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/9.jpg" rel="external"><img src="images/goodfbla/small/9.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/10.jpg" rel="external"><img src="images/goodfbla/small/10.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/11.jpg" rel="external"><img src="images/goodfbla/small/11.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/12.jpg" rel="external"><img src="images/goodfbla/small/12.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/13.jpg" rel="external"><img src="images/goodfbla/small/13.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/14.jpg" rel="external"><img src="images/goodfbla/small/14.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/15.jpg" rel="external"><img src="images/goodfbla/small/15.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/16.jpg" rel="external"><img src="images/goodfbla/small/16.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/17.jpg" rel="external"><img src="images/goodfbla/small/17.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/18.jpg" rel="external"><img src="images/goodfbla/small/18.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/19.jpg" rel="external"><img src="images/goodfbla/small/19.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/20.jpg" rel="external"><img src="images/goodfbla/small/20.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/21.jpg" rel="external"><img src="images/goodfbla/small/21.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/22.jpg" rel="external"><img src="images/goodfbla/small/22.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/23.jpg" rel="external"><img src="images/goodfbla/small/23.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/24.jpg" rel="external"><img src="images/goodfbla/small/24.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/25.jpg" rel="external"><img src="images/goodfbla/small/25.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/26.jpg" rel="external"><img src="images/goodfbla/small/26.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/27.jpg" rel="external"><img src="images/goodfbla/small/27.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/28.jpg" rel="external"><img src="images/goodfbla/small/28.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/29.jpg" rel="external"><img src="images/goodfbla/small/29.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/30.jpg" rel="external"><img src="images/goodfbla/small/30.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/31.jpg" rel="external"><img src="images/goodfbla/small/31.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/32.jpg" rel="external"><img src="images/goodfbla/small/32.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/33.jpg" rel="external"><img src="images/goodfbla/small/33.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/34.jpg" rel="external"><img src="images/goodfbla/small/34.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodfbla/big/35.jpg" rel="external"><img src="images/goodfbla/small/35.jpg" alt="Images from our state and national conferences." /></a></li>
+						
+					</ul>
+					
+				</div>	
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-f footer">
+				<div class="ui-title"> 
+					<a href="../index9.html" class="desktop" style="font-size:.8em; color:white;">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+				</div>
+				
+				<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+					<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+						<img alt="Facebook" src="images/facebook.png" />
+					</a>
+					
+					<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+						<img alt="Twitter" src="images/twitter.png" />
+					</a>
+					
+					<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+						<img alt="Google Plus" src="images/google_icon.png" />
+					</a>
+				</div>
+			</div>
+				
+		</div>
+
+
+
+
+
+
+
+
+		<div data-role="page" id="fcainfo" data-theme="g">
+			<div data-role="header" class="ui-header ui-bar-g">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>FCA Info</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both;">
+					
+						<li><a href="index.html#fcainfo" class="ui-btn-active ui-state-persist" style="font-size:1em;">Info</a>
+						</li>
+						
+						<li><a href="index.html#fcapic" style="font-size:1em;">Photos</a>
+						</li>
+						
+					</ul>
+				
+				</div>
+				
+				<div class="bold">
+					<p><img src="images/fcalogo.png" class="floater" alt="FCA logo">The Fellowship of Christian Athletes is touching millions of lives... one heart at a time. At Polk County High School, we are proud to contribute to this effort. Since 1954, the Fellowship of Christian Athletes has been challenging coaches and athletes on the professional, college, high school, junior high and youth levels to use the powerful medium of athletics to impact the world for Jesus Christ.
+					</p>
+					
+					<p> Since 1971, we have participated in this mission, and helped our surrounding area. With a current base of 95 members, we are more than capable of such a task. FCA is the largest Christian sports organization in America. FCA focuses on serving local communities by equipping, empowering and encouraging people to make a difference for Christ.
+					</p>
+				
+				</div>
+				
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-g">
+				<div class="ui-title">
+					<a href="../index9.html" class="desktop" style="font-size:.8em; color:white;">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+		<div data-role="page" id="fcapic" data-theme="g">
+			<div data-role="header" class="ui-header ui-bar-g">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>FCA Photos</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both;">
+					
+						<li><a href="index.html#fcainfo" style="font-size:1em;">Info</a>
+						</li>
+						
+						<li><a href="index.html#fcapic" class="ui-btn-active ui-state-persist" style="font-size:1em;">Photos</a>
+						</li>
+							
+					</ul>
+					
+				</div>
+				
+				<div class="MainContent">
+
+					<ul id="Gallery" class="gallery">
+						
+						<li><a href="images/goodfca/big/1.jpg" rel="external"><img src="images/goodfca/small/1.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/2.jpg" rel="external"><img src="images/goodfca/small/2.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/3.jpg" rel="external"><img src="images/goodfca/small/3.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/4.jpg" rel="external"><img src="images/goodfca/small/4.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/5.jpg" rel="external"><img src="images/goodfca/small/5.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/6.jpg" rel="external"><img src="images/goodfca/small/6.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/7.jpg" rel="external"><img src="images/goodfca/small/7.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/8.jpg" rel="external"><img src="images/goodfca/small/8.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/9.jpg" rel="external"><img src="images/goodfca/small/9.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/10.jpg" rel="external"><img src="images/goodfca/small/10.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/11.jpg" rel="external"><img src="images/goodfca/small/11.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/12.jpg" rel="external"><img src="images/goodfca/small/12.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/13.jpg" rel="external"><img src="images/goodfca/small/13.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/14.jpg" rel="external"><img src="images/goodfca/small/14.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/15.jpg" rel="external"><img src="images/goodfca/small/15.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/16.jpg" rel="external"><img src="images/goodfca/small/16.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/17.jpg" rel="external"><img src="images/goodfca/small/17.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/18.jpg" rel="external"><img src="images/goodfca/small/18.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/19.jpg" rel="external"><img src="images/goodfca/small/19.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/20.jpg" rel="external"><img src="images/goodfca/small/20.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/21.jpg" rel="external"><img src="images/goodfca/small/21.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/22.jpg" rel="external"><img src="images/goodfca/small/22.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/23.jpg" rel="external"><img src="images/goodfca/small/23.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/24.jpg" rel="external"><img src="images/goodfca/small/24.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/25.jpg" rel="external"><img src="images/goodfca/small/25.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/26.jpg" rel="external"><img src="images/goodfca/small/26.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/27.jpg" rel="external"><img src="images/goodfca/small/27.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/28.jpg" rel="external"><img src="images/goodfca/small/28.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/29.jpg" rel="external"><img src="images/goodfca/small/29.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/30.jpg" rel="external"><img src="images/goodfca/small/30.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/31.jpg" rel="external"><img src="images/goodfca/small/31.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/32.jpg" rel="external"><img src="images/goodfca/small/32.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/33.jpg" rel="external"><img src="images/goodfca/small/33.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/34.jpg" rel="external"><img src="images/goodfca/small/34.jpg" alt="Images from various FCA activities." /></a></li>
+						<li><a href="images/goodfca/big/35.jpg" rel="external"><img src="images/goodfca/small/35.jpg" alt="Images from various FCA activities." /></a></li>
+						
+					</ul>
+				
+				</div>	
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-g">
+				<div class="ui-title">
+					<a href="../index9.html" class="desktop" style="font-size:.8em; color:white;">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+
+		
+		
+		<div data-role="page" id="ffainfo" data-theme="h">
+			<div data-role="header"  class="ui-header ui-bar-h">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>FFA Info</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+					<ul data-role="listview" style="clear:both;">
+						<li><a href="index.html#ffainfo" class="ui-btn-active ui-state-persist" style="font-size:1em;">Info</a>
+						</li>
+						
+						<li><a href="index.html#ffapic" style="font-size:1em;">Photos</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+				<div style="font-weight:bold;">
+					<p><img src="images/ffalogo.png" class="floater" alt="FFA logo">"Future Farmers of America" was founded by a group of young farmers back in 1928. Their mission was to prepare future generations for the challenges of feeding a growing population. They taught us that agriculture is more than planting and harvesting-- it's a science, it's a business and it's an art.
+					</p>
+					<p> FFA continues to help the next generation rise up to meet those challenges by helping its members to develop their own unique talents and explore their interests in a broad range of career pathways. Competing in these events as school, we are an integral part in this movement for better agricultural education.
+					</p>
+				</div>
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-h">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+		<div data-role="page" id="ffapic" data-theme="h">
+			<div data-role="header" class="ui-header ui-bar-h">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>FFA Photos</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both">
+					
+						<li><a href="index.html#ffainfo" style="font-size:1em;">Info</a>
+						</li>
+						
+						<li><a href="index.html#ffapic" class="ui-btn-active ui-state-persist" style="font-size:1em;">Photos</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+				
+				<div class="MainContent">
+
+					<ul id="Gallery" class="gallery">
+						
+						<li><a href="images/goodffa/big/1.jpg" rel="external"><img src="images/goodffa/small/1.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/2.jpg" rel="external"><img src="images/goodffa/small/2.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/3.jpg" rel="external"><img src="images/goodffa/small/3.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/4.jpg" rel="external"><img src="images/goodffa/small/4.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/5.jpg" rel="external"><img src="images/goodffa/small/5.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/6.jpg" rel="external"><img src="images/goodffa/small/6.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/7.jpg" rel="external"><img src="images/goodffa/small/7.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/8.jpg" rel="external"><img src="images/goodffa/small/8.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/9.jpg" rel="external"><img src="images/goodffa/small/9.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/10.jpg" rel="external"><img src="images/goodffa/small/10.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/11.jpg" rel="external"><img src="images/goodffa/small/11.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/12.jpg" rel="external"><img src="images/goodffa/small/12.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/13.jpg" rel="external"><img src="images/goodffa/small/13.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/14.jpg" rel="external"><img src="images/goodffa/small/14.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/15.jpg" rel="external"><img src="images/goodffa/small/15.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/16.jpg" rel="external"><img src="images/goodffa/small/16.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/17.jpg" rel="external"><img src="images/goodffa/small/17.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/18.jpg" rel="external"><img src="images/goodffa/small/18.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/19.jpg" rel="external"><img src="images/goodffa/small/19.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/20.jpg" rel="external"><img src="images/goodffa/small/20.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/21.jpg" rel="external"><img src="images/goodffa/small/21.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/22.jpg" rel="external"><img src="images/goodffa/small/22.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/23.jpg" rel="external"><img src="images/goodffa/small/23.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/24.jpg" rel="external"><img src="images/goodffa/small/24.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/25.jpg" rel="external"><img src="images/goodffa/small/25.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/26.jpg" rel="external"><img src="images/goodffa/small/26.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/27.jpg" rel="external"><img src="images/goodffa/small/27.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/28.jpg" rel="external"><img src="images/goodffa/small/28.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/29.jpg" rel="external"><img src="images/goodffa/small/29.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/30.jpg" rel="external"><img src="images/goodffa/small/30.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/31.jpg" rel="external"><img src="images/goodffa/small/31.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/32.jpg" rel="external"><img src="images/goodffa/small/32.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/33.jpg" rel="external"><img src="images/goodffa/small/33.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/34.jpg" rel="external"><img src="images/goodffa/small/34.jpg" alt="Images from FFA competitions." /></a></li>
+						<li><a href="images/goodffa/big/35.jpg" rel="external"><img src="images/goodffa/small/35.jpg" alt="Images from FFA competitions." /></a></li>
+						
+					</ul>
+			
+				</div>	
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-h">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+		<div data-role="page" id="hosainfo" data-theme="i">
+			<div data-role="header" class="ui-header ui-bar-i" >
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>HOSA Info</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both;">
+						<li><a href="index.html#hosainfo" class="ui-btn-active ui-state-persist" style="font-size:1em;">Info</a>
+						</li>
+						
+						<li><a href="index.html#hosapic" style="font-size:1em;">Photos</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+				
+				<div style="font-weight:bold;">
+					<p><img src="images/hosalogo.png" class="floater" alt="HOSA logo">HOSA is a national student organization endorsed by the U.S. Department of Education and the Health Science Education Division of ACTE. HOSA's two-fold mission is to promote career opportunities in the health care industry and to enhance the delivery of quality health care to all people. HOSA's goal is to encourage all health occupations instructors and students to join and be actively involved in the HSE-HOSA Partnership.
+					</p>
+					<p> We feel that this is a great tool for our medical classes here at Polk County High School. We currently have a total membership of 26 members, all sponsored by Mrs. Sandra Benson. To join our club, you must pay a fee of $14 to join the local, state, and national levels.
+					</p>
+				</div>
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-i">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+		<div data-role="page" id="hosapic" data-theme="i">
+			<div data-role="header" class="ui-header ui-bar-i">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>HOSA Photos</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both">
+					
+						<li>
+							<a href="index.html#hosainfo" style="font-size:1em;">Info</a>
+						</li>
+						
+						<li>
+							<a href="index.html#hosapic" class="ui-btn-active ui-state-persist" style="font-size:1em;">Photos</a>
+						</li>
+					
+					</ul>
+					
+				</div>
+			
+				<div class="MainContent">
+
+					<ul id="Gallery" class="gallery">
+						
+						<li><a href="images/goodhosa/big/1.jpg" rel="external"><img src="images/goodhosa/small/1.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/2.jpg" rel="external"><img src="images/goodhosa/small/2.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/3.jpg" rel="external"><img src="images/goodhosa/small/3.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/4.jpg" rel="external"><img src="images/goodhosa/small/4.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/5.jpg" rel="external"><img src="images/goodhosa/small/5.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/6.jpg" rel="external"><img src="images/goodhosa/small/6.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/7.jpg" rel="external"><img src="images/goodhosa/small/7.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/8.jpg" rel="external"><img src="images/goodhosa/small/8.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/9.jpg" rel="external"><img src="images/goodhosa/small/9.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/10.jpg" rel="external"><img src="images/goodhosa/small/10.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/11.jpg" rel="external"><img src="images/goodhosa/small/11.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/12.jpg" rel="external"><img src="images/goodhosa/small/12.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/13.jpg" rel="external"><img src="images/goodhosa/small/13.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/14.jpg" rel="external"><img src="images/goodhosa/small/14.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/15.jpg" rel="external"><img src="images/goodhosa/small/15.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/16.jpg" rel="external"><img src="images/goodhosa/small/16.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/17.jpg" rel="external"><img src="images/goodhosa/small/17.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/18.jpg" rel="external"><img src="images/goodhosa/small/18.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/19.jpg" rel="external"><img src="images/goodhosa/small/19.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/20.jpg" rel="external"><img src="images/goodhosa/small/20.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/21.jpg" rel="external"><img src="images/goodhosa/small/21.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/22.jpg" rel="external"><img src="images/goodhosa/small/22.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/23.jpg" rel="external"><img src="images/goodhosa/small/23.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/24.jpg" rel="external"><img src="images/goodhosa/small/24.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/25.jpg" rel="external"><img src="images/goodhosa/small/25.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/26.jpg" rel="external"><img src="images/goodhosa/small/26.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/27.jpg" rel="external"><img src="images/goodhosa/small/27.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/28.jpg" rel="external"><img src="images/goodhosa/small/28.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/29.jpg" rel="external"><img src="images/goodhosa/small/29.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/30.jpg" rel="external"><img src="images/goodhosa/small/30.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/31.jpg" rel="external"><img src="images/goodhosa/small/31.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/32.jpg" rel="external"><img src="images/goodhosa/small/32.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/33.jpg" rel="external"><img src="images/goodhosa/small/33.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/34.jpg" rel="external"><img src="images/goodhosa/small/34.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						<li><a href="images/goodhosa/big/35.jpg" rel="external"><img src="images/goodhosa/small/35.jpg" alt="Images from the Candelighters' Fun Day." /></a></li>
+						
+					</ul>
+			
+				</div>	
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-i">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div data-role="page" id="nhsinfo" data-theme="j">
+			<div data-role="header" class="ui-header ui-bar-j" ><a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>NHS Info</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both;">
+						<li>
+							<a href="index.html#nhsinfo" class="ui-btn-active ui-state-persist" style="font-size:1em;">Info</a>
+						</li>
+						
+						<li>
+							<a href="index.html#nhspic" style="font-size:1em;">Photos</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+				
+				<div style="font-weight:bold;">
+					<p><img src="images/nhslogo.png" class="floater" alt="NHS logo">The National Honor Society (NHS) is the nation's premier organization established to recognize outstanding high school students.  More than just an honor roll, NHS serves to honor those students who have demonstrated excellence in the areas of Scholarship, Leadership, Service, and Character (and Citizenship for NJHS). These characteristics have been associated with membership in the organization since its beginning in 1921.
+					</p>
+					<p> At our chapter, we currently have 45 members. Currently sponsored by Ms. Ann Rogers, our chapter was founded in 1941. To become a member, the requirements are simple, yet challenging. You must pay dues of $10 and hold a 90 overall average or better. As students at Polk County High School, we are proud of our membership to not just showcase our own efforts, but to honor our school and the teachers in it.
+					</p>
+				</div>
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-j">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site
+					</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div data-role="page" id="nhspic" data-theme="j">
+			<div data-role="header" class="ui-header ui-bar-j" >
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home
+				</a>
+				<h1>NHS Photos</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both">
+						<li>
+							<a href="index.html#nhsinfo" style="font-size:1em;">Info
+							</a>
+						</li>
+						
+						<li>
+							<a href="index.html#nhspic" class="ui-btn-active ui-state-persist" style="font-size:1em;">Photos
+							</a>
+						</li>
+							
+					</ul>
+					
+				</div>
+				
+				<div class="MainContent">
+
+					<ul id="Gallery" class="gallery">
+						
+						<li><a href="images/goodnhs/big/1.jpg" rel="external"><img src="images/goodnhs/small/1.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/2.jpg" rel="external"><img src="images/goodnhs/small/2.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/3.jpg" rel="external"><img src="images/goodnhs/small/3.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/4.jpg" rel="external"><img src="images/goodnhs/small/4.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/5.jpg" rel="external"><img src="images/goodnhs/small/5.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/6.jpg" rel="external"><img src="images/goodnhs/small/6.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/7.jpg" rel="external"><img src="images/goodnhs/small/7.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/8.jpg" rel="external"><img src="images/goodnhs/small/8.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/9.jpg" rel="external"><img src="images/goodnhs/small/9.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/10.jpg" rel="external"><img src="images/goodnhs/small/10.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/11.jpg" rel="external"><img src="images/goodnhs/small/11.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/12.jpg" rel="external"><img src="images/goodnhs/small/12.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/13.jpg" rel="external"><img src="images/goodnhs/small/13.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/14.jpg" rel="external"><img src="images/goodnhs/small/14.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/15.jpg" rel="external"><img src="images/goodnhs/small/15.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/16.jpg" rel="external"><img src="images/goodnhs/small/16.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/17.jpg" rel="external"><img src="images/goodnhs/small/17.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/18.jpg" rel="external"><img src="images/goodnhs/small/18.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/19.jpg" rel="external"><img src="images/goodnhs/small/19.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/20.jpg" rel="external"><img src="images/goodnhs/small/20.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/21.jpg" rel="external"><img src="images/goodnhs/small/21.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/22.jpg" rel="external"><img src="images/goodnhs/small/22.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/23.jpg" rel="external"><img src="images/goodnhs/small/23.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/24.jpg" rel="external"><img src="images/goodnhs/small/24.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/25.jpg" rel="external"><img src="images/goodnhs/small/25.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/26.jpg" rel="external"><img src="images/goodnhs/small/26.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/27.jpg" rel="external"><img src="images/goodnhs/small/27.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/28.jpg" rel="external"><img src="images/goodnhs/small/28.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/29.jpg" rel="external"><img src="images/goodnhs/small/29.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/30.jpg" rel="external"><img src="images/goodnhs/small/30.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/31.jpg" rel="external"><img src="images/goodnhs/small/31.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/32.jpg" rel="external"><img src="images/goodnhs/small/32.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/33.jpg" rel="external"><img src="images/goodnhs/small/33.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/34.jpg" rel="external"><img src="images/goodnhs/small/34.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						<li><a href="images/goodnhs/big/35.jpg" rel="external"><img src="images/goodnhs/small/35.jpg" alt="Images from our trip to Gettysburg." /></a></li>
+						
+					</ul>
+			
+				</div>	
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-j">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+							
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+							
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div data-role="page" id="skillsusainfo" data-theme="k">
+			<div data-role="header" class="ui-header ui-bar-k">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home
+				</a>
+					<h1>SkillsUSA Info</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both;">
+					
+						<li>
+							<a href="index.html#skillsusainfo" class="ui-btn-active ui-state-persist" style="font-size:1em;">Info
+							</a>
+						</li>
+						
+						<li>
+							<a href="index.html#skillsusapic" style="font-size:1em;">Photos
+							</a>
+						</li>
+								
+					</ul>
+					
+				</div>
+				
+				<div style="font-weight:bold;">
+						<p><img src="images/skillsusalogo.png" class="floater" alt="SkillsUSA logo">SkillsUSA is a partnership of students, teachers and industry working together to ensure America has a skilled workforce. SkillsUSA serves more than 300,000 students and instructors annually. The organization has 13,000 school chapters in 54 state and territorial associations.
+						</p>
+						<p> Being from such a rural location, here at Polk County High School we are proud to be members of such a great organization. We have two SkillUSA programs at our high school: auto mechanics with Mr. Stone and Mr. Burchfiel, and web design with Mr. Esquinance. Club dues are $14. 
+						</p>
+				</div>
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-k">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site
+					</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="page" id="skillsusapic" data-theme="k">
+			<div data-role="header" class="ui-header ui-bar-k">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home
+				</a>
+				<h1>SkillsUSA Photos</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+					<ul data-role="listview" style="clear:both">
+						<li>
+							<a href="index.html#skillsusainfo" style="font-size:1em;">Info
+							</a>
+						</li>
+						
+						<li>
+							<a href="index.html#skillsusapic" class="ui-btn-active ui-state-persist" style="font-size:1em;">Photos
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+				<div class="MainContent">
+
+						<ul id="Gallery" class="gallery">
+							
+							<li><a href="images/goodskillsusa/big/1.jpg" rel="external"><img src="images/goodskillsusa/small/1.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/2.jpg" rel="external"><img src="images/goodskillsusa/small/2.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/3.jpg" rel="external"><img src="images/goodskillsusa/small/3.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/4.jpg" rel="external"><img src="images/goodskillsusa/small/4.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/5.jpg" rel="external"><img src="images/goodskillsusa/small/5.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/6.jpg" rel="external"><img src="images/goodskillsusa/small/6.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/7.jpg" rel="external"><img src="images/goodskillsusa/small/7.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/8.jpg" rel="external"><img src="images/goodskillsusa/small/8.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/9.jpg" rel="external"><img src="images/goodskillsusa/small/9.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/10.jpg" rel="external"><img src="images/goodskillsusa/small/10.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/11.jpg" rel="external"><img src="images/goodskillsusa/small/11.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/12.jpg" rel="external"><img src="images/goodskillsusa/small/12.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/13.jpg" rel="external"><img src="images/goodskillsusa/small/13.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/14.jpg" rel="external"><img src="images/goodskillsusa/small/14.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/15.jpg" rel="external"><img src="images/goodskillsusa/small/15.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/16.jpg" rel="external"><img src="images/goodskillsusa/small/16.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/17.jpg" rel="external"><img src="images/goodskillsusa/small/17.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/18.jpg" rel="external"><img src="images/goodskillsusa/small/18.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/19.jpg" rel="external"><img src="images/goodskillsusa/small/19.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/20.jpg" rel="external"><img src="images/goodskillsusa/small/20.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/21.jpg" rel="external"><img src="images/goodskillsusa/small/21.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/22.jpg" rel="external"><img src="images/goodskillsusa/small/22.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/23.jpg" rel="external"><img src="images/goodskillsusa/small/23.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/24.jpg" rel="external"><img src="images/goodskillsusa/small/24.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/25.jpg" rel="external"><img src="images/goodskillsusa/small/25.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/26.jpg" rel="external"><img src="images/goodskillsusa/small/26.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/27.jpg" rel="external"><img src="images/goodskillsusa/small/27.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/28.jpg" rel="external"><img src="images/goodskillsusa/small/28.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/29.jpg" rel="external"><img src="images/goodskillsusa/small/29.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/30.jpg" rel="external"><img src="images/goodskillsusa/small/30.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/31.jpg" rel="external"><img src="images/goodskillsusa/small/31.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/32.jpg" rel="external"><img src="images/goodskillsusa/small/32.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/33.jpg" rel="external"><img src="images/goodskillsusa/small/33.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/34.jpg" rel="external"><img src="images/goodskillsusa/small/34.jpg" alt="Images from our state and national conferences." /></a></li>
+							<li><a href="images/goodskillsusa/big/35.jpg" rel="external"><img src="images/goodskillsusa/small/35.jpg" alt="Images from our state and national conferences." /></a></li>
+								
+						</ul>
+			
+				</div>	
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-k">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site
+					</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+	
+		<div data-role="page" id="tsainfo" data-theme="l">
+			<div data-role="header" class="ui-header ui-bar-l">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home
+				</a>
+				<h1>TSA Info</h1>
+			</div>
+
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both;">
+						<li>
+							<a href="index.html#tsainfo" class="ui-btn-active ui-state-persist" style="font-size:1em;">Info
+							</a>
+						</li>
+						<li>
+							<a href="index.html#tsapic" style="font-size:1em;">Photos
+							</a>
+						</li>
+					</ul>
+				
+				</div>
+				
+				<div style="font-weight:bold;">
+					<p><img src="images/tsalogo.png" class="floater" alt="TSA logo"> The Technology Student Association (TSA) is the only student organization devoted exclusively to the needs of students interested in technology. Open to students enrolled in or who have completed technology education courses, TSA’s membership includes over 150,000 middle and high school students in 2,000 schools spanning 48 states.
+					</p>
+					<p>Here in Polk County, Tennessee we are proud to represent our area on a regional, state and national level as we have done before. Our chapter is currently composed of a total of 160 members- a huge number compared to our student body of only 591. TSA is supported by educators, parents and business leaders who believe in the need for a technologically literate society.
+					</p>
+					<p> Members learn through exciting competitive events, leadership opportunities and much more. The diversity of activities makes TSA a positive experience for every student. From engineers to business managers, our alumni credit TSA with a positive influence on their lives. To become a member of our chapter, just bring $15 (for membership dues) and a competitive spirit!
+					</p>
+				</div>
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-l">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site
+					</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div data-role="page" id="tsapic" data-theme="l">
+			<div data-role="header" class="ui-header ui-bar-l"><a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home</a>
+				<h1>TSA Photos</h1>
+			</div>
+			
+			<div data-role="content">
+				<div data-role="navbar">
+				
+					<ul data-role="listview" style="clear:both">
+						<li>
+							<a href="index.html#tsainfo" style="font-size:1em;">Info
+							</a>
+						</li>
+						
+						<li>
+							<a href="index.html#tsapic" class="ui-btn-active ui-state-persist" style="font-size:1em;">Photos
+							</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+				
+				<div class="MainContent">
+
+					<ul id="Gallery" class="gallery">
+						
+						<li><a href="images/goodtsa/big/1.jpg" rel="external"><img src="images/goodtsa/small/1.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/2.jpg" rel="external"><img src="images/goodtsa/small/2.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/3.jpg" rel="external"><img src="images/goodtsa/small/3.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/4.jpg" rel="external"><img src="images/goodtsa/small/4.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/5.jpg" rel="external"><img src="images/goodtsa/small/5.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/6.jpg" rel="external"><img src="images/goodtsa/small/6.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/7.jpg" rel="external"><img src="images/goodtsa/small/7.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/8.jpg" rel="external"><img src="images/goodtsa/small/8.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/9.jpg" rel="external"><img src="images/goodtsa/small/9.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/10.jpg" rel="external"><img src="images/goodtsa/small/10.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/11.jpg" rel="external"><img src="images/goodtsa/small/11.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/12.jpg" rel="external"><img src="images/goodtsa/small/12.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/13.jpg" rel="external"><img src="images/goodtsa/small/13.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/14.jpg" rel="external"><img src="images/goodtsa/small/14.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/15.jpg" rel="external"><img src="images/goodtsa/small/15.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/16.jpg" rel="external"><img src="images/goodtsa/small/16.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/17.jpg" rel="external"><img src="images/goodtsa/small/17.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/18.jpg" rel="external"><img src="images/goodtsa/small/18.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/19.jpg" rel="external"><img src="images/goodtsa/small/19.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/20.jpg" rel="external"><img src="images/goodtsa/small/20.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/21.jpg" rel="external"><img src="images/goodtsa/small/21.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/22.jpg" rel="external"><img src="images/goodtsa/small/22.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/23.jpg" rel="external"><img src="images/goodtsa/small/23.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/24.jpg" rel="external"><img src="images/goodtsa/small/24.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/25.jpg" rel="external"><img src="images/goodtsa/small/25.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/26.jpg" rel="external"><img src="images/goodtsa/small/26.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/27.jpg" rel="external"><img src="images/goodtsa/small/27.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/28.jpg" rel="external"><img src="images/goodtsa/small/28.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/29.jpg" rel="external"><img src="images/goodtsa/small/29.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/30.jpg" rel="external"><img src="images/goodtsa/small/30.jpg" alt="Images from our state and national conferences." /></a></li>
+						<li><a href="images/goodtsa/big/31.jpg" rel="external"><img src="images/goodtsa/small/31.jpg" alt="Images from our state and national conferences." /></a></li>
+						
+						
+					</ul>
+			
+				</div>	
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-l">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site
+					</a>
+					<br/>&copy; 2012 PCHS<br/>
+				
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div data-role="page" id="calendar" data-theme="a">
+			<div data-role="header"  class="ui-header ui-bar-a">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home
+				</a>
+				<h1>Calendar</h1>
+			</div>
+			
+			<div data-role="content">
+				<div style="text-align:center;width:300px; height:500px; margin-left:auto; margin-right:auto;">
+					<a href="https://www.google.com/calendar/embed?src=d1vumnhuf9nc2er01k1p39o1gg%40group.calendar.google.com&amp;ctz=America/New_York" target="_blank">
+						<img src="images/calendar.png" alt="Calendar">
+					</a>
+				</div>
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-a">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site
+					</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div data-role="page" id="contact" data-theme="a">
+			<div data-role="header"  class="ui-header ui-bar-a">
+				<a href="index.html#page" data-role="button" data-icon="arrow-l" data-rel="home">Home
+				</a>
+				<h1>Contact Us</h1>
+			</div>
+			
+			<div data-role="content">
+				<form action="index.html#thankyou"  id="reportForm">
+					<div data-role="fieldcontain">
+						<label for="name">Name:
+						</label>
+						
+						<textarea cols="40" rows="8" name="name" id="name">
+						</textarea>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="email">Email:
+						</label>
+
+						<textarea cols="40" rows="8" name="email" id="email">
+						</textarea>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="comments">Questions?
+						</label>
+						<textarea cols="40" rows="8" name="comments" id="comments">
+						</textarea>
+					</div>
+					
+					<div data-role="fieldcontain">
+
+						<fieldset data-role="controlgroup">
+						  <legend>Which club are you inquiring about?
+						  </legend>
+						  
+						  <input type="checkbox" name="clubs" id="clubs_0" class="custom" value="" />
+						  <label for="clubs_0">FBLA
+						  </label>
+						  
+						  <input type="checkbox" name="clubs" id="clubs_1" class="custom" value="" />
+						  <label for="clubs_1">FCA
+						  </label>
+						  
+						  <input type="checkbox" name="clubs" id="clubs_2" class="custom" value="" />
+						  <label for="clubs_2">FFA
+						  </label>
+						  
+						  <input type="checkbox" name="clubs" id="clubs_3" class="custom" value="" />
+						  <label for="clubs_3">HOSA
+						  </label>
+						  
+						  <input type="checkbox" name="clubs" id="clubs_4" class="custom" value="" />
+						  <label for="clubs_4">NHS
+						  </label>
+						  
+						  <input type="checkbox" name="clubs" id="clubs_5" class="custom" value="" />
+						  <label for="clubs_5">SkillsUSA
+						  </label>
+
+						  <input type="checkbox" name="clubs" id="clubs_6" class="custom" value="" />
+						  <label for="clubs_6">TSA
+						  </label>
+						  
+						</fieldset>
+					</div>
+					
+					<input name="reportSubmit" type="submit" id="reportSubmit" value="Submit" data-icon="star"/>	
+				</form>   		
+			</div>
+			
+			<div data-role="footer"  class="ui-footer ui-bar-a">
+				<div class="ui-title">
+					<a href="../index9.html" style="font-size:.8em; color:white; " class="desktop">Click for Desktop Site
+					</a>
+					<br/>&copy; 2012 PCHS<br/>
+					
+					<div class="nodecoration" style="margin-top:10px; height:45px; text-align:center;">
+						<a href="http://www.facebook.com/pages/PCHS-Youth-Connection/173362606044765?ref=ts" class="facebook">
+							<img alt="Facebook" src="images/facebook.png" >
+						</a>
+						
+						<a href="http://twitter.com/#!/PCHSYouth/" rel="external">
+							<img alt="Twitter" src="images/twitter.png" />
+						</a>
+						
+						<a href="https://plus.google.com/u/0/b/106902329720667090332/welcome">
+							<img alt="Google Plus" src="images/google_icon.png" />
+						</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>
