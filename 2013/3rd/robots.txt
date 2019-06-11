@@ -1,0 +1,5 @@
+Sitemap: http://elmwoodmurdockcalendar.weebly.com/sitemap.xml
+
+User-agent: *
+Disallow: /ajax/
+Disallow: /apps/
