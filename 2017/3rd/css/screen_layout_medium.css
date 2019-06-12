@@ -1,0 +1,120 @@
+/*Header*/
+
+#banner{
+	height: 100px;
+}
+
+#bannerfiller{
+	height: 100px;
+}
+
+header a.logo {
+	width: 225px;
+	height: 60px;
+	top: 5px;
+	background-image: url(../images/logo_flat.png);
+	background-size: 225px 60px;
+}
+
+
+/*Body Style*/
+.placeholder {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.opening {
+	width: 80%;
+}
+
+
+/*Thumbnail icons*/
+.columns {
+	width: 50%;
+	float: left;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
+.columns p {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.thumbnail {
+	width: 150px;
+	height: 150px;
+	margin-left: auto;
+}
+
+.thumbnail_align {
+	text-align: center;
+}
+
+
+/*Alternate Fixed and Scroll Backgrounds*/
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+	font-size: 58px;
+}
+.cd-fixed-bg {
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+.cd-scrolling-bg {
+	padding: 8em 0;
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 2;
+	font-weight: 300;
+}
+
+
+/*Navigation*/
+input {
+	display: none;
+}
+
+#menuToggle {
+	text-align: center;
+}
+
+#menu {
+	height: 30px;
+	width: 100%;
+	right: 0px;
+	position: fixed;	
+	top: 70px;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	z-index: 999;
+}
+
+#menu a {
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	text-decoration: none;
+	font-size: 20px;
+	color: #FFFFFF;
+	float: left;
+	width: 20%;
+	margin: 0 auto;
+	padding: 0;
+	transition: color 0.3s ease;
+}
+
+#menu a li {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu a:hover {
+	color: #0091FB;
+}

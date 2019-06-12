@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="images/favicon.png" rel="icon" type="image/x-icon" />
+	<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+	<link href="css/screen&#32;styles.css" rel="stylesheet" type="text/css" />
+	<link media="only screen and (min-width: 0px) and (max-width: 999px)" href="css/hamburger.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1201px)" href="css/screen_layout_large.css">
+	<link rel="stylesheet" type="text/css" media=" only screen and (min-width: 1000px) and (max-width: 1200px)" href="css/screen_layout_medium.css" />
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width: 550px) and (max-width: 999px)" href="css/screen_layout_small.css" />
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width:0px) and (max-width: 549px)" href="css/screen_layout_xsmall.css" /><title>2017 FBLA Website Design, 3rd Place | Rocky Mtn Recreation</title>
+</head>
+<body><center>
+	<div id="bannerfiller"></div>
+	<div id="banner">
+	<header>
+		<div class="socialmedia">
+            <a href="https://https://www.facebook.com/rockymtnrecreation/" class="socialmedia_icon" style="background-image: url(images/facebook_top.png)"></a>
+            <a href="https://www.instagram.com/rockymtnrecreation/" class="socialmedia_icon" style="background-image: url(images/instagram_top.png)"></a>
+            <a href="https://twitter.com/rockymtn_rec" class="socialmedia_icon" style="background-image: url(images/twitter_top.png)"></a>
+        </div>
+        <a class="logo" href="index.html"></a>
+	</header>
+	</div></center>
+	<nav role="navigation">
+        <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="facilities.html">FACILITIES</a></li>
+                <li><a href="fees-memberships.html">FEES-MEMBERSHIPS</a></li>
+                <li><a href="reservations.html">RESERVATIONS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+        	</ul>
+        </div>
+	</nav>
+	<center>
+<div>
+ 
+
+ <p class="main"><h1>CONTACT US</h1></p>
+	<p class="main"><br>
+	<font color="#01B2D1">Location:</font> 3008 N 2200 W Salt Lake City, UT 84116<br>
+	<font color="#01B2D1">Phone:</font> (801) 668-7214<br>
+	<font color="#01B2D1">Hours:</font> Monday-Saturday 5AM-10PM</p>
+		<div id="map"></div>
+ 		<script>
+		  function initMap() {
+			var uluru = {lat: 40.834972, lng: -111.948470};
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  zoom: 7,
+			  center: uluru
+			});
+			var marker = new google.maps.Marker({
+			  position: uluru,
+			  map: map
+			});
+		  }
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbbOIi537y3G1HGXOLHuHxZ9Vc1kCDQIw&callback=initMap">
+		</script><br><br><br><br>
+		
+ <p><h1>STAFF</h1><br><br></p>
+ 
+<table>
+  <thead>
+    <tr>
+      <th>STAFF</th>
+      <th>TITLE</th>
+      <th>PHONE</th>
+      <th>EMAIL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="staff">Reed, Alicia</td>
+      <td data-label="title">Recreation Center Manager</td>
+      <td data-label="phone">(801) 829-3256</td>
+      <td data-label="email">areed@gmail.com</td>
+    </tr>
+    <tr>
+      <td data-label="staff">Lay, Walter</td>
+      <td data-label="title">Maintenance Technician</td>
+      <td data-label="phone">(801) 644-0105</td>
+      <td data-label="email">wlay@gmail.com</td>
+    </tr>
+    <tr>
+      <td data-label="staff">Diggs, Patrick</td>
+      <td data-label="title">Class Director</td>
+      <td data-label="phone">(801) 245-5938</td>
+      <td data-label="email">pdiggs@gmail.com</td>
+    </tr>
+
+  </tbody>
+</table>
+<br><br><br><br>
+  </div>
+	<footer>
+		<div class="copyright">
+            <div class="copyright_1">&copy;2016 Kinyon Green, Christian McClellan, Averi Vaughan</div>
+            <div class="copyright_2">
+            <a href="https://https://www.facebook.com/rockymtnrecreation/" class="social_icon" style="background-image: url(images/facebook.png)"></a>
+            <a href="https://www.instagram.com/rockymtnrecreation/" class="social_icon" style="background-image: url(images/instagram.png)"></a>
+            <a href="https://twitter.com/rockymtn_rec" class="social_icon" style="background-image: url(images/twitter.png)"></a>
+            </div>
+		</div>
+	</footer>
+</center>
+</body>
+</html>

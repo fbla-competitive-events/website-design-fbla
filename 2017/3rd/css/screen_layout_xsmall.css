@@ -1,0 +1,138 @@
+/*Header*/
+#banner{
+	height: 50px;
+}
+
+#bannerfiller{
+	height: 50px;
+}
+
+header a.logo {
+	top: 5px;
+	width: 45px;
+	height: 40px;
+	background-image: url(../images/logo_plain.png);
+	background-size: 45px 40px;
+}
+
+
+
+/*Body Style*/
+.opening {
+	width:90%;
+}
+
+.main {
+	width:90%;
+}
+
+.placeholder {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+}
+
+
+/*Responsive Table*/
+table {
+	border: 0;
+	width: 95%;
+}
+
+table thead {
+	display: none;
+}
+
+table tr {
+	margin-bottom: 10px;
+	display: block;
+	border-bottom: 2px solid #ddd;
+}
+
+table td {
+	display: block;
+	text-align: right;
+	font-size: 15px;
+	border-bottom: 1px dotted #ccc;
+}
+
+table td:last-child {
+	border-bottom: 0;
+}
+
+table td:before {
+	content: attr(data-label);
+	float: left;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+/*Thumbnail icons*/
+.columns {
+	width: 100%;
+	margin-top: 6px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.columns p {
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.thumbnail {
+	width: 120px;
+	height: 120px;
+	margin-left: auto;
+}
+
+.thumbnail_align {
+	text-align: center;
+}
+
+
+/*Social Media*/
+.socialmedia {
+	display: none;
+}
+
+
+/*Alternate Fixed and Scroll Backgrounds*/
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+	font-size: 58px;
+}
+.cd-fixed-bg {
+	min-height: 400px;
+}
+
+
+/*Navigation*/
+#menuToggle {
+	top:21px;
+}
+
+#menuToggle span {
+	left: -30px;
+	top: -9px;
+
+}
+
+#menuToggle input {
+	left: -42px;
+	top: -19px;
+}

@@ -1,0 +1,338 @@
+/*Header*/
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#banner {
+	height: 70px;
+	width: 100%;
+	background-color: #1B1B1B;
+	position: fixed;	
+	opacity: .9;
+	z-index: 800;
+	top: 0px;
+}
+
+#bannerfiller {
+	height: 70px;
+	width: 100%;
+}
+
+header a.logo {
+	display: block;
+	position: relative;
+	top: 50px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+
+/*Body Style*/
+#map {
+	height: 400px;
+	width: 80%;
+ }
+.link {
+	color: #01B2D1;
+}
+
+.link:hover {
+	cursor: pointer;
+	color: #0004B4;
+}
+
+.placeholder {
+	width: 90%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 40%;
+}
+
+.opening {
+	font-size: 14pt;
+	width: 100%;
+	line-height: 1.6;
+	font-weight: 300;
+	padding: 0px 0px 50px 0px;
+}
+
+.main {
+	font-size: 14pt;
+	width: 50%;
+	line-height: 1.6;
+	font-weight: 300;
+	padding: 0px 0px 10px 0px;
+}
+
+.fullbody {
+	height:100vh;
+	position: relative;
+}
+
+.littlebody {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.p {
+	width: 40%;
+}
+
+body {
+	line-height: 1;
+}
+
+h7 {
+	text-align: center;
+	color: #000000;
+}
+
+h1 {
+	text-align: center;
+	color: #000000;
+	font-size: 32pt;
+	font-weight: 300;
+	padding: 50px 0px 0px 0px;
+}
+h2 {
+	text-align: center;
+	color: #01B2D1;
+	font-size: 18pt;
+	font-weight: 200;
+}
+
+
+
+
+/*Responsive Table*/
+table {
+	border: 1px solid #ccc;
+	width: 80%;
+	margin:0;
+	padding:0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table tr {
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+
+table th, table td {
+	padding: 10px;
+	text-align: center;
+	font-weight: 300;
+}
+
+table th {
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+
+/*Thumbnail icons*/
+.row {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 0px 0px 0px 0px;
+	display: inline-block;
+
+}
+.row.blockDisplay {
+	display: block;
+}
+
+.columns {
+	width: 25%;
+	float: left;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #4f4f4f;
+	line-height: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.row .columns p {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.columns h4 {
+	text-align: center;
+	color: #01B2D1;
+	font-weight: 400;
+}
+
+.thumbnail {
+	width: 100%;
+	border-radius: 200px;
+	height: 100px;
+	margin-left: auto;
+}
+
+.thumbnail_align {
+	text-align: center;
+}
+
+
+/*Social Media*/
+.social_icon {
+	width: 45px;
+	height: 45px;
+	background-size: 45px 45px;
+	background-repeat: no-repeat;
+	float: left;
+	padding-right: 7px;
+}
+
+.social_icon:hover {
+	cursor: pointer;
+	opacity: .5;
+}
+
+.socialmedia {
+	width: 159px;
+	float: right;
+	padding-top: 10px;
+}
+
+.socialmedia_icon {
+	width: 40px;
+	height: 40px;
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	float: left;
+	padding-right: 7px;
+}
+
+.socialmedia_icon:hover {
+	cursor: pointer;
+	opacity: .6;
+}
+
+/*Alternate Fixed and Scroll Backgrounds*/
+.cd-container {
+	/* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+	width: 90%;
+	max-width: 999px;
+	margin: 0 auto;
+}
+.cd-container::after {
+	/* clearfix */
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.cd-main-content {
+	/* assign a min-height to the main content so that the children can inherit it*/
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.cd-fixed-bg {
+	position: relative;
+	min-height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 1;
+}
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 90%;
+	max-width: 1170px;
+	text-align: center;
+	font-size: 58px;
+	font-weight:200;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+	color: white;
+}
+.cd-fixed-bg.cd-bg-1 {
+	background-image: url(http://morganfbla.com/rockymtnrecreation/images/cd-background-11.jpg);
+}
+.cd-fixed-bg.cd-bg-2 {
+	background-image: url(../images/cd-background-2.jpg);
+}
+.cd-fixed-bg.cd-bg-3 {
+	background-image: url(../images/cd-background-3.jpg);
+}
+.cd-fixed-bg.cd-bg-4 {
+	background-image: url(../images/cd-background-4.jpg);
+}
+
+.cd-scrolling-bg {
+	position: relative;
+	min-height: 100%;
+	padding: 4em 0;
+	line-height: 1.6;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+
+/*Footer*/
+footer {
+	background-color: #717070;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom:10px;
+	clear: left;
+}
+
+.copyright {
+	text-align: center;
+	background-color: #717070;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-top: 25px;
+	margin-bottom: 0px;
+}
+
+.copyright_1 {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.copyright_2 {
+	width: 159px;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:10px;
+	padding-bottom: 50px;
+	background-color: #717070;
+}

@@ -1,0 +1,93 @@
+/*Header*/
+
+#banner {
+	height: 120px;
+}
+
+#bannerfiller{
+	height: 120px;
+}
+
+header a.logo {
+	width: 264px;
+	height: 70px;
+	top: 5px;
+	background-image: url(../images/logo_flat.png);
+	background-size: 264px 70px;
+}
+
+/*Thumbnail icons*/
+
+.thumbnail {
+	width: 150px;
+	height: 150px;
+	margin-left: auto;
+}
+
+.thumbnail_align {
+	text-align: center;
+}
+
+
+/*Alternate Fixed and Scroll Backgrounds*/
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+	font-size: 58px;
+}
+.cd-fixed-bg {
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+.cd-scrolling-bg {
+	padding: 8em 0;
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 2;
+}
+
+
+/*Navigation*/
+input {
+	display: none;
+}
+
+#menuToggle {
+	text-align: center;
+}
+
+#menu {
+	height: 0px;
+	width: 100%;
+	right: 0px;
+	position: fixed;	
+	top: 82px;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	z-index: 999;
+}
+
+#menu a {
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	text-decoration: none;
+	font-size: 22px;
+	color: #FFFFFF;
+	float: left;
+	width: 20%;
+	vertical-align: middle;
+	height: 30px;
+	margin: 0 auto;
+	padding: 0;
+	transition: color 0.3s ease;
+}
+
+#menu a li {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu a:hover {
+	color: #0091FB;
+}
