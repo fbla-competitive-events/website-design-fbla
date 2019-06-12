@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body, html{
+    height: 100%;
+}
+body{
+    position: relative;
+    margin: 0px;
+    color: #5b5b5a;
+    font-family: 'Varela Round', sans-serif !important;
+    font-size: 14pt !important;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.row-k{
+    width: 100%
+    display: flex;
+    clear: both;
+    justify-content: center;
+}
+
+.log-in {
+    right: 0px;
+    top: 0px;
+    z-index: 400;
+    padding-right: 20px;
+    float:right;
+}
+.header-cont{
+    width: 100%;
+    top:0px;
+    left: 0px;
+    z-index: 400;
+    background-color: #151d3a;
+}
+header{
+    max-width: 80%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+}
+
+header a {
+    color: #FFFFFF;
+}
+
+.slider-cont {
+    width: 100%;
+}
+.footer-cont{
+    width: 100%;
+    background-color: #FFFFFF;
+    height: auto;
+}
+footer{
+    max-width: 80%;
+    margin: auto;
+    height: 130px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.content{
+    padding: 10px;
+    max-width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.icon {
+    display: inline-block;
+    float: left;
+}
+.box {
+    float: left;
+    display: inline-block;
+    height: auto;
+}
+
+.one-third {
+    width: 32%;
+    margin-right: 2%;
+}
+
+.one-half{
+    width: 49%;
+    margin-right: 2%;
+}
+.two-thirds{
+    width: 66%;
+    margin-right: 2%;
+}
+
+.box:last-child{
+    margin-right: 0;
+} 
+
+.border{
+    width: 100%;
+    border-bottom: 1px ridge #444;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+}
+.border:last-child{
+   /* border: none;*/
+}
+
+.navi-cont{
+    margin: auto;
+}
+.navilink {
+    display: inline-block;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+small {
+    font-size: 0.6em !important;
+    padding: 0 3px 0 3px !important;
+    color: #FFFFFF;
+}
+
+
+#navi{
+    height: inherit;
+    margin: auto;
+    display: inline-block;
+    float: right;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+ .navilink a, .categories a{
+    position: relative;
+    text-decoration: none;
+     font-size: .5em;
+}
+
+ .navilink a:before, .categories a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+ .navilink a:hover:before, .categories a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+ a, a:hover, a:visited, a:active{
+     font-size: 14pt;
+    color:#FFFFFF;
+}
+.not-white
+{
+    color: #151d3a;
+}
+.not-white:hover 
+{
+    color: skyblue !important;
+}
+
+h1{
+    padding: 10px 0 10px 0;
+    /*font-family: 'Source Sans Pro', sans-serif; */
+        font-family: 'Varela Round', sans-serif;
+
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+     font-family: 'Varela Round', sans-serif !important;
+}
+
+label {
+        display:block;
+        margin-top:20px;
+    }
+
+input, textarea
+    {
+        border: 1px solid #CCCCCC;
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        display: block;
+        border-radius: 1px; 
+    }
+    
+    input
+    {
+        height: 30px;
+    }
+    
+    input::-webkit-input-placeholder{
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+    input:focus, textarea:focus{
+        border: 1px solid #97d6eb;
+    }
+.cent {
+
+    padding-top: 15px;
+  padding-bottom: 15px;
+}
+.rounded-circle {
+    border-radius: 70px;
+}
+    
+/*
+#social{
+    line-height: 50px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+}
+
+#social img{
+    height: 50px;
+    margin-left: 5px;
+}
+
+.footer a{
+    text-decoration: none;
+}
+ 
+.footer a:hover{
+    text-decoration: underline;
+}
+
+#social a:hover{
+    text-decoration: none;
+}
+
+h3{font-family: "milano"}/*
+
+
