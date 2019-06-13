@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+		<link rel="icon" href="images/favicon.ico" type="image/ico"/>
+		<title>2017 FBLA Website Design, 9th Place | ME FEC | Mini Golf</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+		@font-face {font-family: "fun";src: url("fun.ttf");}
+/* Popup*/
+	.popup {position: relative;display: inline-block;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+	.popup .popuptext {visibility: hidden;background-color: #7030a0;color: #fff;text-align: center;border-radius: 6px;padding: 8px 0;position: absolute;z-index: 1;bottom: 125%;left: 50%;margin-left: -80px;}
+	.popup .popuptext::after {content: "";position: absolute;top: 100%;left: 20%;margin-left: -5px;border-width: 5px;border-style: solid;border-color: #555 transparent transparent transparent;}
+	.popup .show {visibility: visible;-webkit-animation: fadeIn .2s;animation: fadeIn .2s;}
+	@-webkit-keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
+	@keyframes fadeIn {from {opacity: 0;}to {opacity:1 ;}}
+/*NAVIGATION*/
+	#navz{position:fixed;width:100%;background:#7030a0;z-index:1000;margin:0;padding:0;text-decoration:none;height:60px;}
+	.contact2{right:0;}
+	.toggle,[id^=drop] {display: none;}
+	nav {margin:0;padding: 0;background-color: #7030a0;height:60px;}
+	#logo {display: block;padding: 0 30px;float: left;font-size:20px;line-height: 60px;}
+	nav a {display:block;padding:10px 20px 15px;color:#FFF;font-size:30px;text-decoration:none;height:100%;border:none;letter-spacing:3px;}
+	nav:after {content:"";display:table;clear:both;}
+	nav a:hover{background-color: #f58333;color:#fff;}
+	nav ul {float: right;padding:0;margin:0;list-style: none;position: relative;height:100%;}
+	nav ul li {margin: 0px;display:inline-block;float: left;background-color: #7030a0;padding:0;height:100%;}
+	nav ul li:hover > ul{display:inherit;}
+	nav ul ul {display: none;position: absolute;top: 60px;}
+	nav ul ul li {width:220px;float:none;display:list-item;position: relative;}
+	nav ul li ul li{height:60px;overflow:hidden;}
+	nav ul li ul li:hover {background: #000000;}
+	nav ul li ul li a{padding:14px;vertical-align:middle;width:300px;}
+	li > a:after { content:  ' +'; }
+	li > a:only-child:after { content: ''; }
+	#mobilenav{display:none;}
+/* Media Queries*/
+	@media all and (max-width : 900px) {#navz{display:none;}#mobilenav{display:inline}nav {margin: 0;}.menu {margin:0;}nav ul li a{padding:0;font-size:15px;}nav ul li{width: 100%;background-color:transparent;}}
+	@media all and (max-width : 855px) {#banner.major{height:700px}}
+	@media all and (max-width : 400px) {#fun1{font-size:30px;}#fun2{font-size:20px;}}
+	@media all and (max-width:330px){nav ul li{display:block;width:94%;}}
+</style>
+	<script src='http://www.camdenfbla.com/google_analytics_auto.js'></script></head>
+	<body style="color:white;font-family:fun;letter-spacing:3px;">
+		<!-- NAVIGATION -->
+	<!--Computer-->
+	<header id="navz">
+		<nav>
+			<a href="index.html" id="logo"><img src="images/Capture313.jpg" style="display:inline;height:60px;"></a>
+			<label for="drop" class="toggle">Menu</label>
+			<input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+				<li><a href="index.html#about">About</a></li>
+				<li><a href="price.html">Pricing</a></li>
+                <li>
+                    <!-- First Tier Drop Down -->
+                    <label for="drop-1" class="toggle">Activites +</label>
+                    <a href="golf.html#" style="background-color:#f58333">Activites</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="bowling.html"><img src="images/pins.png" style="height:100%;padding-right:20px;">Bowling</a></li>
+						<li><a href="laser.html"><img src="images/target.png" style="height:100%;padding-right:20px;">Laser Tag</a></li>
+						<li><a href="golf.html" style="background-color:#f58333"><img src="images/golf-ball.png" style="height:100%;padding-right:20px;">Mini Golf</a></li>
+						<li><a href="arcade.html"><img src="images/joystick.png" style="height:100%;padding-right:20px;">Arcade</a></li>
+						<li><a href="party.html"><img src="images/cake.png" style="height:100%;padding-right:20px;">Parties</a></li>
+						<li><a href="food.html"><img src="images/fork.png" style="height:100%;padding-right:20px;">Food Court</a></li>
+                    </ul> 
+                </li>
+                <li>
+                <label for="drop-2" class="toggle">Contact +</label>
+                <a href="golf.html#contact">Contact</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul style="right:0;">
+                    <li><a href="mailto:mefecatlanta@gmail.com" target="_top"><i class="fa fa-envelope" aria-hidden="true" style="padding-right:20px;"></i>Email</a></li>
+					<li><a href="https://www.facebook.com/ME-Family-Entertainment-Center-1810436645863904/" target="_blank"><i class="fa fa-facebook" aria-hidden="true" style="padding-right:20px;"></i>Facebook</a></li>
+					<li><a href="https://www.instagram.com/mefecatlanta/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="padding-right:20px;"></i>Instagram</a></li>
+					<li><a href="https://twitter.com/Me_FEC" target="_blank"><i class="fa fa-twitter" aria-hidden="true" style="padding-right:20px;"></i>Twitter</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+	</header>
+	<!--MOBILE NAV-->	
+	<div id="mobilenav">
+		<header id="header" class="alt" style="position:fixed;background-color:#7030a0;">
+			<a href="index.html" class="logo"><img src="images/Capture313.jpg" style="height:100%"></a>
+			<nav>
+				<a href="golf.html#menu" style="color:#fff;">Menu</a>
+			</nav>
+		</header>
+		<!-- Menu -->
+		<nav id="menu" style="background-color:rgba(112,48,160,.8)">
+			<ul class="links" style="color:white;margin:0;">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html#about">About Us</a></li>
+				<li><a href="bowling.html">Bowling</a></li>
+				<li><a href="laser.html">Laser Tag</a></li>
+				<li><a href="golf.html" style="background-color:#f58333;">Mini Golf</a></li>
+				<li><a href="arcade.html">Arcade</a></li>
+				<li><a href="party.html">Parties</a></li>
+				<li><a href="food.html">Food Court</a></li>
+				<li><a href="price.html">Pricing</a></li>
+				<li><a href="golf.html#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!--END OF NAVIGATION-->
+		<!-- Wrapper -->
+			<div id="wrapper">				
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner" style="background-color: rgba(112,48,160,.8)">
+							<span class="image">
+								<img src="images/mini_golf.jpg" alt="" />
+							</span>
+							<header class="major"style="padding-left:30px;padding-top:30px;padding-right:30px;">
+								<h1>Mini Golf</h1>
+							</header>
+							<div class="content" style="padding-left:30px;padding-right:30px;">
+								<p>Put-put through our glow-in-the-dark course.<br/>
+								We are above par than any other.</p>
+							</div>
+						</div>
+					</section>
+				<!-- Main -->
+					<div id="main">
+						<!-- One -->
+							<section id="one" style="background-color:#17b763">
+								<div class="inner">
+									<header class="major">
+										<h2>Drive it home!</h2>
+									</header>
+									<p style="font-size:medium;"><strong>Hit a hole-in-one with this attraction at the ME FEC.</strong></p>
+								</div>
+							</section>
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="golf.html#" class="image page1" style="cursor:default">
+										<img src="images/golf2.jpg" style="height:100%" alt="" data-position="center center" />
+									</a>
+									<div class="content" style="background-color:#f58333">
+										<div class="inner">
+											<header class="major">
+												<h3>Forest</h3>
+											</header>
+											<p><strong>Take a trip to the wild side and golf through our indoor forest. Surround yourself with nature in a whole new light, a black light that is.</strong></p>
+											<ul class="actions">
+												<li><div class="button popup" onclick="myFunction2()">Learn more
+													<span class="popuptext" id="myPopup" style="padding:10px"><p style="text-decoration:underline; margin:0;">Pricing</p><p>$8 per person per/ 1 course<br> (9 holes forest and 9 holes ocean)<br> or $14 for all 18 holes</p></span></a></li>
+												<script>
+												// When the user clicks on div, open the popup
+												function myFunction2() {
+												    var popup = document.getElementById('myPopup');
+												    popup.classList.toggle('show');
+												}
+												</script>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="golf.html#" class="image page1" style="cursor:default">
+										<img src="images/minigolf.jpg" class="image page1" alt="" data-position="top center"/>
+									</a>
+									<div class="content" style="background-color:#5fa7c6">
+										<div class="inner">
+											<header class="major">
+												<h3>Ocean</h3>
+											</header>
+											<p><strong>Dive into an immersive experience and swim through our luminescent undersea world.</strong></p>
+										</div>
+									</div>
+								</section>
+							</section>
+					</div>
+				<!-- Contact -->
+					<section id="contact">
+						<header>
+							<h3 style="font-size:60px;color:#f58333;font-weight:900;text-align:center;margin:0;">CONTACT US</h3>
+						</header>
+						<p style="font-size:30px;text-align:center;">You can email us or follow us on our social media, we would love to talk to you!</p>
+						<div class="inner">
+							<section>
+								<form method="post" action="golf.html#">
+									<div class="field first">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+									<input type="submit" value="Send Message" class="special" onclick="myFunction()"/>
+									<script>
+									function myFunction() {
+										alert("\nThank you for contacting us!\n\nYour Message Was Sent!");
+									}
+									</script>
+									<input type="reset" value="Clear" />
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="golf.html#">mefecatlanta@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(228)-364-3474</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-home"></span>
+										<h3>Address</h3>
+										<a href="https://www.google.com/maps/place/1239+Donald+Lee+Hollowell+Pkwy+NW,+Atlanta,+GA+30318/@33.7718789,-84.430736,17z/data=!3m1!4b1!4m5!3m4!1s0x88f504b0053a0d3b:0xaa286da119fb701!8m2!3d33.7718789!4d-84.4285473" target="_blank">1239 Donald Lee Hollowell Pkwy NW<br/>
+										Atlanta, GA 30318<br/>
+										United States of America</a>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.facebook.com/ME-Family-Entertainment-Center-1810436645863904/" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/mefecatlanta/" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+								<li><a href="https://twitter.com/Me_FEC" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; ME FEC</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>Header image from groupon.com/deals/glowgolf-other-tin-14</li>
+								<li>Forest image from mylocalnews.us/scottsdale/2015/10/24/play-18-holes-of-miniature-golf-at-glow-putt-in-scottsdale</li>
+								<li>Ocean image from lycourier.lycoming.edu/2014_01_01_archive.html</li>
+							</ul>
+						</div>
+					</footer>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
