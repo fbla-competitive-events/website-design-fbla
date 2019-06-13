@@ -1,0 +1,6153 @@
+@charset "UTF-8";
+/*!
+  Ionicons, v2.0.0
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+
+  Android-style icons originally built by Google’s
+  Material Design Icons: https://github.com/google/material-design-icons
+  used under CC BY http://creativecommons.org/licenses/by/4.0/
+  Modified icons to fit ionicon’s grid from original.
+*/
+@font-face {
+  font-family: "Ionicons";
+  src: url(http://garuba.herokuapp.com/fonts/ionicons.eot?v=2.0.0);
+  src: url(http://garuba.herokuapp.com/fonts/ionicons.eot?v=2.0.0) format("embedded-opentype"), url(ionicons-2ba7f20b1d8990e17a47fe3d88e4c766628aaa2baf1dd30fca0a0db59836f5f9.ttf_v=2.0.0) format("truetype"), url(ionicons-709f2789daaff440820ebb975d3ae409af45121bdec47e39e83523490b1bc0fc.woff_v=2.0.0) format("woff"), url(ionicons-dd1d74abcb411c1c0d334e3dbd47820e990f99e8b10f239b93eb73d721084078.svg_v=2.0.0) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 15, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion, .ionicons, .ion-alert:before, .ion-alert-circled:before, .ion-android-add:before, .ion-android-add-circle:before, .ion-android-alarm-clock:before, .ion-android-alert:before, .ion-android-apps:before, .ion-android-archive:before, .ion-android-arrow-back:before, .ion-android-arrow-down:before, .ion-android-arrow-dropdown:before, .ion-android-arrow-dropdown-circle:before, .ion-android-arrow-dropleft:before, .ion-android-arrow-dropleft-circle:before, .ion-android-arrow-dropright:before, .ion-android-arrow-dropright-circle:before, .ion-android-arrow-dropup:before, .ion-android-arrow-dropup-circle:before, .ion-android-arrow-forward:before, .ion-android-arrow-up:before, .ion-android-attach:before, .ion-android-bar:before, .ion-android-bicycle:before, .ion-android-boat:before, .ion-android-bookmark:before, .ion-android-bulb:before, .ion-android-bus:before, .ion-android-calendar:before, .ion-android-call:before, .ion-android-camera:before, .ion-android-cancel:before, .ion-android-car:before, .ion-android-cart:before, .ion-android-chat:before, .ion-android-checkbox:before, .ion-android-checkbox-blank:before, .ion-android-checkbox-outline:before, .ion-android-checkbox-outline-blank:before, .ion-android-checkmark-circle:before, .ion-android-clipboard:before, .ion-android-close:before, .ion-android-cloud:before, .ion-android-cloud-circle:before, .ion-android-cloud-done:before, .ion-android-cloud-outline:before, .ion-android-color-palette:before, .ion-android-compass:before, .ion-android-contact:before, .ion-android-contacts:before, .ion-android-contract:before, .ion-android-create:before, .ion-android-delete:before, .ion-android-desktop:before, .ion-android-document:before, .ion-android-done:before, .ion-android-done-all:before, .ion-android-download:before, .ion-android-drafts:before, .ion-android-exit:before, .ion-android-expand:before, .ion-android-favorite:before, .ion-android-favorite-outline:before, .ion-android-film:before, .ion-android-folder:before, .ion-android-folder-open:before, .ion-android-funnel:before, .ion-android-globe:before, .ion-android-hand:before, .ion-android-hangout:before, .ion-android-happy:before, .ion-android-home:before, .ion-android-image:before, .ion-android-laptop:before, .ion-android-list:before, .ion-android-locate:before, .ion-android-lock:before, .ion-android-mail:before, .ion-android-map:before, .ion-android-menu:before, .ion-android-microphone:before, .ion-android-microphone-off:before, .ion-android-more-horizontal:before, .ion-android-more-vertical:before, .ion-android-navigate:before, .ion-android-notifications:before, .ion-android-notifications-none:before, .ion-android-notifications-off:before, .ion-android-open:before, .ion-android-options:before, .ion-android-people:before, .ion-android-person:before, .ion-android-person-add:before, .ion-android-phone-landscape:before, .ion-android-phone-portrait:before, .ion-android-pin:before, .ion-android-plane:before, .ion-android-playstore:before, .ion-android-print:before, .ion-android-radio-button-off:before, .ion-android-radio-button-on:before, .ion-android-refresh:before, .ion-android-remove:before, .ion-android-remove-circle:before, .ion-android-restaurant:before, .ion-android-sad:before, .ion-android-search:before, .ion-android-send:before, .ion-android-settings:before, .ion-android-share:before, .ion-android-share-alt:before, .ion-android-star:before, .ion-android-star-half:before, .ion-android-star-outline:before, .ion-android-stopwatch:before, .ion-android-subway:before, .ion-android-sunny:before, .ion-android-sync:before, .ion-android-textsms:before, .ion-android-time:before, .ion-android-train:before, .ion-android-unlock:before, .ion-android-upload:before, .ion-android-volume-down:before, .ion-android-volume-mute:before, .ion-android-volume-off:before, .ion-android-volume-up:before, .ion-android-walk:before, .ion-android-warning:before, .ion-android-watch:before, .ion-android-wifi:before, .ion-aperture:before, .ion-archive:before, .ion-arrow-down-a:before, .ion-arrow-down-b:before, .ion-arrow-down-c:before, .ion-arrow-expand:before, .ion-arrow-graph-down-left:before, .ion-arrow-graph-down-right:before, .ion-arrow-graph-up-left:before, .ion-arrow-graph-up-right:before, .ion-arrow-left-a:before, .ion-arrow-left-b:before, .ion-arrow-left-c:before, .ion-arrow-move:before, .ion-arrow-resize:before, .ion-arrow-return-left:before, .ion-arrow-return-right:before, .ion-arrow-right-a:before, .ion-arrow-right-b:before, .ion-arrow-right-c:before, .ion-arrow-shrink:before, .ion-arrow-swap:before, .ion-arrow-up-a:before, .ion-arrow-up-b:before, .ion-arrow-up-c:before, .ion-asterisk:before, .ion-at:before, .ion-backspace:before, .ion-backspace-outline:before, .ion-bag:before, .ion-battery-charging:before, .ion-battery-empty:before, .ion-battery-full:before, .ion-battery-half:before, .ion-battery-low:before, .ion-beaker:before, .ion-beer:before, .ion-bluetooth:before, .ion-bonfire:before, .ion-bookmark:before, .ion-bowtie:before, .ion-briefcase:before, .ion-bug:before, .ion-calculator:before, .ion-calendar:before, .ion-camera:before, .ion-card:before, .ion-cash:before, .ion-chatbox:before, .ion-chatbox-working:before, .ion-chatboxes:before, .ion-chatbubble:before, .ion-chatbubble-working:before, .ion-chatbubbles:before, .ion-checkmark:before, .ion-checkmark-circled:before, .ion-checkmark-round:before, .ion-chevron-down:before, .ion-chevron-left:before, .ion-chevron-right:before, .ion-chevron-up:before, .ion-clipboard:before, .ion-clock:before, .ion-close:before, .ion-close-circled:before, .ion-close-round:before, .ion-closed-captioning:before, .ion-cloud:before, .ion-code:before, .ion-code-download:before, .ion-code-working:before, .ion-coffee:before, .ion-compass:before, .ion-compose:before, .ion-connection-bars:before, .ion-contrast:before, .ion-crop:before, .ion-cube:before, .ion-disc:before, .ion-document:before, .ion-document-text:before, .ion-drag:before, .ion-earth:before, .ion-easel:before, .ion-edit:before, .ion-egg:before, .ion-eject:before, .ion-email:before, .ion-email-unread:before, .ion-erlenmeyer-flask:before, .ion-erlenmeyer-flask-bubbles:before, .ion-eye:before, .ion-eye-disabled:before, .ion-female:before, .ion-filing:before, .ion-film-marker:before, .ion-fireball:before, .ion-flag:before, .ion-flame:before, .ion-flash:before, .ion-flash-off:before, .ion-folder:before, .ion-fork:before, .ion-fork-repo:before, .ion-forward:before, .ion-funnel:before, .ion-gear-a:before, .ion-gear-b:before, .ion-grid:before, .ion-hammer:before, .ion-happy:before, .ion-happy-outline:before, .ion-headphone:before, .ion-heart:before, .ion-heart-broken:before, .ion-help:before, .ion-help-buoy:before, .ion-help-circled:before, .ion-home:before, .ion-icecream:before, .ion-image:before, .ion-images:before, .ion-information:before, .ion-information-circled:before, .ion-ionic:before, .ion-ios-alarm:before, .ion-ios-alarm-outline:before, .ion-ios-albums:before, .ion-ios-albums-outline:before, .ion-ios-americanfootball:before, .ion-ios-americanfootball-outline:before, .ion-ios-analytics:before, .ion-ios-analytics-outline:before, .ion-ios-arrow-back:before, .ion-ios-arrow-down:before, .ion-ios-arrow-forward:before, .ion-ios-arrow-left:before, .ion-ios-arrow-right:before, .ion-ios-arrow-thin-down:before, .ion-ios-arrow-thin-left:before, .ion-ios-arrow-thin-right:before, .ion-ios-arrow-thin-up:before, .ion-ios-arrow-up:before, .ion-ios-at:before, .ion-ios-at-outline:before, .ion-ios-barcode:before, .ion-ios-barcode-outline:before, .ion-ios-baseball:before, .ion-ios-baseball-outline:before, .ion-ios-basketball:before, .ion-ios-basketball-outline:before, .ion-ios-bell:before, .ion-ios-bell-outline:before, .ion-ios-body:before, .ion-ios-body-outline:before, .ion-ios-bolt:before, .ion-ios-bolt-outline:before, .ion-ios-book:before, .ion-ios-book-outline:before, .ion-ios-bookmarks:before, .ion-ios-bookmarks-outline:before, .ion-ios-box:before, .ion-ios-box-outline:before, .ion-ios-briefcase:before, .ion-ios-briefcase-outline:before, .ion-ios-browsers:before, .ion-ios-browsers-outline:before, .ion-ios-calculator:before, .ion-ios-calculator-outline:before, .ion-ios-calendar:before, .ion-ios-calendar-outline:before, .ion-ios-camera:before, .ion-ios-camera-outline:before, .ion-ios-cart:before, .ion-ios-cart-outline:before, .ion-ios-chatboxes:before, .ion-ios-chatboxes-outline:before, .ion-ios-chatbubble:before, .ion-ios-chatbubble-outline:before, .ion-ios-checkmark:before, .ion-ios-checkmark-empty:before, .ion-ios-checkmark-outline:before, .ion-ios-circle-filled:before, .ion-ios-circle-outline:before, .ion-ios-clock:before, .ion-ios-clock-outline:before, .ion-ios-close:before, .ion-ios-close-empty:before, .ion-ios-close-outline:before, .ion-ios-cloud:before, .ion-ios-cloud-download:before, .ion-ios-cloud-download-outline:before, .ion-ios-cloud-outline:before, .ion-ios-cloud-upload:before, .ion-ios-cloud-upload-outline:before, .ion-ios-cloudy:before, .ion-ios-cloudy-night:before, .ion-ios-cloudy-night-outline:before, .ion-ios-cloudy-outline:before, .ion-ios-cog:before, .ion-ios-cog-outline:before, .ion-ios-color-filter:before, .ion-ios-color-filter-outline:before, .ion-ios-color-wand:before, .ion-ios-color-wand-outline:before, .ion-ios-compose:before, .ion-ios-compose-outline:before, .ion-ios-contact:before, .ion-ios-contact-outline:before, .ion-ios-copy:before, .ion-ios-copy-outline:before, .ion-ios-crop:before, .ion-ios-crop-strong:before, .ion-ios-download:before, .ion-ios-download-outline:before, .ion-ios-drag:before, .ion-ios-email:before, .ion-ios-email-outline:before, .ion-ios-eye:before, .ion-ios-eye-outline:before, .ion-ios-fastforward:before, .ion-ios-fastforward-outline:before, .ion-ios-filing:before, .ion-ios-filing-outline:before, .ion-ios-film:before, .ion-ios-film-outline:before, .ion-ios-flag:before, .ion-ios-flag-outline:before, .ion-ios-flame:before, .ion-ios-flame-outline:before, .ion-ios-flask:before, .ion-ios-flask-outline:before, .ion-ios-flower:before, .ion-ios-flower-outline:before, .ion-ios-folder:before, .ion-ios-folder-outline:before, .ion-ios-football:before, .ion-ios-football-outline:before, .ion-ios-game-controller-a:before, .ion-ios-game-controller-a-outline:before, .ion-ios-game-controller-b:before, .ion-ios-game-controller-b-outline:before, .ion-ios-gear:before, .ion-ios-gear-outline:before, .ion-ios-glasses:before, .ion-ios-glasses-outline:before, .ion-ios-grid-view:before, .ion-ios-grid-view-outline:before, .ion-ios-heart:before, .ion-ios-heart-outline:before, .ion-ios-help:before, .ion-ios-help-empty:before, .ion-ios-help-outline:before, .ion-ios-home:before, .ion-ios-home-outline:before, .ion-ios-infinite:before, .ion-ios-infinite-outline:before, .ion-ios-information:before, .ion-ios-information-empty:before, .ion-ios-information-outline:before, .ion-ios-ionic-outline:before, .ion-ios-keypad:before, .ion-ios-keypad-outline:before, .ion-ios-lightbulb:before, .ion-ios-lightbulb-outline:before, .ion-ios-list:before, .ion-ios-list-outline:before, .ion-ios-location:before, .ion-ios-location-outline:before, .ion-ios-locked:before, .ion-ios-locked-outline:before, .ion-ios-loop:before, .ion-ios-loop-strong:before, .ion-ios-medical:before, .ion-ios-medical-outline:before, .ion-ios-medkit:before, .ion-ios-medkit-outline:before, .ion-ios-mic:before, .ion-ios-mic-off:before, .ion-ios-mic-outline:before, .ion-ios-minus:before, .ion-ios-minus-empty:before, .ion-ios-minus-outline:before, .ion-ios-monitor:before, .ion-ios-monitor-outline:before, .ion-ios-moon:before, .ion-ios-moon-outline:before, .ion-ios-more:before, .ion-ios-more-outline:before, .ion-ios-musical-note:before, .ion-ios-musical-notes:before, .ion-ios-navigate:before, .ion-ios-navigate-outline:before, .ion-ios-nutrition:before, .ion-ios-nutrition-outline:before, .ion-ios-paper:before, .ion-ios-paper-outline:before, .ion-ios-paperplane:before, .ion-ios-paperplane-outline:before, .ion-ios-partlysunny:before, .ion-ios-partlysunny-outline:before, .ion-ios-pause:before, .ion-ios-pause-outline:before, .ion-ios-paw:before, .ion-ios-paw-outline:before, .ion-ios-people:before, .ion-ios-people-outline:before, .ion-ios-person:before, .ion-ios-person-outline:before, .ion-ios-personadd:before, .ion-ios-personadd-outline:before, .ion-ios-photos:before, .ion-ios-photos-outline:before, .ion-ios-pie:before, .ion-ios-pie-outline:before, .ion-ios-pint:before, .ion-ios-pint-outline:before, .ion-ios-play:before, .ion-ios-play-outline:before, .ion-ios-plus:before, .ion-ios-plus-empty:before, .ion-ios-plus-outline:before, .ion-ios-pricetag:before, .ion-ios-pricetag-outline:before, .ion-ios-pricetags:before, .ion-ios-pricetags-outline:before, .ion-ios-printer:before, .ion-ios-printer-outline:before, .ion-ios-pulse:before, .ion-ios-pulse-strong:before, .ion-ios-rainy:before, .ion-ios-rainy-outline:before, .ion-ios-recording:before, .ion-ios-recording-outline:before, .ion-ios-redo:before, .ion-ios-redo-outline:before, .ion-ios-refresh:before, .ion-ios-refresh-empty:before, .ion-ios-refresh-outline:before, .ion-ios-reload:before, .ion-ios-reverse-camera:before, .ion-ios-reverse-camera-outline:before, .ion-ios-rewind:before, .ion-ios-rewind-outline:before, .ion-ios-rose:before, .ion-ios-rose-outline:before, .ion-ios-search:before, .ion-ios-search-strong:before, .ion-ios-settings:before, .ion-ios-settings-strong:before, .ion-ios-shuffle:before, .ion-ios-shuffle-strong:before, .ion-ios-skipbackward:before, .ion-ios-skipbackward-outline:before, .ion-ios-skipforward:before, .ion-ios-skipforward-outline:before, .ion-ios-snowy:before, .ion-ios-speedometer:before, .ion-ios-speedometer-outline:before, .ion-ios-star:before, .ion-ios-star-half:before, .ion-ios-star-outline:before, .ion-ios-stopwatch:before, .ion-ios-stopwatch-outline:before, .ion-ios-sunny:before, .ion-ios-sunny-outline:before, .ion-ios-telephone:before, .ion-ios-telephone-outline:before, .ion-ios-tennisball:before, .ion-ios-tennisball-outline:before, .ion-ios-thunderstorm:before, .ion-ios-thunderstorm-outline:before, .ion-ios-time:before, .ion-ios-time-outline:before, .ion-ios-timer:before, .ion-ios-timer-outline:before, .ion-ios-toggle:before, .ion-ios-toggle-outline:before, .ion-ios-trash:before, .ion-ios-trash-outline:before, .ion-ios-undo:before, .ion-ios-undo-outline:before, .ion-ios-unlocked:before, .ion-ios-unlocked-outline:before, .ion-ios-upload:before, .ion-ios-upload-outline:before, .ion-ios-videocam:before, .ion-ios-videocam-outline:before, .ion-ios-volume-high:before, .ion-ios-volume-low:before, .ion-ios-wineglass:before, .ion-ios-wineglass-outline:before, .ion-ios-world:before, .ion-ios-world-outline:before, .ion-ipad:before, .ion-iphone:before, .ion-ipod:before, .ion-jet:before, .ion-key:before, .ion-knife:before, .ion-laptop:before, .ion-leaf:before, .ion-levels:before, .ion-lightbulb:before, .ion-link:before, .ion-load-a:before, .ion-load-b:before, .ion-load-c:before, .ion-load-d:before, .ion-location:before, .ion-lock-combination:before, .ion-locked:before, .ion-log-in:before, .ion-log-out:before, .ion-loop:before, .ion-magnet:before, .ion-male:before, .ion-man:before, .ion-map:before, .ion-medkit:before, .ion-merge:before, .ion-mic-a:before, .ion-mic-b:before, .ion-mic-c:before, .ion-minus:before, .ion-minus-circled:before, .ion-minus-round:before, .ion-model-s:before, .ion-monitor:before, .ion-more:before, .ion-mouse:before, .ion-music-note:before, .ion-navicon:before, .ion-navicon-round:before, .ion-navigate:before, .ion-network:before, .ion-no-smoking:before, .ion-nuclear:before, .ion-outlet:before, .ion-paintbrush:before, .ion-paintbucket:before, .ion-paper-airplane:before, .ion-paperclip:before, .ion-pause:before, .ion-person:before, .ion-person-add:before, .ion-person-stalker:before, .ion-pie-graph:before, .ion-pin:before, .ion-pinpoint:before, .ion-pizza:before, .ion-plane:before, .ion-planet:before, .ion-play:before, .ion-playstation:before, .ion-plus:before, .ion-plus-circled:before, .ion-plus-round:before, .ion-podium:before, .ion-pound:before, .ion-power:before, .ion-pricetag:before, .ion-pricetags:before, .ion-printer:before, .ion-pull-request:before, .ion-qr-scanner:before, .ion-quote:before, .ion-radio-waves:before, .ion-record:before, .ion-refresh:before, .ion-reply:before, .ion-reply-all:before, .ion-ribbon-a:before, .ion-ribbon-b:before, .ion-sad:before, .ion-sad-outline:before, .ion-scissors:before, .ion-search:before, .ion-settings:before, .ion-share:before, .ion-shuffle:before, .ion-skip-backward:before, .ion-skip-forward:before, .ion-social-android:before, .ion-social-android-outline:before, .ion-social-angular:before, .ion-social-angular-outline:before, .ion-social-apple:before, .ion-social-apple-outline:before, .ion-social-bitcoin:before, .ion-social-bitcoin-outline:before, .ion-social-buffer:before, .ion-social-buffer-outline:before, .ion-social-chrome:before, .ion-social-chrome-outline:before, .ion-social-codepen:before, .ion-social-codepen-outline:before, .ion-social-css3:before, .ion-social-css3-outline:before, .ion-social-designernews:before, .ion-social-designernews-outline:before, .ion-social-dribbble:before, .ion-social-dribbble-outline:before, .ion-social-dropbox:before, .ion-social-dropbox-outline:before, .ion-social-euro:before, .ion-social-euro-outline:before, .ion-social-facebook:before, .ion-social-facebook-outline:before, .ion-social-foursquare:before, .ion-social-foursquare-outline:before, .ion-social-freebsd-devil:before, .ion-social-github:before, .ion-social-github-outline:before, .ion-social-google:before, .ion-social-google-outline:before, .ion-social-googleplus:before, .ion-social-googleplus-outline:before, .ion-social-hackernews:before, .ion-social-hackernews-outline:before, .ion-social-html5:before, .ion-social-html5-outline:before, .ion-social-instagram:before, .ion-social-instagram-outline:before, .ion-social-javascript:before, .ion-social-javascript-outline:before, .ion-social-linkedin:before, .ion-social-linkedin-outline:before, .ion-social-markdown:before, .ion-social-nodejs:before, .ion-social-octocat:before, .ion-social-pinterest:before, .ion-social-pinterest-outline:before, .ion-social-python:before, .ion-social-reddit:before, .ion-social-reddit-outline:before, .ion-social-rss:before, .ion-social-rss-outline:before, .ion-social-sass:before, .ion-social-skype:before, .ion-social-skype-outline:before, .ion-social-snapchat:before, .ion-social-snapchat-outline:before, .ion-social-tumblr:before, .ion-social-tumblr-outline:before, .ion-social-tux:before, .ion-social-twitch:before, .ion-social-twitch-outline:before, .ion-social-twitter:before, .ion-social-twitter-outline:before, .ion-social-usd:before, .ion-social-usd-outline:before, .ion-social-vimeo:before, .ion-social-vimeo-outline:before, .ion-social-whatsapp:before, .ion-social-whatsapp-outline:before, .ion-social-windows:before, .ion-social-windows-outline:before, .ion-social-wordpress:before, .ion-social-wordpress-outline:before, .ion-social-yahoo:before, .ion-social-yahoo-outline:before, .ion-social-yen:before, .ion-social-yen-outline:before, .ion-social-youtube:before, .ion-social-youtube-outline:before, .ion-soup-can:before, .ion-soup-can-outline:before, .ion-speakerphone:before, .ion-speedometer:before, .ion-spoon:before, .ion-star:before, .ion-stats-bars:before, .ion-steam:before, .ion-stop:before, .ion-thermometer:before, .ion-thumbsdown:before, .ion-thumbsup:before, .ion-toggle:before, .ion-toggle-filled:before, .ion-transgender:before, .ion-trash-a:before, .ion-trash-b:before, .ion-trophy:before, .ion-tshirt:before, .ion-tshirt-outline:before, .ion-umbrella:before, .ion-university:before, .ion-unlocked:before, .ion-upload:before, .ion-usb:before, .ion-videocamera:before, .ion-volume-high:before, .ion-volume-low:before, .ion-volume-medium:before, .ion-volume-mute:before, .ion-wand:before, .ion-waterdrop:before, .ion-wifi:before, .ion-wineglass:before, .ion-woman:before, .ion-wrench:before, .ion-xbox:before {
+  display: inline-block;
+  font-family: "Ionicons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 17, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-alert:before {
+  content: "\f101";
+}
+
+/* line 19, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-alert-circled:before {
+  content: "\f100";
+}
+
+/* line 21, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-add:before {
+  content: "\f2c7";
+}
+
+/* line 23, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-add-circle:before {
+  content: "\f359";
+}
+
+/* line 25, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-alarm-clock:before {
+  content: "\f35a";
+}
+
+/* line 27, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-alert:before {
+  content: "\f35b";
+}
+
+/* line 29, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-apps:before {
+  content: "\f35c";
+}
+
+/* line 31, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-archive:before {
+  content: "\f2c9";
+}
+
+/* line 33, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-back:before {
+  content: "\f2ca";
+}
+
+/* line 35, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-down:before {
+  content: "\f35d";
+}
+
+/* line 37, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-dropdown:before {
+  content: "\f35f";
+}
+
+/* line 39, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-dropdown-circle:before {
+  content: "\f35e";
+}
+
+/* line 41, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-dropleft:before {
+  content: "\f361";
+}
+
+/* line 43, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-dropleft-circle:before {
+  content: "\f360";
+}
+
+/* line 45, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-dropright:before {
+  content: "\f363";
+}
+
+/* line 47, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-dropright-circle:before {
+  content: "\f362";
+}
+
+/* line 49, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-dropup:before {
+  content: "\f365";
+}
+
+/* line 51, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-dropup-circle:before {
+  content: "\f364";
+}
+
+/* line 53, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-forward:before {
+  content: "\f30f";
+}
+
+/* line 55, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-arrow-up:before {
+  content: "\f366";
+}
+
+/* line 57, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-attach:before {
+  content: "\f367";
+}
+
+/* line 59, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-bar:before {
+  content: "\f368";
+}
+
+/* line 61, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-bicycle:before {
+  content: "\f369";
+}
+
+/* line 63, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-boat:before {
+  content: "\f36a";
+}
+
+/* line 65, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-bookmark:before {
+  content: "\f36b";
+}
+
+/* line 67, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-bulb:before {
+  content: "\f36c";
+}
+
+/* line 69, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-bus:before {
+  content: "\f36d";
+}
+
+/* line 71, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-calendar:before {
+  content: "\f2d1";
+}
+
+/* line 73, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-call:before {
+  content: "\f2d2";
+}
+
+/* line 75, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-camera:before {
+  content: "\f2d3";
+}
+
+/* line 77, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-cancel:before {
+  content: "\f36e";
+}
+
+/* line 79, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-car:before {
+  content: "\f36f";
+}
+
+/* line 81, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-cart:before {
+  content: "\f370";
+}
+
+/* line 83, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-chat:before {
+  content: "\f2d4";
+}
+
+/* line 85, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-checkbox:before {
+  content: "\f374";
+}
+
+/* line 87, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-checkbox-blank:before {
+  content: "\f371";
+}
+
+/* line 89, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-checkbox-outline:before {
+  content: "\f373";
+}
+
+/* line 91, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-checkbox-outline-blank:before {
+  content: "\f372";
+}
+
+/* line 93, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-checkmark-circle:before {
+  content: "\f375";
+}
+
+/* line 95, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-clipboard:before {
+  content: "\f376";
+}
+
+/* line 97, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-close:before {
+  content: "\f2d7";
+}
+
+/* line 99, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-cloud:before {
+  content: "\f37a";
+}
+
+/* line 101, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-cloud-circle:before {
+  content: "\f377";
+}
+
+/* line 103, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-cloud-done:before {
+  content: "\f378";
+}
+
+/* line 105, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-cloud-outline:before {
+  content: "\f379";
+}
+
+/* line 107, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-color-palette:before {
+  content: "\f37b";
+}
+
+/* line 109, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-compass:before {
+  content: "\f37c";
+}
+
+/* line 111, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-contact:before {
+  content: "\f2d8";
+}
+
+/* line 113, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-contacts:before {
+  content: "\f2d9";
+}
+
+/* line 115, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-contract:before {
+  content: "\f37d";
+}
+
+/* line 117, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-create:before {
+  content: "\f37e";
+}
+
+/* line 119, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-delete:before {
+  content: "\f37f";
+}
+
+/* line 121, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-desktop:before {
+  content: "\f380";
+}
+
+/* line 123, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-document:before {
+  content: "\f381";
+}
+
+/* line 125, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-done:before {
+  content: "\f383";
+}
+
+/* line 127, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-done-all:before {
+  content: "\f382";
+}
+
+/* line 129, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-download:before {
+  content: "\f2dd";
+}
+
+/* line 131, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-drafts:before {
+  content: "\f384";
+}
+
+/* line 133, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-exit:before {
+  content: "\f385";
+}
+
+/* line 135, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-expand:before {
+  content: "\f386";
+}
+
+/* line 137, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-favorite:before {
+  content: "\f388";
+}
+
+/* line 139, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-favorite-outline:before {
+  content: "\f387";
+}
+
+/* line 141, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-film:before {
+  content: "\f389";
+}
+
+/* line 143, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-folder:before {
+  content: "\f2e0";
+}
+
+/* line 145, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-folder-open:before {
+  content: "\f38a";
+}
+
+/* line 147, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-funnel:before {
+  content: "\f38b";
+}
+
+/* line 149, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-globe:before {
+  content: "\f38c";
+}
+
+/* line 151, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-hand:before {
+  content: "\f2e3";
+}
+
+/* line 153, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-hangout:before {
+  content: "\f38d";
+}
+
+/* line 155, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-happy:before {
+  content: "\f38e";
+}
+
+/* line 157, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-home:before {
+  content: "\f38f";
+}
+
+/* line 159, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-image:before {
+  content: "\f2e4";
+}
+
+/* line 161, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-laptop:before {
+  content: "\f390";
+}
+
+/* line 163, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-list:before {
+  content: "\f391";
+}
+
+/* line 165, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-locate:before {
+  content: "\f2e9";
+}
+
+/* line 167, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-lock:before {
+  content: "\f392";
+}
+
+/* line 169, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-mail:before {
+  content: "\f2eb";
+}
+
+/* line 171, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-map:before {
+  content: "\f393";
+}
+
+/* line 173, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-menu:before {
+  content: "\f394";
+}
+
+/* line 175, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-microphone:before {
+  content: "\f2ec";
+}
+
+/* line 177, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-microphone-off:before {
+  content: "\f395";
+}
+
+/* line 179, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-more-horizontal:before {
+  content: "\f396";
+}
+
+/* line 181, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-more-vertical:before {
+  content: "\f397";
+}
+
+/* line 183, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-navigate:before {
+  content: "\f398";
+}
+
+/* line 185, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-notifications:before {
+  content: "\f39b";
+}
+
+/* line 187, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-notifications-none:before {
+  content: "\f399";
+}
+
+/* line 189, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-notifications-off:before {
+  content: "\f39a";
+}
+
+/* line 191, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-open:before {
+  content: "\f39c";
+}
+
+/* line 193, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-options:before {
+  content: "\f39d";
+}
+
+/* line 195, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-people:before {
+  content: "\f39e";
+}
+
+/* line 197, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-person:before {
+  content: "\f3a0";
+}
+
+/* line 199, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-person-add:before {
+  content: "\f39f";
+}
+
+/* line 201, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-phone-landscape:before {
+  content: "\f3a1";
+}
+
+/* line 203, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-phone-portrait:before {
+  content: "\f3a2";
+}
+
+/* line 205, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-pin:before {
+  content: "\f3a3";
+}
+
+/* line 207, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-plane:before {
+  content: "\f3a4";
+}
+
+/* line 209, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-playstore:before {
+  content: "\f2f0";
+}
+
+/* line 211, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-print:before {
+  content: "\f3a5";
+}
+
+/* line 213, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-radio-button-off:before {
+  content: "\f3a6";
+}
+
+/* line 215, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-radio-button-on:before {
+  content: "\f3a7";
+}
+
+/* line 217, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-refresh:before {
+  content: "\f3a8";
+}
+
+/* line 219, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-remove:before {
+  content: "\f2f4";
+}
+
+/* line 221, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-remove-circle:before {
+  content: "\f3a9";
+}
+
+/* line 223, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-restaurant:before {
+  content: "\f3aa";
+}
+
+/* line 225, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-sad:before {
+  content: "\f3ab";
+}
+
+/* line 227, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-search:before {
+  content: "\f2f5";
+}
+
+/* line 229, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-send:before {
+  content: "\f2f6";
+}
+
+/* line 231, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-settings:before {
+  content: "\f2f7";
+}
+
+/* line 233, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-share:before {
+  content: "\f2f8";
+}
+
+/* line 235, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-share-alt:before {
+  content: "\f3ac";
+}
+
+/* line 237, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-star:before {
+  content: "\f2fc";
+}
+
+/* line 239, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-star-half:before {
+  content: "\f3ad";
+}
+
+/* line 241, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-star-outline:before {
+  content: "\f3ae";
+}
+
+/* line 243, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-stopwatch:before {
+  content: "\f2fd";
+}
+
+/* line 245, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-subway:before {
+  content: "\f3af";
+}
+
+/* line 247, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-sunny:before {
+  content: "\f3b0";
+}
+
+/* line 249, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-sync:before {
+  content: "\f3b1";
+}
+
+/* line 251, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-textsms:before {
+  content: "\f3b2";
+}
+
+/* line 253, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-time:before {
+  content: "\f3b3";
+}
+
+/* line 255, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-train:before {
+  content: "\f3b4";
+}
+
+/* line 257, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-unlock:before {
+  content: "\f3b5";
+}
+
+/* line 259, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-upload:before {
+  content: "\f3b6";
+}
+
+/* line 261, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-volume-down:before {
+  content: "\f3b7";
+}
+
+/* line 263, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-volume-mute:before {
+  content: "\f3b8";
+}
+
+/* line 265, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-volume-off:before {
+  content: "\f3b9";
+}
+
+/* line 267, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-volume-up:before {
+  content: "\f3ba";
+}
+
+/* line 269, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-walk:before {
+  content: "\f3bb";
+}
+
+/* line 271, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-warning:before {
+  content: "\f3bc";
+}
+
+/* line 273, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-watch:before {
+  content: "\f3bd";
+}
+
+/* line 275, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-android-wifi:before {
+  content: "\f305";
+}
+
+/* line 277, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-aperture:before {
+  content: "\f313";
+}
+
+/* line 279, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-archive:before {
+  content: "\f102";
+}
+
+/* line 281, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-down-a:before {
+  content: "\f103";
+}
+
+/* line 283, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-down-b:before {
+  content: "\f104";
+}
+
+/* line 285, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-down-c:before {
+  content: "\f105";
+}
+
+/* line 287, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-expand:before {
+  content: "\f25e";
+}
+
+/* line 289, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-graph-down-left:before {
+  content: "\f25f";
+}
+
+/* line 291, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-graph-down-right:before {
+  content: "\f260";
+}
+
+/* line 293, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-graph-up-left:before {
+  content: "\f261";
+}
+
+/* line 295, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-graph-up-right:before {
+  content: "\f262";
+}
+
+/* line 297, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-left-a:before {
+  content: "\f106";
+}
+
+/* line 299, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-left-b:before {
+  content: "\f107";
+}
+
+/* line 301, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-left-c:before {
+  content: "\f108";
+}
+
+/* line 303, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-move:before {
+  content: "\f263";
+}
+
+/* line 305, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-resize:before {
+  content: "\f264";
+}
+
+/* line 307, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-return-left:before {
+  content: "\f265";
+}
+
+/* line 309, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-return-right:before {
+  content: "\f266";
+}
+
+/* line 311, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-right-a:before {
+  content: "\f109";
+}
+
+/* line 313, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-right-b:before {
+  content: "\f10a";
+}
+
+/* line 315, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-right-c:before {
+  content: "\f10b";
+}
+
+/* line 317, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-shrink:before {
+  content: "\f267";
+}
+
+/* line 319, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-swap:before {
+  content: "\f268";
+}
+
+/* line 321, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-up-a:before {
+  content: "\f10c";
+}
+
+/* line 323, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-up-b:before {
+  content: "\f10d";
+}
+
+/* line 325, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-arrow-up-c:before {
+  content: "\f10e";
+}
+
+/* line 327, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-asterisk:before {
+  content: "\f314";
+}
+
+/* line 329, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-at:before {
+  content: "\f10f";
+}
+
+/* line 331, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-backspace:before {
+  content: "\f3bf";
+}
+
+/* line 333, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-backspace-outline:before {
+  content: "\f3be";
+}
+
+/* line 335, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-bag:before {
+  content: "\f110";
+}
+
+/* line 337, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-battery-charging:before {
+  content: "\f111";
+}
+
+/* line 339, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-battery-empty:before {
+  content: "\f112";
+}
+
+/* line 341, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-battery-full:before {
+  content: "\f113";
+}
+
+/* line 343, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-battery-half:before {
+  content: "\f114";
+}
+
+/* line 345, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-battery-low:before {
+  content: "\f115";
+}
+
+/* line 347, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-beaker:before {
+  content: "\f269";
+}
+
+/* line 349, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-beer:before {
+  content: "\f26a";
+}
+
+/* line 351, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-bluetooth:before {
+  content: "\f116";
+}
+
+/* line 353, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-bonfire:before {
+  content: "\f315";
+}
+
+/* line 355, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-bookmark:before {
+  content: "\f26b";
+}
+
+/* line 357, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-bowtie:before {
+  content: "\f3c0";
+}
+
+/* line 359, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-briefcase:before {
+  content: "\f26c";
+}
+
+/* line 361, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-bug:before {
+  content: "\f2be";
+}
+
+/* line 363, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-calculator:before {
+  content: "\f26d";
+}
+
+/* line 365, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-calendar:before {
+  content: "\f117";
+}
+
+/* line 367, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-camera:before {
+  content: "\f118";
+}
+
+/* line 369, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-card:before {
+  content: "\f119";
+}
+
+/* line 371, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-cash:before {
+  content: "\f316";
+}
+
+/* line 373, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chatbox:before {
+  content: "\f11b";
+}
+
+/* line 375, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chatbox-working:before {
+  content: "\f11a";
+}
+
+/* line 377, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chatboxes:before {
+  content: "\f11c";
+}
+
+/* line 379, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chatbubble:before {
+  content: "\f11e";
+}
+
+/* line 381, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chatbubble-working:before {
+  content: "\f11d";
+}
+
+/* line 383, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chatbubbles:before {
+  content: "\f11f";
+}
+
+/* line 385, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-checkmark:before {
+  content: "\f122";
+}
+
+/* line 387, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-checkmark-circled:before {
+  content: "\f120";
+}
+
+/* line 389, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-checkmark-round:before {
+  content: "\f121";
+}
+
+/* line 391, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chevron-down:before {
+  content: "\f123";
+}
+
+/* line 393, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chevron-left:before {
+  content: "\f124";
+}
+
+/* line 395, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chevron-right:before {
+  content: "\f125";
+}
+
+/* line 397, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-chevron-up:before {
+  content: "\f126";
+}
+
+/* line 399, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-clipboard:before {
+  content: "\f127";
+}
+
+/* line 401, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-clock:before {
+  content: "\f26e";
+}
+
+/* line 403, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-close:before {
+  content: "\f12a";
+}
+
+/* line 405, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-close-circled:before {
+  content: "\f128";
+}
+
+/* line 407, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-close-round:before {
+  content: "\f129";
+}
+
+/* line 409, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-closed-captioning:before {
+  content: "\f317";
+}
+
+/* line 411, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-cloud:before {
+  content: "\f12b";
+}
+
+/* line 413, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-code:before {
+  content: "\f271";
+}
+
+/* line 415, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-code-download:before {
+  content: "\f26f";
+}
+
+/* line 417, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-code-working:before {
+  content: "\f270";
+}
+
+/* line 419, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-coffee:before {
+  content: "\f272";
+}
+
+/* line 421, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-compass:before {
+  content: "\f273";
+}
+
+/* line 423, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-compose:before {
+  content: "\f12c";
+}
+
+/* line 425, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-connection-bars:before {
+  content: "\f274";
+}
+
+/* line 427, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-contrast:before {
+  content: "\f275";
+}
+
+/* line 429, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-crop:before {
+  content: "\f3c1";
+}
+
+/* line 431, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-cube:before {
+  content: "\f318";
+}
+
+/* line 433, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-disc:before {
+  content: "\f12d";
+}
+
+/* line 435, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-document:before {
+  content: "\f12f";
+}
+
+/* line 437, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-document-text:before {
+  content: "\f12e";
+}
+
+/* line 439, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-drag:before {
+  content: "\f130";
+}
+
+/* line 441, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-earth:before {
+  content: "\f276";
+}
+
+/* line 443, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-easel:before {
+  content: "\f3c2";
+}
+
+/* line 445, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-edit:before {
+  content: "\f2bf";
+}
+
+/* line 447, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-egg:before {
+  content: "\f277";
+}
+
+/* line 449, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-eject:before {
+  content: "\f131";
+}
+
+/* line 451, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-email:before {
+  content: "\f132";
+}
+
+/* line 453, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-email-unread:before {
+  content: "\f3c3";
+}
+
+/* line 455, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-erlenmeyer-flask:before {
+  content: "\f3c5";
+}
+
+/* line 457, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-erlenmeyer-flask-bubbles:before {
+  content: "\f3c4";
+}
+
+/* line 459, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-eye:before {
+  content: "\f133";
+}
+
+/* line 461, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-eye-disabled:before {
+  content: "\f306";
+}
+
+/* line 463, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-female:before {
+  content: "\f278";
+}
+
+/* line 465, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-filing:before {
+  content: "\f134";
+}
+
+/* line 467, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-film-marker:before {
+  content: "\f135";
+}
+
+/* line 469, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-fireball:before {
+  content: "\f319";
+}
+
+/* line 471, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-flag:before {
+  content: "\f279";
+}
+
+/* line 473, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-flame:before {
+  content: "\f31a";
+}
+
+/* line 475, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-flash:before {
+  content: "\f137";
+}
+
+/* line 477, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-flash-off:before {
+  content: "\f136";
+}
+
+/* line 479, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-folder:before {
+  content: "\f139";
+}
+
+/* line 481, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-fork:before {
+  content: "\f27a";
+}
+
+/* line 483, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-fork-repo:before {
+  content: "\f2c0";
+}
+
+/* line 485, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-forward:before {
+  content: "\f13a";
+}
+
+/* line 487, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-funnel:before {
+  content: "\f31b";
+}
+
+/* line 489, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-gear-a:before {
+  content: "\f13d";
+}
+
+/* line 491, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-gear-b:before {
+  content: "\f13e";
+}
+
+/* line 493, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-grid:before {
+  content: "\f13f";
+}
+
+/* line 495, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-hammer:before {
+  content: "\f27b";
+}
+
+/* line 497, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-happy:before {
+  content: "\f31c";
+}
+
+/* line 499, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-happy-outline:before {
+  content: "\f3c6";
+}
+
+/* line 501, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-headphone:before {
+  content: "\f140";
+}
+
+/* line 503, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-heart:before {
+  content: "\f141";
+}
+
+/* line 505, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-heart-broken:before {
+  content: "\f31d";
+}
+
+/* line 507, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-help:before {
+  content: "\f143";
+}
+
+/* line 509, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-help-buoy:before {
+  content: "\f27c";
+}
+
+/* line 511, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-help-circled:before {
+  content: "\f142";
+}
+
+/* line 513, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-home:before {
+  content: "\f144";
+}
+
+/* line 515, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-icecream:before {
+  content: "\f27d";
+}
+
+/* line 517, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-image:before {
+  content: "\f147";
+}
+
+/* line 519, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-images:before {
+  content: "\f148";
+}
+
+/* line 521, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-information:before {
+  content: "\f14a";
+}
+
+/* line 523, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-information-circled:before {
+  content: "\f149";
+}
+
+/* line 525, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ionic:before {
+  content: "\f14b";
+}
+
+/* line 527, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-alarm:before {
+  content: "\f3c8";
+}
+
+/* line 529, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-alarm-outline:before {
+  content: "\f3c7";
+}
+
+/* line 531, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-albums:before {
+  content: "\f3ca";
+}
+
+/* line 533, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-albums-outline:before {
+  content: "\f3c9";
+}
+
+/* line 535, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-americanfootball:before {
+  content: "\f3cc";
+}
+
+/* line 537, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-americanfootball-outline:before {
+  content: "\f3cb";
+}
+
+/* line 539, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-analytics:before {
+  content: "\f3ce";
+}
+
+/* line 541, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-analytics-outline:before {
+  content: "\f3cd";
+}
+
+/* line 543, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-back:before {
+  content: "\f3cf";
+}
+
+/* line 545, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-down:before {
+  content: "\f3d0";
+}
+
+/* line 547, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-forward:before {
+  content: "\f3d1";
+}
+
+/* line 549, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-left:before {
+  content: "\f3d2";
+}
+
+/* line 551, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-right:before {
+  content: "\f3d3";
+}
+
+/* line 553, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-thin-down:before {
+  content: "\f3d4";
+}
+
+/* line 555, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-thin-left:before {
+  content: "\f3d5";
+}
+
+/* line 557, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-thin-right:before {
+  content: "\f3d6";
+}
+
+/* line 559, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-thin-up:before {
+  content: "\f3d7";
+}
+
+/* line 561, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-arrow-up:before {
+  content: "\f3d8";
+}
+
+/* line 563, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-at:before {
+  content: "\f3da";
+}
+
+/* line 565, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-at-outline:before {
+  content: "\f3d9";
+}
+
+/* line 567, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-barcode:before {
+  content: "\f3dc";
+}
+
+/* line 569, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-barcode-outline:before {
+  content: "\f3db";
+}
+
+/* line 571, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-baseball:before {
+  content: "\f3de";
+}
+
+/* line 573, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-baseball-outline:before {
+  content: "\f3dd";
+}
+
+/* line 575, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-basketball:before {
+  content: "\f3e0";
+}
+
+/* line 577, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-basketball-outline:before {
+  content: "\f3df";
+}
+
+/* line 579, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-bell:before {
+  content: "\f3e2";
+}
+
+/* line 581, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-bell-outline:before {
+  content: "\f3e1";
+}
+
+/* line 583, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-body:before {
+  content: "\f3e4";
+}
+
+/* line 585, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-body-outline:before {
+  content: "\f3e3";
+}
+
+/* line 587, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-bolt:before {
+  content: "\f3e6";
+}
+
+/* line 589, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-bolt-outline:before {
+  content: "\f3e5";
+}
+
+/* line 591, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-book:before {
+  content: "\f3e8";
+}
+
+/* line 593, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-book-outline:before {
+  content: "\f3e7";
+}
+
+/* line 595, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-bookmarks:before {
+  content: "\f3ea";
+}
+
+/* line 597, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-bookmarks-outline:before {
+  content: "\f3e9";
+}
+
+/* line 599, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-box:before {
+  content: "\f3ec";
+}
+
+/* line 601, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-box-outline:before {
+  content: "\f3eb";
+}
+
+/* line 603, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-briefcase:before {
+  content: "\f3ee";
+}
+
+/* line 605, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-briefcase-outline:before {
+  content: "\f3ed";
+}
+
+/* line 607, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-browsers:before {
+  content: "\f3f0";
+}
+
+/* line 609, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-browsers-outline:before {
+  content: "\f3ef";
+}
+
+/* line 611, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-calculator:before {
+  content: "\f3f2";
+}
+
+/* line 613, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-calculator-outline:before {
+  content: "\f3f1";
+}
+
+/* line 615, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-calendar:before {
+  content: "\f3f4";
+}
+
+/* line 617, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-calendar-outline:before {
+  content: "\f3f3";
+}
+
+/* line 619, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-camera:before {
+  content: "\f3f6";
+}
+
+/* line 621, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-camera-outline:before {
+  content: "\f3f5";
+}
+
+/* line 623, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cart:before {
+  content: "\f3f8";
+}
+
+/* line 625, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cart-outline:before {
+  content: "\f3f7";
+}
+
+/* line 627, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-chatboxes:before {
+  content: "\f3fa";
+}
+
+/* line 629, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-chatboxes-outline:before {
+  content: "\f3f9";
+}
+
+/* line 631, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-chatbubble:before {
+  content: "\f3fc";
+}
+
+/* line 633, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-chatbubble-outline:before {
+  content: "\f3fb";
+}
+
+/* line 635, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-checkmark:before {
+  content: "\f3ff";
+}
+
+/* line 637, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-checkmark-empty:before {
+  content: "\f3fd";
+}
+
+/* line 639, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-checkmark-outline:before {
+  content: "\f3fe";
+}
+
+/* line 641, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-circle-filled:before {
+  content: "\f400";
+}
+
+/* line 643, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-circle-outline:before {
+  content: "\f401";
+}
+
+/* line 645, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-clock:before {
+  content: "\f403";
+}
+
+/* line 647, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-clock-outline:before {
+  content: "\f402";
+}
+
+/* line 649, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-close:before {
+  content: "\f406";
+}
+
+/* line 651, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-close-empty:before {
+  content: "\f404";
+}
+
+/* line 653, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-close-outline:before {
+  content: "\f405";
+}
+
+/* line 655, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloud:before {
+  content: "\f40c";
+}
+
+/* line 657, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloud-download:before {
+  content: "\f408";
+}
+
+/* line 659, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloud-download-outline:before {
+  content: "\f407";
+}
+
+/* line 661, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloud-outline:before {
+  content: "\f409";
+}
+
+/* line 663, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloud-upload:before {
+  content: "\f40b";
+}
+
+/* line 665, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloud-upload-outline:before {
+  content: "\f40a";
+}
+
+/* line 667, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloudy:before {
+  content: "\f410";
+}
+
+/* line 669, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloudy-night:before {
+  content: "\f40e";
+}
+
+/* line 671, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloudy-night-outline:before {
+  content: "\f40d";
+}
+
+/* line 673, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cloudy-outline:before {
+  content: "\f40f";
+}
+
+/* line 675, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cog:before {
+  content: "\f412";
+}
+
+/* line 677, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-cog-outline:before {
+  content: "\f411";
+}
+
+/* line 679, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-color-filter:before {
+  content: "\f414";
+}
+
+/* line 681, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-color-filter-outline:before {
+  content: "\f413";
+}
+
+/* line 683, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-color-wand:before {
+  content: "\f416";
+}
+
+/* line 685, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-color-wand-outline:before {
+  content: "\f415";
+}
+
+/* line 687, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-compose:before {
+  content: "\f418";
+}
+
+/* line 689, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-compose-outline:before {
+  content: "\f417";
+}
+
+/* line 691, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-contact:before {
+  content: "\f41a";
+}
+
+/* line 693, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-contact-outline:before {
+  content: "\f419";
+}
+
+/* line 695, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-copy:before {
+  content: "\f41c";
+}
+
+/* line 697, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-copy-outline:before {
+  content: "\f41b";
+}
+
+/* line 699, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-crop:before {
+  content: "\f41e";
+}
+
+/* line 701, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-crop-strong:before {
+  content: "\f41d";
+}
+
+/* line 703, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-download:before {
+  content: "\f420";
+}
+
+/* line 705, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-download-outline:before {
+  content: "\f41f";
+}
+
+/* line 707, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-drag:before {
+  content: "\f421";
+}
+
+/* line 709, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-email:before {
+  content: "\f423";
+}
+
+/* line 711, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-email-outline:before {
+  content: "\f422";
+}
+
+/* line 713, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-eye:before {
+  content: "\f425";
+}
+
+/* line 715, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-eye-outline:before {
+  content: "\f424";
+}
+
+/* line 717, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-fastforward:before {
+  content: "\f427";
+}
+
+/* line 719, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-fastforward-outline:before {
+  content: "\f426";
+}
+
+/* line 721, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-filing:before {
+  content: "\f429";
+}
+
+/* line 723, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-filing-outline:before {
+  content: "\f428";
+}
+
+/* line 725, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-film:before {
+  content: "\f42b";
+}
+
+/* line 727, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-film-outline:before {
+  content: "\f42a";
+}
+
+/* line 729, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-flag:before {
+  content: "\f42d";
+}
+
+/* line 731, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-flag-outline:before {
+  content: "\f42c";
+}
+
+/* line 733, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-flame:before {
+  content: "\f42f";
+}
+
+/* line 735, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-flame-outline:before {
+  content: "\f42e";
+}
+
+/* line 737, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-flask:before {
+  content: "\f431";
+}
+
+/* line 739, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-flask-outline:before {
+  content: "\f430";
+}
+
+/* line 741, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-flower:before {
+  content: "\f433";
+}
+
+/* line 743, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-flower-outline:before {
+  content: "\f432";
+}
+
+/* line 745, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-folder:before {
+  content: "\f435";
+}
+
+/* line 747, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-folder-outline:before {
+  content: "\f434";
+}
+
+/* line 749, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-football:before {
+  content: "\f437";
+}
+
+/* line 751, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-football-outline:before {
+  content: "\f436";
+}
+
+/* line 753, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-game-controller-a:before {
+  content: "\f439";
+}
+
+/* line 755, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-game-controller-a-outline:before {
+  content: "\f438";
+}
+
+/* line 757, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-game-controller-b:before {
+  content: "\f43b";
+}
+
+/* line 759, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-game-controller-b-outline:before {
+  content: "\f43a";
+}
+
+/* line 761, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-gear:before {
+  content: "\f43d";
+}
+
+/* line 763, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-gear-outline:before {
+  content: "\f43c";
+}
+
+/* line 765, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-glasses:before {
+  content: "\f43f";
+}
+
+/* line 767, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-glasses-outline:before {
+  content: "\f43e";
+}
+
+/* line 769, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-grid-view:before {
+  content: "\f441";
+}
+
+/* line 771, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-grid-view-outline:before {
+  content: "\f440";
+}
+
+/* line 773, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-heart:before {
+  content: "\f443";
+}
+
+/* line 775, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-heart-outline:before {
+  content: "\f442";
+}
+
+/* line 777, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-help:before {
+  content: "\f446";
+}
+
+/* line 779, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-help-empty:before {
+  content: "\f444";
+}
+
+/* line 781, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-help-outline:before {
+  content: "\f445";
+}
+
+/* line 783, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-home:before {
+  content: "\f448";
+}
+
+/* line 785, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-home-outline:before {
+  content: "\f447";
+}
+
+/* line 787, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-infinite:before {
+  content: "\f44a";
+}
+
+/* line 789, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-infinite-outline:before {
+  content: "\f449";
+}
+
+/* line 791, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-information:before {
+  content: "\f44d";
+}
+
+/* line 793, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-information-empty:before {
+  content: "\f44b";
+}
+
+/* line 795, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-information-outline:before {
+  content: "\f44c";
+}
+
+/* line 797, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-ionic-outline:before {
+  content: "\f44e";
+}
+
+/* line 799, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-keypad:before {
+  content: "\f450";
+}
+
+/* line 801, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-keypad-outline:before {
+  content: "\f44f";
+}
+
+/* line 803, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-lightbulb:before {
+  content: "\f452";
+}
+
+/* line 805, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-lightbulb-outline:before {
+  content: "\f451";
+}
+
+/* line 807, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-list:before {
+  content: "\f454";
+}
+
+/* line 809, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-list-outline:before {
+  content: "\f453";
+}
+
+/* line 811, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-location:before {
+  content: "\f456";
+}
+
+/* line 813, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-location-outline:before {
+  content: "\f455";
+}
+
+/* line 815, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-locked:before {
+  content: "\f458";
+}
+
+/* line 817, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-locked-outline:before {
+  content: "\f457";
+}
+
+/* line 819, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-loop:before {
+  content: "\f45a";
+}
+
+/* line 821, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-loop-strong:before {
+  content: "\f459";
+}
+
+/* line 823, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-medical:before {
+  content: "\f45c";
+}
+
+/* line 825, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-medical-outline:before {
+  content: "\f45b";
+}
+
+/* line 827, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-medkit:before {
+  content: "\f45e";
+}
+
+/* line 829, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-medkit-outline:before {
+  content: "\f45d";
+}
+
+/* line 831, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-mic:before {
+  content: "\f461";
+}
+
+/* line 833, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-mic-off:before {
+  content: "\f45f";
+}
+
+/* line 835, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-mic-outline:before {
+  content: "\f460";
+}
+
+/* line 837, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-minus:before {
+  content: "\f464";
+}
+
+/* line 839, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-minus-empty:before {
+  content: "\f462";
+}
+
+/* line 841, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-minus-outline:before {
+  content: "\f463";
+}
+
+/* line 843, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-monitor:before {
+  content: "\f466";
+}
+
+/* line 845, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-monitor-outline:before {
+  content: "\f465";
+}
+
+/* line 847, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-moon:before {
+  content: "\f468";
+}
+
+/* line 849, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-moon-outline:before {
+  content: "\f467";
+}
+
+/* line 851, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-more:before {
+  content: "\f46a";
+}
+
+/* line 853, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-more-outline:before {
+  content: "\f469";
+}
+
+/* line 855, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-musical-note:before {
+  content: "\f46b";
+}
+
+/* line 857, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-musical-notes:before {
+  content: "\f46c";
+}
+
+/* line 859, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-navigate:before {
+  content: "\f46e";
+}
+
+/* line 861, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-navigate-outline:before {
+  content: "\f46d";
+}
+
+/* line 863, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-nutrition:before {
+  content: "\f470";
+}
+
+/* line 865, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-nutrition-outline:before {
+  content: "\f46f";
+}
+
+/* line 867, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-paper:before {
+  content: "\f472";
+}
+
+/* line 869, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-paper-outline:before {
+  content: "\f471";
+}
+
+/* line 871, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-paperplane:before {
+  content: "\f474";
+}
+
+/* line 873, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-paperplane-outline:before {
+  content: "\f473";
+}
+
+/* line 875, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-partlysunny:before {
+  content: "\f476";
+}
+
+/* line 877, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-partlysunny-outline:before {
+  content: "\f475";
+}
+
+/* line 879, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pause:before {
+  content: "\f478";
+}
+
+/* line 881, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pause-outline:before {
+  content: "\f477";
+}
+
+/* line 883, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-paw:before {
+  content: "\f47a";
+}
+
+/* line 885, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-paw-outline:before {
+  content: "\f479";
+}
+
+/* line 887, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-people:before {
+  content: "\f47c";
+}
+
+/* line 889, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-people-outline:before {
+  content: "\f47b";
+}
+
+/* line 891, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-person:before {
+  content: "\f47e";
+}
+
+/* line 893, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-person-outline:before {
+  content: "\f47d";
+}
+
+/* line 895, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-personadd:before {
+  content: "\f480";
+}
+
+/* line 897, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-personadd-outline:before {
+  content: "\f47f";
+}
+
+/* line 899, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-photos:before {
+  content: "\f482";
+}
+
+/* line 901, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-photos-outline:before {
+  content: "\f481";
+}
+
+/* line 903, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pie:before {
+  content: "\f484";
+}
+
+/* line 905, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pie-outline:before {
+  content: "\f483";
+}
+
+/* line 907, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pint:before {
+  content: "\f486";
+}
+
+/* line 909, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pint-outline:before {
+  content: "\f485";
+}
+
+/* line 911, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-play:before {
+  content: "\f488";
+}
+
+/* line 913, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-play-outline:before {
+  content: "\f487";
+}
+
+/* line 915, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-plus:before {
+  content: "\f48b";
+}
+
+/* line 917, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-plus-empty:before {
+  content: "\f489";
+}
+
+/* line 919, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-plus-outline:before {
+  content: "\f48a";
+}
+
+/* line 921, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pricetag:before {
+  content: "\f48d";
+}
+
+/* line 923, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pricetag-outline:before {
+  content: "\f48c";
+}
+
+/* line 925, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pricetags:before {
+  content: "\f48f";
+}
+
+/* line 927, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pricetags-outline:before {
+  content: "\f48e";
+}
+
+/* line 929, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-printer:before {
+  content: "\f491";
+}
+
+/* line 931, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-printer-outline:before {
+  content: "\f490";
+}
+
+/* line 933, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pulse:before {
+  content: "\f493";
+}
+
+/* line 935, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-pulse-strong:before {
+  content: "\f492";
+}
+
+/* line 937, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-rainy:before {
+  content: "\f495";
+}
+
+/* line 939, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-rainy-outline:before {
+  content: "\f494";
+}
+
+/* line 941, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-recording:before {
+  content: "\f497";
+}
+
+/* line 943, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-recording-outline:before {
+  content: "\f496";
+}
+
+/* line 945, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-redo:before {
+  content: "\f499";
+}
+
+/* line 947, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-redo-outline:before {
+  content: "\f498";
+}
+
+/* line 949, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-refresh:before {
+  content: "\f49c";
+}
+
+/* line 951, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-refresh-empty:before {
+  content: "\f49a";
+}
+
+/* line 953, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-refresh-outline:before {
+  content: "\f49b";
+}
+
+/* line 955, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-reload:before {
+  content: "\f49d";
+}
+
+/* line 957, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-reverse-camera:before {
+  content: "\f49f";
+}
+
+/* line 959, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-reverse-camera-outline:before {
+  content: "\f49e";
+}
+
+/* line 961, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-rewind:before {
+  content: "\f4a1";
+}
+
+/* line 963, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-rewind-outline:before {
+  content: "\f4a0";
+}
+
+/* line 965, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-rose:before {
+  content: "\f4a3";
+}
+
+/* line 967, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-rose-outline:before {
+  content: "\f4a2";
+}
+
+/* line 969, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-search:before {
+  content: "\f4a5";
+}
+
+/* line 971, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-search-strong:before {
+  content: "\f4a4";
+}
+
+/* line 973, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-settings:before {
+  content: "\f4a7";
+}
+
+/* line 975, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-settings-strong:before {
+  content: "\f4a6";
+}
+
+/* line 977, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-shuffle:before {
+  content: "\f4a9";
+}
+
+/* line 979, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-shuffle-strong:before {
+  content: "\f4a8";
+}
+
+/* line 981, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-skipbackward:before {
+  content: "\f4ab";
+}
+
+/* line 983, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-skipbackward-outline:before {
+  content: "\f4aa";
+}
+
+/* line 985, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-skipforward:before {
+  content: "\f4ad";
+}
+
+/* line 987, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-skipforward-outline:before {
+  content: "\f4ac";
+}
+
+/* line 989, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-snowy:before {
+  content: "\f4ae";
+}
+
+/* line 991, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-speedometer:before {
+  content: "\f4b0";
+}
+
+/* line 993, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-speedometer-outline:before {
+  content: "\f4af";
+}
+
+/* line 995, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-star:before {
+  content: "\f4b3";
+}
+
+/* line 997, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-star-half:before {
+  content: "\f4b1";
+}
+
+/* line 999, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-star-outline:before {
+  content: "\f4b2";
+}
+
+/* line 1001, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-stopwatch:before {
+  content: "\f4b5";
+}
+
+/* line 1003, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-stopwatch-outline:before {
+  content: "\f4b4";
+}
+
+/* line 1005, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-sunny:before {
+  content: "\f4b7";
+}
+
+/* line 1007, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-sunny-outline:before {
+  content: "\f4b6";
+}
+
+/* line 1009, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-telephone:before {
+  content: "\f4b9";
+}
+
+/* line 1011, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-telephone-outline:before {
+  content: "\f4b8";
+}
+
+/* line 1013, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-tennisball:before {
+  content: "\f4bb";
+}
+
+/* line 1015, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-tennisball-outline:before {
+  content: "\f4ba";
+}
+
+/* line 1017, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-thunderstorm:before {
+  content: "\f4bd";
+}
+
+/* line 1019, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-thunderstorm-outline:before {
+  content: "\f4bc";
+}
+
+/* line 1021, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-time:before {
+  content: "\f4bf";
+}
+
+/* line 1023, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-time-outline:before {
+  content: "\f4be";
+}
+
+/* line 1025, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-timer:before {
+  content: "\f4c1";
+}
+
+/* line 1027, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-timer-outline:before {
+  content: "\f4c0";
+}
+
+/* line 1029, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-toggle:before {
+  content: "\f4c3";
+}
+
+/* line 1031, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-toggle-outline:before {
+  content: "\f4c2";
+}
+
+/* line 1033, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-trash:before {
+  content: "\f4c5";
+}
+
+/* line 1035, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-trash-outline:before {
+  content: "\f4c4";
+}
+
+/* line 1037, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-undo:before {
+  content: "\f4c7";
+}
+
+/* line 1039, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-undo-outline:before {
+  content: "\f4c6";
+}
+
+/* line 1041, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-unlocked:before {
+  content: "\f4c9";
+}
+
+/* line 1043, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-unlocked-outline:before {
+  content: "\f4c8";
+}
+
+/* line 1045, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-upload:before {
+  content: "\f4cb";
+}
+
+/* line 1047, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-upload-outline:before {
+  content: "\f4ca";
+}
+
+/* line 1049, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-videocam:before {
+  content: "\f4cd";
+}
+
+/* line 1051, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-videocam-outline:before {
+  content: "\f4cc";
+}
+
+/* line 1053, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-volume-high:before {
+  content: "\f4ce";
+}
+
+/* line 1055, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-volume-low:before {
+  content: "\f4cf";
+}
+
+/* line 1057, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-wineglass:before {
+  content: "\f4d1";
+}
+
+/* line 1059, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-wineglass-outline:before {
+  content: "\f4d0";
+}
+
+/* line 1061, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-world:before {
+  content: "\f4d3";
+}
+
+/* line 1063, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ios-world-outline:before {
+  content: "\f4d2";
+}
+
+/* line 1065, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ipad:before {
+  content: "\f1f9";
+}
+
+/* line 1067, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-iphone:before {
+  content: "\f1fa";
+}
+
+/* line 1069, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ipod:before {
+  content: "\f1fb";
+}
+
+/* line 1071, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-jet:before {
+  content: "\f295";
+}
+
+/* line 1073, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-key:before {
+  content: "\f296";
+}
+
+/* line 1075, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-knife:before {
+  content: "\f297";
+}
+
+/* line 1077, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-laptop:before {
+  content: "\f1fc";
+}
+
+/* line 1079, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-leaf:before {
+  content: "\f1fd";
+}
+
+/* line 1081, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-levels:before {
+  content: "\f298";
+}
+
+/* line 1083, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-lightbulb:before {
+  content: "\f299";
+}
+
+/* line 1085, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-link:before {
+  content: "\f1fe";
+}
+
+/* line 1087, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-load-a:before {
+  content: "\f29a";
+}
+
+/* line 1089, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-load-b:before {
+  content: "\f29b";
+}
+
+/* line 1091, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-load-c:before {
+  content: "\f29c";
+}
+
+/* line 1093, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-load-d:before {
+  content: "\f29d";
+}
+
+/* line 1095, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-location:before {
+  content: "\f1ff";
+}
+
+/* line 1097, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-lock-combination:before {
+  content: "\f4d4";
+}
+
+/* line 1099, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-locked:before {
+  content: "\f200";
+}
+
+/* line 1101, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-log-in:before {
+  content: "\f29e";
+}
+
+/* line 1103, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-log-out:before {
+  content: "\f29f";
+}
+
+/* line 1105, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-loop:before {
+  content: "\f201";
+}
+
+/* line 1107, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-magnet:before {
+  content: "\f2a0";
+}
+
+/* line 1109, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-male:before {
+  content: "\f2a1";
+}
+
+/* line 1111, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-man:before {
+  content: "\f202";
+}
+
+/* line 1113, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-map:before {
+  content: "\f203";
+}
+
+/* line 1115, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-medkit:before {
+  content: "\f2a2";
+}
+
+/* line 1117, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-merge:before {
+  content: "\f33f";
+}
+
+/* line 1119, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-mic-a:before {
+  content: "\f204";
+}
+
+/* line 1121, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-mic-b:before {
+  content: "\f205";
+}
+
+/* line 1123, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-mic-c:before {
+  content: "\f206";
+}
+
+/* line 1125, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-minus:before {
+  content: "\f209";
+}
+
+/* line 1127, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-minus-circled:before {
+  content: "\f207";
+}
+
+/* line 1129, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-minus-round:before {
+  content: "\f208";
+}
+
+/* line 1131, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-model-s:before {
+  content: "\f2c1";
+}
+
+/* line 1133, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-monitor:before {
+  content: "\f20a";
+}
+
+/* line 1135, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-more:before {
+  content: "\f20b";
+}
+
+/* line 1137, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-mouse:before {
+  content: "\f340";
+}
+
+/* line 1139, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-music-note:before {
+  content: "\f20c";
+}
+
+/* line 1141, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-navicon:before {
+  content: "\f20e";
+}
+
+/* line 1143, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-navicon-round:before {
+  content: "\f20d";
+}
+
+/* line 1145, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-navigate:before {
+  content: "\f2a3";
+}
+
+/* line 1147, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-network:before {
+  content: "\f341";
+}
+
+/* line 1149, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-no-smoking:before {
+  content: "\f2c2";
+}
+
+/* line 1151, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-nuclear:before {
+  content: "\f2a4";
+}
+
+/* line 1153, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-outlet:before {
+  content: "\f342";
+}
+
+/* line 1155, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-paintbrush:before {
+  content: "\f4d5";
+}
+
+/* line 1157, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-paintbucket:before {
+  content: "\f4d6";
+}
+
+/* line 1159, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-paper-airplane:before {
+  content: "\f2c3";
+}
+
+/* line 1161, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-paperclip:before {
+  content: "\f20f";
+}
+
+/* line 1163, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-pause:before {
+  content: "\f210";
+}
+
+/* line 1165, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-person:before {
+  content: "\f213";
+}
+
+/* line 1167, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-person-add:before {
+  content: "\f211";
+}
+
+/* line 1169, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-person-stalker:before {
+  content: "\f212";
+}
+
+/* line 1171, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-pie-graph:before {
+  content: "\f2a5";
+}
+
+/* line 1173, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-pin:before {
+  content: "\f2a6";
+}
+
+/* line 1175, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-pinpoint:before {
+  content: "\f2a7";
+}
+
+/* line 1177, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-pizza:before {
+  content: "\f2a8";
+}
+
+/* line 1179, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-plane:before {
+  content: "\f214";
+}
+
+/* line 1181, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-planet:before {
+  content: "\f343";
+}
+
+/* line 1183, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-play:before {
+  content: "\f215";
+}
+
+/* line 1185, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-playstation:before {
+  content: "\f30a";
+}
+
+/* line 1187, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-plus:before {
+  content: "\f218";
+}
+
+/* line 1189, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-plus-circled:before {
+  content: "\f216";
+}
+
+/* line 1191, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-plus-round:before {
+  content: "\f217";
+}
+
+/* line 1193, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-podium:before {
+  content: "\f344";
+}
+
+/* line 1195, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-pound:before {
+  content: "\f219";
+}
+
+/* line 1197, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-power:before {
+  content: "\f2a9";
+}
+
+/* line 1199, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-pricetag:before {
+  content: "\f2aa";
+}
+
+/* line 1201, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-pricetags:before {
+  content: "\f2ab";
+}
+
+/* line 1203, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-printer:before {
+  content: "\f21a";
+}
+
+/* line 1205, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-pull-request:before {
+  content: "\f345";
+}
+
+/* line 1207, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-qr-scanner:before {
+  content: "\f346";
+}
+
+/* line 1209, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-quote:before {
+  content: "\f347";
+}
+
+/* line 1211, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-radio-waves:before {
+  content: "\f2ac";
+}
+
+/* line 1213, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-record:before {
+  content: "\f21b";
+}
+
+/* line 1215, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-refresh:before {
+  content: "\f21c";
+}
+
+/* line 1217, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-reply:before {
+  content: "\f21e";
+}
+
+/* line 1219, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-reply-all:before {
+  content: "\f21d";
+}
+
+/* line 1221, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ribbon-a:before {
+  content: "\f348";
+}
+
+/* line 1223, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-ribbon-b:before {
+  content: "\f349";
+}
+
+/* line 1225, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-sad:before {
+  content: "\f34a";
+}
+
+/* line 1227, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-sad-outline:before {
+  content: "\f4d7";
+}
+
+/* line 1229, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-scissors:before {
+  content: "\f34b";
+}
+
+/* line 1231, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-search:before {
+  content: "\f21f";
+}
+
+/* line 1233, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-settings:before {
+  content: "\f2ad";
+}
+
+/* line 1235, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-share:before {
+  content: "\f220";
+}
+
+/* line 1237, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-shuffle:before {
+  content: "\f221";
+}
+
+/* line 1239, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-skip-backward:before {
+  content: "\f222";
+}
+
+/* line 1241, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-skip-forward:before {
+  content: "\f223";
+}
+
+/* line 1243, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-android:before {
+  content: "\f225";
+}
+
+/* line 1245, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-android-outline:before {
+  content: "\f224";
+}
+
+/* line 1247, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-angular:before {
+  content: "\f4d9";
+}
+
+/* line 1249, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-angular-outline:before {
+  content: "\f4d8";
+}
+
+/* line 1251, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-apple:before {
+  content: "\f227";
+}
+
+/* line 1253, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-apple-outline:before {
+  content: "\f226";
+}
+
+/* line 1255, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-bitcoin:before {
+  content: "\f2af";
+}
+
+/* line 1257, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-bitcoin-outline:before {
+  content: "\f2ae";
+}
+
+/* line 1259, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-buffer:before {
+  content: "\f229";
+}
+
+/* line 1261, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-buffer-outline:before {
+  content: "\f228";
+}
+
+/* line 1263, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-chrome:before {
+  content: "\f4db";
+}
+
+/* line 1265, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-chrome-outline:before {
+  content: "\f4da";
+}
+
+/* line 1267, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-codepen:before {
+  content: "\f4dd";
+}
+
+/* line 1269, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-codepen-outline:before {
+  content: "\f4dc";
+}
+
+/* line 1271, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-css3:before {
+  content: "\f4df";
+}
+
+/* line 1273, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-css3-outline:before {
+  content: "\f4de";
+}
+
+/* line 1275, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-designernews:before {
+  content: "\f22b";
+}
+
+/* line 1277, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-designernews-outline:before {
+  content: "\f22a";
+}
+
+/* line 1279, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-dribbble:before {
+  content: "\f22d";
+}
+
+/* line 1281, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-dribbble-outline:before {
+  content: "\f22c";
+}
+
+/* line 1283, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-dropbox:before {
+  content: "\f22f";
+}
+
+/* line 1285, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-dropbox-outline:before {
+  content: "\f22e";
+}
+
+/* line 1287, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-euro:before {
+  content: "\f4e1";
+}
+
+/* line 1289, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-euro-outline:before {
+  content: "\f4e0";
+}
+
+/* line 1291, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-facebook:before {
+  content: "\f231";
+}
+
+/* line 1293, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-facebook-outline:before {
+  content: "\f230";
+}
+
+/* line 1295, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-foursquare:before {
+  content: "\f34d";
+}
+
+/* line 1297, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-foursquare-outline:before {
+  content: "\f34c";
+}
+
+/* line 1299, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-freebsd-devil:before {
+  content: "\f2c4";
+}
+
+/* line 1301, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-github:before {
+  content: "\f233";
+}
+
+/* line 1303, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-github-outline:before {
+  content: "\f232";
+}
+
+/* line 1305, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-google:before {
+  content: "\f34f";
+}
+
+/* line 1307, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-google-outline:before {
+  content: "\f34e";
+}
+
+/* line 1309, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-googleplus:before {
+  content: "\f235";
+}
+
+/* line 1311, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-googleplus-outline:before {
+  content: "\f234";
+}
+
+/* line 1313, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-hackernews:before {
+  content: "\f237";
+}
+
+/* line 1315, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-hackernews-outline:before {
+  content: "\f236";
+}
+
+/* line 1317, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-html5:before {
+  content: "\f4e3";
+}
+
+/* line 1319, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-html5-outline:before {
+  content: "\f4e2";
+}
+
+/* line 1321, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-instagram:before {
+  content: "\f351";
+}
+
+/* line 1323, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-instagram-outline:before {
+  content: "\f350";
+}
+
+/* line 1325, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-javascript:before {
+  content: "\f4e5";
+}
+
+/* line 1327, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-javascript-outline:before {
+  content: "\f4e4";
+}
+
+/* line 1329, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-linkedin:before {
+  content: "\f239";
+}
+
+/* line 1331, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-linkedin-outline:before {
+  content: "\f238";
+}
+
+/* line 1333, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-markdown:before {
+  content: "\f4e6";
+}
+
+/* line 1335, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-nodejs:before {
+  content: "\f4e7";
+}
+
+/* line 1337, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-octocat:before {
+  content: "\f4e8";
+}
+
+/* line 1339, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-pinterest:before {
+  content: "\f2b1";
+}
+
+/* line 1341, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-pinterest-outline:before {
+  content: "\f2b0";
+}
+
+/* line 1343, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-python:before {
+  content: "\f4e9";
+}
+
+/* line 1345, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-reddit:before {
+  content: "\f23b";
+}
+
+/* line 1347, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-reddit-outline:before {
+  content: "\f23a";
+}
+
+/* line 1349, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-rss:before {
+  content: "\f23d";
+}
+
+/* line 1351, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-rss-outline:before {
+  content: "\f23c";
+}
+
+/* line 1353, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-sass:before {
+  content: "\f4ea";
+}
+
+/* line 1355, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-skype:before {
+  content: "\f23f";
+}
+
+/* line 1357, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-skype-outline:before {
+  content: "\f23e";
+}
+
+/* line 1359, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-snapchat:before {
+  content: "\f4ec";
+}
+
+/* line 1361, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-snapchat-outline:before {
+  content: "\f4eb";
+}
+
+/* line 1363, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-tumblr:before {
+  content: "\f241";
+}
+
+/* line 1365, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-tumblr-outline:before {
+  content: "\f240";
+}
+
+/* line 1367, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-tux:before {
+  content: "\f2c5";
+}
+
+/* line 1369, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-twitch:before {
+  content: "\f4ee";
+}
+
+/* line 1371, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-twitch-outline:before {
+  content: "\f4ed";
+}
+
+/* line 1373, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-twitter:before {
+  content: "\f243";
+}
+
+/* line 1375, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-twitter-outline:before {
+  content: "\f242";
+}
+
+/* line 1377, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-usd:before {
+  content: "\f353";
+}
+
+/* line 1379, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-usd-outline:before {
+  content: "\f352";
+}
+
+/* line 1381, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-vimeo:before {
+  content: "\f245";
+}
+
+/* line 1383, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-vimeo-outline:before {
+  content: "\f244";
+}
+
+/* line 1385, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-whatsapp:before {
+  content: "\f4f0";
+}
+
+/* line 1387, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-whatsapp-outline:before {
+  content: "\f4ef";
+}
+
+/* line 1389, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-windows:before {
+  content: "\f247";
+}
+
+/* line 1391, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-windows-outline:before {
+  content: "\f246";
+}
+
+/* line 1393, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-wordpress:before {
+  content: "\f249";
+}
+
+/* line 1395, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-wordpress-outline:before {
+  content: "\f248";
+}
+
+/* line 1397, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-yahoo:before {
+  content: "\f24b";
+}
+
+/* line 1399, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-yahoo-outline:before {
+  content: "\f24a";
+}
+
+/* line 1401, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-yen:before {
+  content: "\f4f2";
+}
+
+/* line 1403, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-yen-outline:before {
+  content: "\f4f1";
+}
+
+/* line 1405, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-youtube:before {
+  content: "\f24d";
+}
+
+/* line 1407, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-social-youtube-outline:before {
+  content: "\f24c";
+}
+
+/* line 1409, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-soup-can:before {
+  content: "\f4f4";
+}
+
+/* line 1411, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-soup-can-outline:before {
+  content: "\f4f3";
+}
+
+/* line 1413, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-speakerphone:before {
+  content: "\f2b2";
+}
+
+/* line 1415, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-speedometer:before {
+  content: "\f2b3";
+}
+
+/* line 1417, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-spoon:before {
+  content: "\f2b4";
+}
+
+/* line 1419, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-star:before {
+  content: "\f24e";
+}
+
+/* line 1421, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-stats-bars:before {
+  content: "\f2b5";
+}
+
+/* line 1423, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-steam:before {
+  content: "\f30b";
+}
+
+/* line 1425, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-stop:before {
+  content: "\f24f";
+}
+
+/* line 1427, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-thermometer:before {
+  content: "\f2b6";
+}
+
+/* line 1429, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-thumbsdown:before {
+  content: "\f250";
+}
+
+/* line 1431, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-thumbsup:before {
+  content: "\f251";
+}
+
+/* line 1433, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-toggle:before {
+  content: "\f355";
+}
+
+/* line 1435, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-toggle-filled:before {
+  content: "\f354";
+}
+
+/* line 1437, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-transgender:before {
+  content: "\f4f5";
+}
+
+/* line 1439, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-trash-a:before {
+  content: "\f252";
+}
+
+/* line 1441, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-trash-b:before {
+  content: "\f253";
+}
+
+/* line 1443, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-trophy:before {
+  content: "\f356";
+}
+
+/* line 1445, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-tshirt:before {
+  content: "\f4f7";
+}
+
+/* line 1447, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-tshirt-outline:before {
+  content: "\f4f6";
+}
+
+/* line 1449, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-umbrella:before {
+  content: "\f2b7";
+}
+
+/* line 1451, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-university:before {
+  content: "\f357";
+}
+
+/* line 1453, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-unlocked:before {
+  content: "\f254";
+}
+
+/* line 1455, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-upload:before {
+  content: "\f255";
+}
+
+/* line 1457, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-usb:before {
+  content: "\f2b8";
+}
+
+/* line 1459, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-videocamera:before {
+  content: "\f256";
+}
+
+/* line 1461, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-volume-high:before {
+  content: "\f257";
+}
+
+/* line 1463, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-volume-low:before {
+  content: "\f258";
+}
+
+/* line 1465, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-volume-medium:before {
+  content: "\f259";
+}
+
+/* line 1467, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-volume-mute:before {
+  content: "\f25a";
+}
+
+/* line 1469, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-wand:before {
+  content: "\f358";
+}
+
+/* line 1471, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-waterdrop:before {
+  content: "\f25b";
+}
+
+/* line 1473, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-wifi:before {
+  content: "\f25c";
+}
+
+/* line 1475, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-wineglass:before {
+  content: "\f2b9";
+}
+
+/* line 1477, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-woman:before {
+  content: "\f25d";
+}
+
+/* line 1479, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-wrench:before {
+  content: "\f2ba";
+}
+
+/* line 1481, C:/Users/Ayush/code/fblasite/garuba/vendor/assets/stylesheets/ionicons.scss */
+.ion-xbox:before {
+  content: "\f30c";
+}
+
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  animation-name: flash;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  animation-name: rubberBand;
+}
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  animation-name: shake;
+}
+
+@keyframes headShake {
+  0% {
+    transform: translateX(0);
+  }
+
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+}
+
+.headShake {
+  animation-timing-function: ease-in-out;
+  animation-name: headShake;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.swing {
+  transform-origin: top center;
+  animation-name: swing;
+}
+
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  animation-name: tada;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes wobble {
+  from {
+    transform: none;
+  }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.wobble {
+  animation-name: wobble;
+}
+
+@keyframes jello {
+  from, 11.1%, to {
+    transform: none;
+  }
+
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+.jello {
+  animation-name: jello;
+  transform-origin: center;
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  animation-name: bounceInDown;
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  animation-name: bounceInUp;
+}
+
+@keyframes bounceOut {
+  20% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+.bounceOut {
+  animation-name: bounceOut;
+}
+
+@keyframes bounceOutDown {
+  20% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  40%, 45% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+.bounceOutDown {
+  animation-name: bounceOutDown;
+}
+
+@keyframes bounceOutLeft {
+  20% {
+    opacity: 1;
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+.bounceOutLeft {
+  animation-name: bounceOutLeft;
+}
+
+@keyframes bounceOutRight {
+  20% {
+    opacity: 1;
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+
+.bounceOutRight {
+  animation-name: bounceOutRight;
+}
+
+@keyframes bounceOutUp {
+  20% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%, 45% {
+    opacity: 1;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+
+.bounceOutUp {
+  animation-name: bounceOutUp;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDownBig {
+  animation-name: fadeInDownBig;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeftBig {
+  animation-name: fadeInLeftBig;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRightBig {
+  animation-name: fadeInRightBig;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+  animation-name: fadeInUpBig;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  animation-name: fadeOutDown;
+}
+
+@keyframes fadeOutDownBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+.fadeOutDownBig {
+  animation-name: fadeOutDownBig;
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft;
+}
+
+@keyframes fadeOutLeftBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
+.fadeOutLeftBig {
+  animation-name: fadeOutLeftBig;
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.fadeOutRight {
+  animation-name: fadeOutRight;
+}
+
+@keyframes fadeOutRightBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+
+.fadeOutRightBig {
+  animation-name: fadeOutRightBig;
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}
+
+@keyframes fadeOutUpBig {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0);
+  }
+}
+
+.fadeOutUpBig {
+  animation-name: fadeOutUpBig;
+}
+
+@keyframes flip {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: perspective(400px) scale3d(.95, .95, .95);
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    transform: perspective(400px);
+    animation-timing-function: ease-in;
+  }
+}
+
+.animated.flip {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  animation-name: flip;
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+}
+
+@keyframes flipInY {
+  from {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInY {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipInY;
+}
+
+@keyframes flipOutX {
+  from {
+    transform: perspective(400px);
+  }
+
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+.flipOutX {
+  animation-name: flipOutX;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+@keyframes flipOutY {
+  from {
+    transform: perspective(400px);
+  }
+
+  30% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+.flipOutY {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  animation-name: flipOutY;
+}
+
+@keyframes lightSpeedIn {
+  from {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.lightSpeedIn {
+  animation-name: lightSpeedIn;
+  animation-timing-function: ease-out;
+}
+
+@keyframes lightSpeedOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+.lightSpeedOut {
+  animation-name: lightSpeedOut;
+  animation-timing-function: ease-in;
+}
+
+@keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateIn {
+  animation-name: rotateIn;
+}
+
+@keyframes rotateInDownLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateInDownLeft {
+  animation-name: rotateInDownLeft;
+}
+
+@keyframes rotateInDownRight {
+  from {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateInDownRight {
+  animation-name: rotateInDownRight;
+}
+
+@keyframes rotateInUpLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateInUpLeft {
+  animation-name: rotateInUpLeft;
+}
+
+@keyframes rotateInUpRight {
+  from {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, -90deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateInUpRight {
+  animation-name: rotateInUpRight;
+}
+
+@keyframes rotateOut {
+  from {
+    transform-origin: center;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+  }
+}
+
+.rotateOut {
+  animation-name: rotateOut;
+}
+
+@keyframes rotateOutDownLeft {
+  from {
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutDownLeft {
+  animation-name: rotateOutDownLeft;
+}
+
+@keyframes rotateOutDownRight {
+  from {
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutDownRight {
+  animation-name: rotateOutDownRight;
+}
+
+@keyframes rotateOutUpLeft {
+  from {
+    transform-origin: left bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutUpLeft {
+  animation-name: rotateOutUpLeft;
+}
+
+@keyframes rotateOutUpRight {
+  from {
+    transform-origin: right bottom;
+    opacity: 1;
+  }
+
+  to {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+  }
+}
+
+.rotateOutUpRight {
+  animation-name: rotateOutUpRight;
+}
+
+@keyframes hinge {
+  0% {
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  20%, 60% {
+    transform: rotate3d(0, 0, 1, 80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  40%, 80% {
+    transform: rotate3d(0, 0, 1, 60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
+.hinge {
+  animation-name: hinge;
+}
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.jackInTheBox {
+  animation-name: jackInTheBox;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollIn {
+  animation-name: rollIn;
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@keyframes rollOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}
+
+.rollOut {
+  animation-name: rollOut;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInDown {
+  animation-name: zoomInDown;
+}
+
+@keyframes zoomInLeft {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInLeft {
+  animation-name: zoomInLeft;
+}
+
+@keyframes zoomInRight {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInRight {
+  animation-name: zoomInRight;
+}
+
+@keyframes zoomInUp {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomInUp {
+  animation-name: zoomInUp;
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.zoomOut {
+  animation-name: zoomOut;
+}
+
+@keyframes zoomOutDown {
+  40% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    transform-origin: center bottom;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomOutDown {
+  animation-name: zoomOutDown;
+}
+
+@keyframes zoomOutLeft {
+  40% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(.1) translate3d(-2000px, 0, 0);
+    transform-origin: left center;
+  }
+}
+
+.zoomOutLeft {
+  animation-name: zoomOutLeft;
+}
+
+@keyframes zoomOutRight {
+  40% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(.1) translate3d(2000px, 0, 0);
+    transform-origin: right center;
+  }
+}
+
+.zoomOutRight {
+  animation-name: zoomOutRight;
+}
+
+@keyframes zoomOutUp {
+  40% {
+    opacity: 1;
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    transform-origin: center bottom;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+.zoomOutUp {
+  animation-name: zoomOutUp;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+}
+
+@keyframes slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.slideOutDown {
+  animation-name: slideOutDown;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.slideOutLeft {
+  animation-name: slideOutLeft;
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.slideOutRight {
+  animation-name: slideOutRight;
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.slideOutUp {
+  animation-name: slideOutUp;
+}
+/*COLORS MATERIAL DESING
+Paleta de colores
+https://codepen.io/ztvMark/pen/ZGagWz
+*/
+/*COLORS MATERIAL DESING
+Paleta de colores
+https://codepen.io/ztvMark/pen/ZGagWz
+*/
+/* line 20, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.fab {
+  position: fixed;
+  z-index: 3;
+  right: 3vw;
+  bottom: 5vh;
+}
+
+/* line 27, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.round-button {
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-shadow: 0px 0px;
+  text-align: center;
+  color: #424242;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 24px;
+  height: 56px;
+  margin: auto;
+  min-width: 56px;
+  width: 56px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #69F0AE;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  display: table;
+}
+/* line 42, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.round-button i {
+  line-height: 26px;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 48, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.round-button:hover {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 5px 2px -3px rgba(0, 0, 0, 0.2), 0 4px 7px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* line 53, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.rect-button {
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-shadow: 0px 0px;
+  text-align: center;
+  color: #424242;
+  border: none;
+  cursor: pointer;
+  background-color: #69F0AE;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  height: 36px;
+  margin: 0;
+  min-width: 64px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  will-change: box-shadow;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  line-height: 36px;
+}
+
+/* line 71, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.spacer {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+}
+
+/* line 78, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.obfuscator {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: black;
+  opacity: .6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+/* line 92, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.modal {
+  display: none;
+  z-index: 2000;
+}
+
+/* line 97, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.row {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  flex-flow: wrap;
+}
+
+/* line 106, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+form p {
+  position: relative;
+  padding: 15px;
+  padding-left: 0;
+  margin-top: 10px;
+  flex-grow: 1;
+}
+
+/* line 113, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.form-field {
+  font-family: "Roboto";
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #BDBDBD;
+  background: transparent;
+  outline: 0;
+  font-size: 16px;
+  color: #212121;
+  transition: border-color 0.2s;
+}
+
+/* line 124, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.form-field::placeholder {
+  color: transparent;
+}
+
+/* line 127, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.form-field:placeholder-shown ~ label {
+  font-size: 16px;
+  top: 16px;
+}
+
+/* line 133, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+label, .form-field ~ label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9E9E9E;
+}
+
+/* line 142, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+label.incorrect-input {
+  color: #F44336;
+}
+
+/* line 145, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+input.incorrect-input {
+  border-bottom-color: #F44336;
+}
+
+/* line 149, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.form-field:focus ~ label {
+  color: #1E88E5;
+}
+
+/* line 152, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.form-field:focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #1E88E5;
+}
+
+/* line 157, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+textarea.form-field {
+  resize: none;
+}
+
+/* line 161, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 167, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.card:hover, .card:focus-within {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 170, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.card-content {
+  padding: 30px;
+}
+
+/* line 175, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin: 10px;
+}
+
+/* line 183, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/components.scss */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*COLORS MATERIAL DESING
+Paleta de colores
+https://codepen.io/ztvMark/pen/ZGagWz
+*/
+/* line 4, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/footer.scss */
+footer {
+  background-color: #616161;
+  height: 32px;
+  display: table;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* line 11, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/footer.scss */
+footer .footer-row {
+  padding: 0px 40px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 18, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/footer.scss */
+footer .footer-row ul {
+  list-style-type: none;
+}
+/* line 19, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/footer.scss */
+footer .footer-row li {
+  display: inline-block;
+}
+/* line 20, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/footer.scss */
+footer .footer-row .logo-text {
+  font-size: 32px;
+  font-family: "Righteous", cursive;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #F5F5F5;
+  letter-spacing: .02em;
+}
+/* line 28, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/footer.scss */
+footer .footer-row i {
+  font-size: 32px;
+  color: #FAFAFA;
+  margin: 5px;
+}
+/* line 33, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/footer.scss */
+footer .footer-row .footer-text {
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  color: #FAFAFA;
+}
+/*COLORS MATERIAL DESING
+Paleta de colores
+https://codepen.io/ztvMark/pen/ZGagWz
+*/
+/* line 4, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/globals.scss */
+h1 {
+  font-size: 50px;
+  color: #616161;
+}
+
+/* line 8, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/globals.scss */
+h2 {
+  font-size: 45px;
+}
+
+/* line 11, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/globals.scss */
+h3 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 34px;
+  color: #616161;
+}
+
+/* line 17, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/globals.scss */
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 24px 0 16px;
+  font-weight: 700;
+}
+
+/* line 23, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/globals.scss */
+h5 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* line 27, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/globals.scss */
+h6 {
+  font-size: 16px;
+}
+
+/* line 31, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/globals.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 35, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/globals.scss */
+p {
+  line-height: 1.5;
+}
+/*COLORS MATERIAL DESING
+Paleta de colores
+https://codepen.io/ztvMark/pen/ZGagWz
+*/
+/* line 3, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+header {
+  height: 64px;
+  background-color: #2196F3;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+/* line 11, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+header ul {
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+/* line 17, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+header ul li {
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+/* line 24, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+header .header-row {
+  padding: 0px 40px;
+  line-height: 64px;
+  display: flex;
+  height: 100%;
+}
+/* line 31, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+header .logo-text {
+  font-size: 32px;
+  font-family: "Righteous", cursive;
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: .02em;
+}
+/* line 38, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+header a.logo-container {
+  height: 100%;
+  display: block;
+  width: auto;
+}
+/* line 43, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+header a.logo-container .logo-image {
+  height: 48px;
+  width: auto;
+  margin: 8px 0;
+}
+/* line 49, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+header .nav-link {
+  padding: 0 24px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 100;
+}
+@media screen and (max-width: 767px) {
+  /* line 56, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+  header #header-nav {
+    display: none;
+  }
+  /* line 59, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+  header .header-row {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 64, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+  header #show-sidebar {
+    display: none;
+  }
+}
+/* line 68, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/header.scss */
+header #show-sidebar {
+  width: 40px;
+  font-size: 32px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  height: 100%;
+}
+/* line 2, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/hero.scss */
+.main-hero-image {
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+}
+
+/* line 13, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/hero.scss */
+.hero-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  color: white;
+  font-size: 15vh;
+  line-height: normal;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media screen and (max-width: 575px) {
+  /* line 13, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/hero.scss */
+  .hero-text {
+    font-size: 15vw;
+  }
+}
+
+/* line 30, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/hero.scss */
+.other-hero-image {
+  width: 100%;
+  height: 45vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+}
+/*COLORS MATERIAL DESING
+Paleta de colores
+https://codepen.io/ztvMark/pen/ZGagWz
+*/
+/* line 3, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+#forum-hero {
+  background-image: url(ForumHero-2ba6be703b98d1ebda5fb97801c37f3669cfb15cdd29e71d848f5c296799ab5a.jpg);
+}
+
+/* line 7, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+.forum-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 12, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+  .forum-content {
+    width: 95%;
+  }
+}
+/* line 17, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+.reply-form {
+  display: none;
+}
+
+/* line 21, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+.reply {
+  background-color: #FAFAFA;
+}
+
+/* line 25, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+.reply-form-holder {
+  background-color: #E0E0E0;
+}
+
+/* line 29, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+.reply-modal {
+  background: white;
+  position: fixed;
+  max-height: 80vh;
+  width: 80vw;
+  top: 10vh;
+  left: 10vw;
+  right: 10vw;
+  overflow-y: scroll;
+}
+
+/* line 40, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+.input-form {
+  background: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  max-width: 95%;
+  padding: 30px;
+}
+
+/* line 55, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+.card-content {
+  border-bottom: 1px solid #BDBDBD;
+}
+
+/* line 59, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+.message-text {
+  font-size: 16px;
+}
+
+/* line 62, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/posts.scss */
+.post-name {
+  font-size: 14px;
+}
+/*COLORS MATERIAL DESING
+Paleta de colores
+https://codepen.io/ztvMark/pen/ZGagWz
+*/
+/* line 4, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/sidebar.scss */
+.sidebar {
+  width: 30vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 0;
+  z-index: 1300;
+}
+/* line 13, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/sidebar.scss */
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+/* line 17, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/sidebar.scss */
+.sidebar .nav-link {
+  color: #757575;
+  width: 207px;
+  line-height: 24px;
+  padding: 16px;
+  font-weight: 300;
+  display: none;
+}
+/*COLORS MATERIAL DESING
+Paleta de colores
+https://codepen.io/ztvMark/pen/ZGagWz
+*/
+/* line 7, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+#homepage-hero {
+  background-image: url(ayush_hero2-580cdf4fcd75e2e206f4c3154fcbc8ee57c58731b1bda9f1d9516f518f689429.jpg);
+}
+
+/* line 11, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+#openings-hero {
+  background-image: url(JobOpeningsHero-c634dc814f01a29952b4c5c1293e1120b90ae868ff217d9d20850f9de5b06a2d.png);
+}
+
+/* line 14, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+#resume-hero {
+  background-image: url(ResumeHeroColor-817d28e2d92be582758bbc6a734ee5ebc6a71673433109ff7e10520f02134c5f.jpg);
+}
+
+/* line 17, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+#application-hero {
+  background-image: url(ApplicationHero2-488f22e88e13001e5cd649c873f409659b793ae30f096b63bc9e610f7395e3ec.jpg);
+}
+
+/* line 20, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+#interview-hero {
+  background-image: url(InterviewHero-a3ad40140231aaad0d30f41f8b43821e08973adc31e7915c25e85896db3978ad.png);
+}
+
+/* line 25, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+.content {
+  width: 60%;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+/* line 33, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+.text {
+  color: #424242;
+}
+
+/* line 37, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+img.right {
+  float: right;
+}
+
+/* line 41, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+img.left {
+  float: left;
+}
+
+/* line 46, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+.content img {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  display: block;
+  max-width: 100%;
+  padding: 30px;
+}
+
+/* line 55, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+.text > div {
+  margin: 0 0;
+  width: 100%;
+}
+
+/* line 63, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+.sample-resume {
+  color: black;
+  font-family: "Times";
+  font-size: 20px;
+  background-color: white;
+  padding: 10px 30px;
+  width: calc(80vw - 60px);
+  height: 80vh;
+  margin: 0 auto;
+  box-shadow: 0px 0px 3px black;
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  right: 10vw;
+  bottom: 10vh;
+  overflow-y: scroll;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+@media screen and (max-width: 575px) {
+  /* line 63, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+  .sample-resume {
+    width: calc(95vw - 60px);
+    left: 2.5vw;
+  }
+}
+
+/* line 89, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+.resume a {
+  text-decoration: none;
+}
+/* line 92, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+.resume h3, .resume h4 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 99, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/static.scss */
+  .yt-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@charset "UTF-8";
+/*COLORS MATERIAL DESING
+Paleta de colores
+https://codepen.io/ztvMark/pen/ZGagWz
+*/
+/* line 4, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+#all-pages {
+  color: #616161;
+  text-align: center;
+  clear: both;
+}
+
+/* line 10, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.tabs {
+  clear: both;
+  width: 50%;
+  margin: 8vh auto;
+  margin-top: 0;
+  text-align: center;
+  color: #616161;
+}
+@media screen and (max-width: 575px) {
+  /* line 10, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+  .tabs {
+    width: 90%;
+  }
+}
+/* line 21, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.tabs .tab-row {
+  height: 72px;
+  display: flex;
+  border-bottom: 1px solid #E0E0E0;
+  justify-content: center;
+  flex-direction: row;
+}
+/* line 29, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.tabs .tab-row .tab {
+  padding: 0 24px;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 2px solid rgba(33, 150, 243, 0);
+}
+@media screen and (max-width: 767px) {
+  /* line 29, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+  .tabs .tab-row .tab {
+    padding: 0 10px;
+  }
+}
+/* line 38, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.tabs .tab-row .tab .tab-image {
+  height: 48px;
+  width: auto;
+}
+
+/* line 45, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.panel {
+  min-height: 300px;
+  width: auto;
+  display: none;
+}
+
+@keyframes active-panel {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 54, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.panel.is-active {
+  display: block;
+  animation: active-panel 700ms 1 both;
+}
+
+/* line 58, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.panel-image {
+  float: left;
+  height: 25vh;
+  width: 50%;
+  max-width: 90vw;
+}
+/* line 63, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.panel-image img {
+  max-height: 90%;
+  margin: 5% auto;
+  max-width: 100%;
+}
+@media screen and (max-width: 992px) {
+  /* line 58, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+  .panel-image {
+    width: 90%;
+    height: 40vh;
+  }
+}
+
+/* line 75, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.panel-text {
+  text-align: left;
+  overflow: hidden;
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  /* line 75, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+  .panel-text {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@keyframes active-tab {
+  from  {
+    border-bottom-color: rgba(33, 150, 243, 0);
+  }
+  to {
+    border-bottom-color: #2196f3;
+  }
+}
+/* line 88, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/tabs.scss */
+.tab.is-active {
+  animation-name: active-tab;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+ */
+/* line 22, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/application.scss */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 27, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/application.scss */
+main {
+  position: absolute;
+  top: 64px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(sayagata-400px-d85512af503f678698fef17ef7da02fbbe5b3ac09e725e98d8e919da574f0ce4.png);
+  background-position: 0 0;
+  background-repeat: repeat repeat;
+  background-attachment: local;
+  min-height: calc(100% - 64px - 106px);
+  line-height: 1.5;
+}
+
+/* line 46, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/application.scss */
+body {
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  animation-delay: 0.1s;
+  animation-name: fontfix;
+  animation-duration: 0.1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  overflow: hidden;
+}
+
+@-webkit-keyframes fontfix {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fontfix {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 69, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/application.scss */
+table.main-table {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* line 73, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/application.scss */
+table.main-table tr {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* line 78, C:/Users/Ayush/code/fblasite/garuba/app/assets/stylesheets/application.scss */
+table.main-table td {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
