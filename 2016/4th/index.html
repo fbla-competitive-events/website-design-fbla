@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2016 FBLA Website Design, 4th Place | Project: Healthy Way - Gluten Free Restaurant</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Healthy Way is a Gluten Free Restaurant and Bakery in Georgia" />
+    <meta name="keywords" content="gluten, free, restaurant, bakery, georgia, atlanta, marietta, ga" />
+    <meta name="author" content="Peter Kenney, Rebecca Bartlett, and Annastasia Fultz">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="affix.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Signika:400,600" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link href="styling.css" rel="stylesheet" type="text/css" />
+    <link href="css/hover.css" rel="stylesheet" media="all" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/imagehover.min.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/tabble.css" rel="stylesheet" type="text/css" />
+    <link href="social.css" rel="stylesheet" type="text/css">
+    <script src="js/tweenmax.js"></script>
+    <script src="js/scrollto.js"></script>
+    <!--<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>-->
+    <script type="text/javascript">
+        $(function () {
+            var $window = $(window); //Window object
+            var scrollTime = .4; //Scroll time
+            var scrollDistance = 225; //Distance. Use smaller value for shorter scroll and greater value for longer scroll
+            $window.on("mousewheel DOMMouseScroll", function (event) {
+                event.preventDefault();
+                var delta = event.originalEvent.wheelDelta / 120 || -
+                    event.originalEvent.detail / 3;
+                var scrollTop = $window.scrollTop();
+                var finalScroll = scrollTop - parseInt(delta *
+                    scrollDistance);
+                TweenMax.to($window, scrollTime, {
+                    scrollTo: {
+                        y: finalScroll,
+                        autoKill: true
+                    },
+                    ease: Power1.easeOut, //For more easing functions see http://api.greensock.com/js/com/greensock/easing/package-detail.html
+                    autoKill: true,
+                    overwrite: 5
+                });
+            });
+        });
+    </script>
+    <script>
+        var form = document.forms.SubmitBtn;
+
+        form.onsubmit = function () {
+            alert("Your email has been sent!");
+            return true;
+        }
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-77032848-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+  <style>
+    .my-map-display img {
+        max-width: none!important;
+        background: none!important;
+        font-size: inherit;
+    }
+</style>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <div class="cover" id="home">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html#" class="pull-left nLogo nTop"><img src="images/logo.png" height="45" alt="Healthy Way Icon" title="Healthy Way Icon" /></a>
+                    <a class="navbar-brand button nTop2" href="index.html#"><span>Healthy Way</span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a href="index.html#home" class="button hvr-sweep-to-bottom">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about" class="button hvr-sweep-to-bottom">About</a>
+                        </li>
+                        <li>
+                            <a href="index.html#menu" class="button hvr-sweep-to-bottom">Menu</a>
+                        </li>
+                        <li>
+                            <a href="index.html#locations" class="button hvr-sweep-to-bottom">Locations</a>
+                        </li>
+                        <li>
+                            <a href="index.html#reviews" class="button hvr-sweep-to-bottom">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact" class="button hvr-sweep-to-bottom">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="background-image-fixed cover-image">
+            <video autoplay loop class="fillWidth">
+                <source src="images/videos/attempttwo.mp4" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <div class="poster coverImgFix">
+                <img src="images/background.jpg" alt="cover image" />
+            </div>
+        </div>
+        <div class="container revealMain">
+            <div class="row">
+                <div class="col-md-12 text-center center">
+                    <a href="index.html#"><img src="images/logoTwo.png" title="Healthy Way Logo" alt="Healthy Way Logo"></a>
+                    <!--<p class="back darkfont font3 drops">Gluten free restaurant and bakery</p>-->
+                    <div class="row">
+                        <div class="col-md-12 hidden-lg hidden-md hidden-sm text-center">
+                            <a href="https://www.instagram.com/dewcrewchief/" target="_blank"><i class=
+                            "fa fa-3x fa-fw fa-instagram text-inverse tShadow"></i></a>
+                            <a href="https://twitter.com/PCHS_TSA" target="_blank"><i class=
+                            "fa fa-3x fa-fw fa-twitter text-inverse tShadow"></i></a>
+                            <a href="https://www.facebook.com/PCHSChapter" target="_blank" class="tShadow"><i class=
+                            "fa fa-3x fa-fw fa-facebook text-inverse tShadow" ></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 hidden-xs text-center">
+                            <a href="https://www.instagram.com/dewcrewchief/" target="_blank"><i class=
+                            "fa fa-3x fa-fw fa-instagram text-inverse" ></i></a>
+                            <a href="https://twitter.com/PCHS_TSA" target="_blank"><i class=
+                            "fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                            <a href="https://www.facebook.com/PCHSChapter" target="_blank"><i class=
+                            "fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!--<a href="#item4" class="btn button border font font2 hvr-icon-down">DIVE IN!</a>-->
+                    <a href="index.html#about" class="btn button font3 btngreen hvr-grow mainButton heroW">Learn About Us</a>
+                    <a href="index.html#menu" class="btn button font3 btngreen hvr-grow mainButton heroW">See Our Menu</a>
+                    <a href="index.html#myModal10" role="button" data-toggle="modal" class="btn button font3 btngreen hvr-grow mainButton heroW">Loyalty Program</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about" class="section section-success text-left aboutup">
+        <div class="container revealAbout">
+            <div class="row">
+                <div class="col-md-6 font3 ptopLess">
+                    <h1 class="font3">About Us</h1>
+                    <p>Healthy Way is a gluten-free, organic alternative to today’s otherwise preservative-filled food options. We have a couple convenient locations in prestigious areas in Marietta, GA and Atlanta, GA. Our mission at Healthy Way is to provide healthy, gluten free foods to people who lead active and productive lifestyles. In order to complete this mission we offer a number of services to our valued customers. </p>
+                    <br>
+                    <p>At Healthy Way it is our belief that the customer’s needs should come first. That is precisely why we offer round the clock catering for a variety of events that can range from social gatherings to business meetings. To provide this service we have hand-picked a more than capable staff that’s ready to meet your every request. In line with our customer heavy business model we have the added perk of what we call our very own personal touch; this is where we take a recipe given to us by the customer and work tirelessly to integrate it into our cooking style.</p>
+                </div>
+                <div class="col-md-6"> <img src="images/store.jpg" class="img-responsive img-thumbnail visible-lg visible-md" alt="picture of the kitchen" title="staff at work"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row darkcolor">
+                <div class="col-md-3 col-sm-3 col-xs-6 ptopLess revealManager">
+                    <img src="images/staff/staff1.jpg" class="img-responsive" alt="Manager Dylan Brackett" title="Manager Dylan Brackett" />
+                    <h2 class="darkfont scndFont">Dylan Brackett</h2>
+                    <h3 class="sub darkfont grey scndFont">Manager</h3>
+                    <p class="darkfont">Our manager, Dylan, is the most organized and productive person we know. Specifically chosen, our manager balances our numbers, and sorts and fills orders. Our manager works hard to ensure that orders are correct. </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 ptopLess revealChef">
+                    <img src="images/staff/staff2.jpg" class="img-responsive" alt="Chef Mason Rodriguez" title="Chef Mason Rodriguez" />
+                    <h2 class="darkfont scndFont">Mason Rodriguez</h2>
+                    <h3 class="sub darkfont grey scndFont">Chef</h3>
+                    <p class="darkfont">Our chef, Mason, is the best chef around. Our chef spends large amounts of his time to make sure you get the most heavenly tasting gluten free dishes. Our chef prides himself in the quality and detail that he puts into his work. </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 ptopLess revealCoOwnerOne">
+                    <img src="images/staff/staff3.jpg" class="img-responsive" alt="Co-owner Britney Ashton" title="Co-owner Britney Ashton" />
+                    <h2 class="darkfont scndFont">Britney Ashton</h2>
+                    <h3 class="sub darkfont grey scndFont">Co-Owner</h3>
+                    <p class="darkfont">Britney started Healthy Way with Dannon to serve good, healthy and gluten free food. It was their mission to find ways to bring every day delicious foods to those who cannot consume gluten, or are trying to lead a more organic, natural lifestyle. </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 ptopLess revealCoOwnerTwo">
+                    <img src="images/staff/staff4.jpg" class="img-responsive" alt="Co-owner Dannon crowe" title="Co-owner Dannon Crowe" />
+                    <h2 class="darkfont scndFont">Dannon Crowe</h2>
+                    <h3 class="sub darkfont grey scndFont">Co-Owner</h3>
+                    <p class="darkfont">When Dannon approached Britney with the idea to start Healthy Way, he had the idea of creating a gluten-free environment while keeping the food at a high standard and amazing taste. Dannon's high standard for food helped create our wonderful menu! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu" class="darkgreen section">
+        <div class="container">
+
+            <div class="section">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="text-center mainFont colorWhite padbott ptopLess">Our Menu Favorites</h1>
+                            <!--<p class="text-center font3">Only the best food!</p>-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-6 centerText revealTwo">
+                            <a href="index.html#myModal" role="button" data-toggle="modal"><img class="img-circle img-responsive hvr-grow mleft bcircle cfix" src="images/menu/frittataTh.jpg" alt="Frittata" title="Frittata" /></a>
+                            <h1 class="text-centered font3 centerText mleft ftop visible-lg visible-md">Frittata</h1>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 centerText revealTwo">
+                            <a href="index.html#myModal2" role="button" data-toggle="modal"><img class="img-circle img-responsive hvr-grow mleft bcircle cfix" src="images/menu/kalePastaTh.jpg" alt="Kale Pasta" title="Kale Pasta" /></a>
+                            <h1 class="text-centered font3 centerText mleft ftop visible-lg visible-md">Kale Pasta</h1>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 centerText revealTwo">
+                            <a href="index.html#myModal3" role="button" data-toggle="modal"><img class="img-circle img-responsive hvr-grow mleft bcircle cfix" src="images/menu/apCakeTh.jpg" alt="Apricot Tart" title="Apricot Tart" /></a>
+                            <h1 class="text-centered font3 centerText mleft ftop visible-lg visible-md">Apricot Tart</h1>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 centerText revealTwo">
+                            <a href="index.html#myModal4" role="button" data-toggle="modal"><img class="img-circle img-responsive hvr-grow mleft bcircle cfix" src="images/menu/crepeTh.jpg" alt="Crêpe" title="Crêpe" /></a>
+                            <h1 class="text-centered font3 centerText mleft ftop visible-lg visible-md">Crêpe</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-6 centerText reveal">
+                            <a href="index.html#myModal5" role="button" data-toggle="modal"><img class="img-circle img-responsive hvr-grow mleft bcircle cfix" src="images/menu/lambTh.jpg" alt="Lamb" title="Lamb" /></a>
+                            <h1 class="text-centered font3 centerText mleft ftop visible-lg visible-md">Lamb</h1>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 centerText reveal">
+                            <a href="index.html#myModal6" role="button" data-toggle="modal"><img class="img-circle img-responsive hvr-grow mleft bcircle cfix" src="images/menu/SpaghettiTh.jpg" alt="Spaghetti" title="Spaghetti" /></a>
+                            <h1 class="text-centered font3 centerText mleft ftop visible-lg visible-md">Spaghetti</h1>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 centerText reveal">
+                            <a href="index.html#myModal7" role="button" data-toggle="modal"><img class="img-circle img-responsive hvr-grow mleft bcircle cfix" src="images/menu/sconesTh.jpg" alt="Scones" title="Scones" /></a>
+                            <h1 class="text-centered font3 centerText mleft ftop visible-lg visible-md">Scones</h1>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-6 centerText pbott2 reveal">
+                            <a href="index.html#myModal8" role="button" data-toggle="modal"><img class="img-circle img-responsive hvr-grow mleft bcircle cfix" src="images/menu/breadsticksTh.jpg" alt="Breadsticks" title="Breadsticks" /></a>
+                            <h1 class="text-centered font3 centerText mleft ftop visible-lg visible-md">Breadsticks</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center padbott">
+                <div class="col-md-12">
+                    <h3 class="btn button font3 btngreen hvr-grow mitop"><a href="healthwaymenu.pdf" role="button" target="_blank" class="textFix">Full Menu</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="locations" class="cover">
+        <div class="section"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                </div>
+                            </div>
+                            <div class="row revealMapThree">
+                                <h4 class="text-center pbot grey mainFont2 revealMapOne">Two convenient locations!</h4>
+                                <div class="col-md-6">
+                                    <h1 class="text-center green">Marietta, GA</h1>
+                                    <h3 class="text-center scndFont pbot">2675 Cobb Pkwy SE, Smyrna, GA 30080</h3>
+                                    <div style="overflow:hidden;width:575px;height:500px;resize:none;max-width:100%;">
+                                        <div class="my-map-display" style="height:100%; width:100%;max-width:100%;">
+                                            <iframe style="height:100%;width:100%;border:0;" src="https://www.google.com/maps/embed/v1/place?q=2675+Cobb+Pkwy+SE,+Smyrna,+GA+30080,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pbot">
+                                    <h1 class="text-center green">Atlanta, GA</h1>
+                                    <h3 class="text-center scndFont pbot">190 Marietta St, Atlanta, GA 30303</h3>
+                                    <div style="overflow:hidden;width:575px;height:500px;resize:none;max-width:100%;">
+                                        <div class="my-map-display" style="height:100%; width:100%;max-width:100%;">
+                                            <iframe style="height:100%;width:100%;border:0;" src="https://www.google.com/maps/embed/v1/place?q=190+Marietta+St,+Atlanta,+GA+30303,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <h4 class="text-center pbot green mainFont2 visible-lg visible-md">Visit either of our beautiful locations today for a wonderful meal!</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="connect">
+        <div class="background-image background-image-fixed" style="background-image: url('images/socialtwo.jpg')">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row text-center">
+                        <h1 class="seperator-text sTextFix">Connect with us on social media!</h1>
+                        <div id="circ">
+                            <ul>
+                                <li class="animated zoomIn">
+                                    <div class="back">
+                                    </div>
+                                    <div class="icon">
+                                        <a href="http://www.facebook.com" target="_blank"><i class=
+                    "fa fa-facebook"></i></a>
+                                    </div>
+                                </li>
+                                <li class="animated zoomIn delayone">
+                                    <div class="back">
+                                    </div>
+                                    <div class="icon">
+                                        <a href="http://www.twitter.com" target="_blank"><i class=
+                    "fa fa-twitter"></i></a>
+                                    </div>
+                                </li>
+                                <li class="animated zoomIn delaytwo">
+                                    <div class="back">
+                                    </div>
+                                    <div class="icon">
+                                        <a href="http://www.linkedin.com" target="_blank"><i class=
+                    "fa fa-linkedin"></i></a>
+                                    </div>
+                                </li>
+                                <li class="animated zoomIn delaythree">
+                                    <div class="back">
+                                    </div>
+                                    <div class="icon">
+                                        <a href="http://www.youtube.com" target="_blank"><i class=
+                    "fa fa-youtube"></i></a>
+                                    </div>
+                                </li>
+                                <li class="animated zoomIn delayfour">
+                                    <div class="back">
+                                    </div>
+                                    <div class="icon">
+                                        <a href="http://www.pinterest.com" target="_blank"><i class=
+                    "fa fa-pinterest-p"></i></a>
+                                    </div>
+                                </li>
+                                <li class="animated zoomIn delayfive">
+                                    <div class="back">
+                                    </div>
+                                    <div class="icon">
+                                        <a href="http://www.plus.google.com" target="_blank"><i class=
+                    "fa fa-google-plus"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center mainFont testTop">Customer Reviews</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fpad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 testimonials fleft testOne">
+                    <img src="images/people/person12.jpg" class="img-responsive fleft imgPad visible-lg visible-md p200" alt="Martin Tompkins" title="Martin Tompkins" />
+                    <i class="fa fa-quote-left fleft quoteMark"></i>
+                    <p class="quoteBody">My wife has been telling me to start eating healthier, so on my way home from work I decided to stop off at Healthy Way and I must say, I wasn’t disappointed. The service was seamless; each of my items came out effortlessly with no mistakes."</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-empty"></i>
+                    <h3 class="quoteName">Martin Tompkins</h3>
+
+                </div>
+                <div class="col-md-6 testimonials fleft testTwo">
+                    <img src="images/people/person22.jpg" class="img-responsive fleft imgPad visible-lg visible-md p200" alt="Vincent Woodside" title="Vincent Woodside" />
+                    <i class="fa fa-quote-left fleft quoteMark"></i>
+                    <p class="quoteBody">In my experience with these sorts of restaurants, they are generally generic. They offer little to no customer friendly experience. This, however, was not the case with Healthy Way. I was indeed surprised by the overall atmosphere and feel of the restaurant."</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <h3 class="quoteName">Vincent Woodside</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fpad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 testimonials fleft testThree">
+                    <img src="images/people/person44.jpg" class="img-responsive fleft imgPad visible-lg visible-md p200" alt="Natalie Dougherty" title="Natalie Dougherty" />
+                    <i class="fa fa-quote-left fleft quoteMark"></i>
+                    <p class="quoteBody">If you come to Healthy Way, then I hope you come prepared for an unforgettable experience. I mean, the hospitality alone makes me want to keep coming back."</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-empty"></i>
+                    <h3 class="quoteName">Natalie Dougherty</h3>
+                </div>
+                <div class="col-md-6 testimonials fleft testFour">
+                    <img src="images/people/person33.jpg" class="img-responsive fleft imgPad visible-lg visible-md p200" alt="Jason Todd" title="Jason Todd" />
+                    <i class="fa fa-quote-left fleft quoteMark"></i>
+                    <p class="quoteBody">I never thought that I would eat at a restaurant that could make gluten-free food taste delicious, then I found Healthy Way. The food was amazingly healthy, and delicious."</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-empty"></i><i class="fa fa-star-o"></i>
+                    <h3 class="quoteName">Jason Todd</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fpad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 testimonials fleft testFive">
+                    <img src="images/people/person55.jpg" class="img-responsive fleft imgPad visible-lg visible-md p200" alt="Nate Simmons" title="Nate Simmons" />
+                    <i class="fa fa-quote-left fleft quoteMark"></i>
+                    <p class="quoteBody"> This food really changed the way I think about my average restaurant experience. Before, I would go out and eat and be totally disappointed by the experience. After being introduced to Healthy Way, I feel invigorated by the great food and kind hearted servers. "</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <h3 class="quoteName">Nate Simmons</h3>
+                </div>
+                <div class="col-md-6 testimonials fleft testSix">
+                    <img src="images/people/person66.jpg" class="img-responsive fleft imgPad visible-lg visible-md p200" alt="Dorothy Jamison" title="Dorothy Jamison" />
+                    <i class="fa fa-quote-left fleft quoteMark"></i>
+                    <p class="quoteBody">My name is Dorothy, I work as an event organizer for a local law firm. In my line of work, I don’t have time to waste running back and forth worrying about every small detail. That’s why I have Healthy Way do my catering for me. It’s quick and easy."</p>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                    <h3 class="quoteName">Dorothy Jamison</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="loyalty">
+        <div class="background-image background-image-fixed" style="background-image: url('images/card.jpg')">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row text-center">
+                        <h1 class="seperator-text sTextFix">Request a customer loyalty reward card!</h1>
+                        <form method="post">
+                            <div class="form-group col-md-6">
+                                <label class="control-label white" for="exampleInputEmail1">Name</label>
+                                <input class="form-control col-md-6" id="exampleInputEmail1" placeholder="John Doe" type="text" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label white" for="exampleInputEmail1">Address</label>
+                                <input class="form-control col-md-6" id="exampleInputEmail2" placeholder="1600 Pennsylvania Avenue" type="text" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label white" for="exampleInputEmail1">Phone Number</label>
+                                <input class="form-control col-md-6" id="exampleInputEmail3" placeholder="(012)555-5467" type="text" required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="control-label white" for="exampleInputEmail1">Email</label>
+                                <input class="form-control col-md-6" id="exampleInputEmail4" placeholder="name@email.com" type="text" required />
+                            </div>
+                            
+                            <a href="thankyou.html" onClick="window.open('thankyou.html','pagename','resizable,height=260,width=370'); return false;"><input class="btn btn-default darkfont font3 btngreen border2 ptopLess" type="submit" name="submit" value="Request Card" /></a>
+                            <input type="hidden" name="redirect" value="http://web2016.pchs-fbla.com/" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="darkgreen section" id="contact">
+        <div class="background-image background-image-fixed" style="background-image : url(images/m25.jpg)"></div>
+        <div class="container">
+            <div class="row reseMove">
+                <h1 class="text-center font3 ptopLess">Make a reservation</h1>
+                <div class="col-md-6">
+                    <form action=" http://www.pocohi.com/cgi-sys/formmail.pl" method="post" class="fMarFix">
+                        <input type="hidden" name="recipient" value=" dewey@pocohi.com" />
+                        <input type="hidden" name="subject" value="FormMail E-Mail" />
+                        <div class="form-group">
+                            <label class="control-label white" for="exampleInputEmail1">Name</label>
+                            <input class="form-control" id="exampleInputEmail5" placeholder="John Doe" type="text" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label white" for="exampleInputPassword1">Phone Number</label>
+                            <input class="form-control" id="exampleInputPassword1" placeholder="(XXX)XXX-XXX" type="text" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label white" for="exampleInputPassword1">Party Size</label>
+                            <input class="form-control" id="exampleInputPassword2" placeholder="Number of people attending" type="text" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label white" for="exampleInputPassword1">Reservation Date</label>
+                            <input class="form-control" id="exampleInputPassword3" placeholder="mm/dd/yy" type="text" required />
+                        </div>
+                        <div class="input-group bootstrap-timepicker timepicker col-md-12 fixround">
+                            <label class="control-label white" for="exampleInputEmail1">Reservation Time</label>
+                            <input id="timepicker1" type="text" placeholder="00:00 AM/PM" class="form-control input-small" required />
+                        </div>
+                        <!--<button type="submit" class="btn btn-default darkfont font3 btngreen border2 ptopLess" onclick="javascript:alert('Assuming all fields where filled out, your reservation has been requested and you\'ll be contacted as soon as possible!')">Request Reservation</button>-->
+
+                        <a href="thankyoureserve.html" onClick="window.open('thankyoureserve.html','pagename','resizable,height=260,width=370'); return false;"><input class="btn btn-default darkfont font3 btngreen border2 ptopLess" type="submit" name="submit" value="Request Reservation" /></a>
+                        <input type="hidden" name="redirect" value="http://web2016.pchs-fbla.com/" />
+                    </form>
+                </div>
+                <div class="col-md-6 border3 csize calendar-container fMarFix">
+                    <iframe class="ptopLess pleft csize visible-lg visible-md visible-sm visible-xs" src="https://calendar.google.com/calendar/embed?src=pocohi.com_seq779tea4ehc9kf99kop34kek%40group.calendar.google.com&ctz=America/Montreal" style="border: 0" width="585" height="400"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div class="section-white darkfont contactMove">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form action=" http://www.pocohi.com/cgi-sys/formmail.pl" method="post">
+                            <input type="hidden" name="recipient" value=" dewey@pocohi.com" />
+                            <input type="hidden" name="subject" value="FormMail E-Mail" />
+                            <div class="form-group">
+                                <label class="control-label ptopLess2" for="exampleInputEmail1">Name</label>
+                                <input class="form-control" id="exampleInputEmail6" placeholder="Name" type="text" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email</label>
+                                <input class="form-control" id="exampleInputEmail7" placeholder="Email" type="email" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="exampleInputPassword1">Phone Number</label>
+                                <input class="form-control" id="exampleInputPassword4" placeholder="Phone Number" type="text" required />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Message</label>
+                                <textarea class="form-control" placeholder="Type your message here..."></textarea>
+                            </div>
+                            <a href="thankyoucontact.html" onClick="window.open('thankyoucontact.html','pagename','resizable,height=260,width=370'); return false;"><input class="btn button font3 btngreen2 hvr-grow border2" type="submit" name="submit" value="Submit" /></a>
+                            <input type="hidden" name="redirect" value="http://web2016.pchs-fbla.com/" />
+                        </form>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="moveTop">
+                            <h2 class="less">Call Us</h2>
+                            <p class="pushRight grey"><b>Owner:</b> 404-555-0137
+                                <br/> <b>Front Desk:</b> 404-555-0154
+                                <br/> <b>Chef:</b> 404-555-0185 </p>
+                        </div>
+                        <div class="moveTop">
+                            <h2 class="less">E-mail Us</h2>
+                            <p class="pushRight grey"><b>Owner:</b> owner@healthyway.com
+                                <br/> <b>Front Desk:</b> front@healthyway.com
+                                <br/> <b>Chef:</b> chef@healthyway.com </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="moveTop">
+                            <h2 class="less">Hours</h2>
+                            <p class="pushRight grey pbot">
+                                <b>Monday:</b> 8:00am - 9:30pm
+                                <br/>
+                                <b>Tuesday:</b> 8:00am - 9:30pm
+                                <br/>
+                                <b>Wednesday:</b> 8:00am - 9:30pm
+                                <br/>
+                                <b>Thursday:</b> 8:00am - 9:30pm
+                                <br/>
+                                <b>Friday:</b> 8:00am - 9:30pm
+                                <br/>
+                                <b>Saturday:</b> 7:30am - 11:00pm
+                                <br/>
+                                <b>Sunday:</b> 7:30am - 10:30pm
+                                <br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="section section-success">
+        <div class="container">
+            <div class="row revealFooter">
+                <div class="col-sm-6">
+                    <h1 class="font3">Healthy Way</h1>
+                    <p class="font3">&copy;2016 Designed by Peter Kenney, Rebecca Bartlett, and Annastasia Fultz</p>
+                </div>
+                <div>
+                    <a href="images/copyright.pdf" target="_blank" class="button btnFix font3 fright pfix hvr-grow col-md-2 cfix">Copyright Information</a>
+                    <a href="procedures.pdf" target="_blank" class="button btnFix font3 fright pfix hvr-grow col-md-2 cfix">Our Procedures</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var defaultDuration = 500
+        var edgeOffset = 4
+        var myDiv = document.getElementById("container")
+        var myScroller = zenscroll.createScroller(myDiv, defaultDuration, edgeOffset)
+        var target = document.getElementById("item4")
+        myScroller.center(target)
+    </script>
+    <script src="zenscroll/zenscroll-min.js"></script>
+    <script type="text/javascript">
+        $('#timepicker2').timepicker({
+            minuteStep: 1,
+            template: 'modal',
+            appendWidgetTo: 'body',
+            showSeconds: true,
+            showMeridian: false,
+            defaultTime: false
+        });
+    </script>
+
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/scroll.js"></script>
+
+
+    <!-- Frittata Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Frittata</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive ptop3 pcenter" src="images/menu/frittataTh.jpg" title="Picture of Frittata" alt="Picture of Frittata" />
+                    <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+                    <table class="rwd-table">
+                        <col span="2" />
+                        <tr>
+                            <td>Food</td>
+                            <td>Frittata</td>
+                        </tr>
+                        <tr>
+                            <td>Serving size</td>
+                            <td>1 Fritatta</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>360</td>
+                        </tr>
+                        <tr>
+                            <td>Fat (grams)</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Cholesterol (mg)</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium (mg)</td>
+                            <td>470</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar (grams)</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates (grams)</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Kale Pasta Modal -->
+    <div id="myModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Kale Pasta</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive ptop3 pcenter" src="images/menu/kalePastaTh.jpg" title="Picture of Pasta" alt="Picture of Pasta" />
+                    <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+                    <table class="rwd-table">
+                        <col span="2" />
+                        <tr>
+                            <td>Food</td>
+                            <td>Kale Pasta</td>
+                        </tr>
+                        <tr>
+                            <td>Serving size</td>
+                            <td>1 cup</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>523</td>
+                        </tr>
+                        <tr>
+                            <td>Fat (grams)</td>
+                            <td>19.2</td>
+                        </tr>
+                        <tr>
+                            <td>Cholesterol (mg)</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium (mg)</td>
+                            <td>60.5</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar (grams)</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates (grams)</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Apricot Tart-->
+    <div id="myModal3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Apricot Tart</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive ptop3 pcenter" src="images/menu/apCakeTh.jpg" alt="Apricot Tart" title="Apricot Tart" />
+                    <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+                    <table class="rwd-table">
+                        <col span="2" />
+                        <tr>
+                            <td>Food</td>
+                            <td>Apricot</td>
+                        </tr>
+                        <tr>
+                            <td>Serving size</td>
+                            <td>1 slice</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>302</td>
+                        </tr>
+                        <tr>
+                            <td>Fat (grams)</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Cholesterol (mg)</td>
+                            <td>54</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium (mg)</td>
+                            <td>245</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar (grams)</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates (grams)</td>
+                            <td>39</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Crepe-->
+    <div id="myModal4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Crepe</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive ptop3 pcenter" src="images/menu/crepeTh.jpg" title="Picture of Crepe" alt="Picture of Crepe" />
+                    <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+                    <table class="rwd-table">
+                        <col span="2" />
+                        <tr>
+                            <td>Food</td>
+                            <td>Crepe</td>
+                        </tr>
+                        <tr>
+                            <td>Serving size</td>
+                            <td>1 crepe</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>103</td>
+                        </tr>
+                        <tr>
+                            <td>Fat (grams)</td>
+                            <td>6.3</td>
+                        </tr>
+                        <tr>
+                            <td>Cholesterol (mg)</td>
+                            <td>53.2</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium (mg)</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar (grams)</td>
+                            <td>1.2</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates (grams)</td>
+                            <td>7.3</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Lamb-->
+    <div id="myModal5" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Lamb</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive ptop3 pcenter" src="images/menu/lambTh.jpg" title="Picture of Lamb" alt="Picture of Lamb" />
+                    <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+                    <table class="rwd-table">
+                        <col span="2" />
+                        <tr>
+                            <td>Food</td>
+                            <td>Lamb</td>
+                        </tr>
+                        <tr>
+                            <td>Serving size</td>
+                            <td>1/2 lb Lamb</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>248</td>
+                        </tr>
+                        <tr>
+                            <td>Fat (grams)</td>
+                            <td>17.9</td>
+                        </tr>
+                        <tr>
+                            <td>Cholesterol (mg)</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium (mg)</td>
+                            <td>60.5</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar (grams)</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates (grams)</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Spaghetti-->
+    <div id="myModal6" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Spaghetti</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive ptop3 pcenter pcenter" src="images/menu/SpaghettiTh.jpg" title="Picture of Spaghetti" alt="Picture of Spaghetti" />
+                    <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+                    <table class="rwd-table">
+                        <col span="2" />
+                        <tr>
+                            <td>Food</td>
+                            <td>Spaghetti</td>
+                        </tr>
+                        <tr>
+                            <td>Serving size</td>
+                            <td>13 oz</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>440</td>
+                        </tr>
+                        <tr>
+                            <td>Fat (grams)</td>
+                            <td>15.8</td>
+                        </tr>
+                        <tr>
+                            <td>Cholesterol (mg)</td>
+                            <td>78</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium (mg)</td>
+                            <td>981</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar (grams)</td>
+                            <td>906</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates (grams)</td>
+                            <td>49.7</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Scones-->
+    <div id="myModal7" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Scones</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive ptop3 pcenter" src="images/menu/sconesTh.jpg" title="Picture of Scones" alt="Picture of Scones" />
+                    <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+                    <table class="rwd-table">
+                        <col span="2" />
+                        <tr>
+                            <td>Food</td>
+                            <td>Scones</td>
+                        </tr>
+                        <tr>
+                            <td>Serving size</td>
+                            <td>2 Scones</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>43</td>
+                        </tr>
+                        <tr>
+                            <td>Fat (grams)</td>
+                            <td>0.6</td>
+                        </tr>
+                        <tr>
+                            <td>Cholesterol (mg)</td>
+                            <td>1.3</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium (mg)</td>
+                            <td>653</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar (grams)</td>
+                            <td>0.6</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates (grams)</td>
+                            <td>4.9</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Breadsticks-->
+    <div id="myModal8" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Breadsticks</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive ptop3 pcenter" src="images/menu/breadsticksTh.jpg" title="Picture of Breadsticks" alt="Picture of Breadsticks" />
+                    <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}-->
+                    <table class="rwd-table">
+                        <col span="2" />
+                        <tr>
+                            <td>Food</td>
+                            <td>Breadsticks</td>
+                        </tr>
+                        <tr>
+                            <td>Serving size</td>
+                            <td>2 Sticks</td>
+                        </tr>
+                        <tr>
+                            <td>Calories</td>
+                            <td>220</td>
+                        </tr>
+                        <tr>
+                            <td>Fat (grams)</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Cholesterol (mg)</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Sodium (mg)</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar (grams)</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Carbohydrates (grams)</td>
+                            <td>22</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Loyalty-->
+    <div id="myModal10" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title modalText">Loyalty Rewards Program</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 class="text-center modalText">Our Customer Loyalty Rewards Card</h4>
+                    <img src="images/card.png" class="img-responsive mCenter shadow" alt="loyalty reward card" title="customer loyalty reward card" />
+                    <a href="index.html#loyalty" data-dismiss="modal">
+                        <p class="text-center modalText">Request a card by clicking here!</p>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Flipbook-->
+    <div id="myModal9" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Full Menu</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>Once in fullscreen, click ESC to exit.</h3>
+                    <iframe style="width:565px;height:350px" src="http://online.anyflip.com/ntws/xvia/"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
