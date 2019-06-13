@@ -1,0 +1,52 @@
+.landingparallax{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.parallax{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 2em;
+}
+/*Fill in with image links*/
+.parallax-0{
+    background-image: url("../img/compressedbread.jpg");
+}
+.parallax-1{
+    background-image: url("../img/cress-682686_1920.jpg");
+}
+.parallax-2{
+    background-image: url("../img/poppy-seed-almond-cake-993541_1280.jpg");
+}
+.parallax-3{
+    background-image: url("../img/background-2561_1920.jpg");
+}
+.parallax-4{
+    background-image: url("../img/cream-puff-1166737_1920.jpg");
+}
+.parallax-5{
+    background-image: url("../img/chocolate-1121356_1920.jpg");
+}
+.parallax-6{
+    background-image: url("../img/cookie-547636_1920.jpg");
+}
+.parallax-7{
+    background-image: url("../img/croissants-569075_1920.jpg");
+}
+.parallax-8{
+    background-image: url("../img/sandwiches-892996_1920.jpg");
+}
+.parallax-9{
+    background-image: url("../img/sandwiches-960543_1920.jpg");
+}
+.parallax-10{
+    background-image: url("../img/bread-793843_1920.jpg");
+}
+
+.black-overlay .vertical-center h1, .black-overlay .vertical-center h3{
+    text-shadow: 3px 3px #222;
+}
