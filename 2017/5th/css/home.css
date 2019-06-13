@@ -1,0 +1,91 @@
+header,
+header .header-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  min-height: 100%;
+}
+
+header .header-content h1 {
+  font-size: 3em;
+}
+
+@media (max-width: 768px) {
+  header .header-content h1 {
+    font-size: 2em;
+  }
+}
+
+header .btn {
+  font-size: 1.75em;
+}
+
+#home-header {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/header.jpg");
+  color: #fff;
+}
+
+.header-content img {
+  margin-top: 50px;
+  opacity: .75;
+}
+
+@media (max-width: 900px), (max-height: 700px) {
+  .header-content img {
+    height: 200px;
+  }
+}
+
+#home-activities {
+  height: 100%;
+  width: 100%;
+}
+
+#home-activities h1 {
+  font-size: 3em;
+}
+
+#home-activities p {
+  font-size: 1.75em;
+}
+
+#home-activities img {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  #home-activities {
+    height: auto;
+  }
+}
+
+#home-about {
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #212121;
+  margin-bottom: 10px;
+}
+
+#home-about p {
+  font-size: 1.25em;
+}
+
+#home-about i {
+  color: #009688;
+  font-size: 10em;
+}
+
+@media (max-width: 1000px) {
+  #home-about {
+    height: auto;
+  }
+}

@@ -1,0 +1,50 @@
+#activities {
+  width: 100%;
+  height: 100%;
+}
+
+#activities .col-md-4 {
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  #activities {
+    height: auto;
+  }
+}
+
+.activity {
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.activity .activity-learn-more {
+  width: 100%;
+  height: 100%;
+}
+
+#go-karts {
+  background: url("../img/go-karts.jpg");
+}
+
+#laser-tag {
+  background: url("../img/laser-tag.jpg");
+}
+
+#mini-golf {
+  background: url("../img/mini-golf.jpg");
+}
+
+#arcade {
+  background: url("../img/arcade.jpg");
+}
+
+#buffet {
+  background: url("../img/buffet.jpg");
+}
+
+#childs-play-center {
+  background: url("../img/play-ground.jpg");
+}

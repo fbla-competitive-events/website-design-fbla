@@ -1,0 +1,217 @@
+#reserve {
+  width: 100%;
+  height: 100%;
+}
+
+#reserve #reserve-header {
+  width: 100%;
+  height: 30%;
+}
+
+#reserve #reserve-section {
+  width: 100%;
+  height: 70%;
+}
+
+@media (max-width: 1247px), (max-height: 700px) {
+  #reserve {
+    height: auto;
+  }
+}
+
+#create-reservation, #reservation-created {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1247px), (max-height: 700px) {
+  #create-reservation {
+    height: 100%;
+  }
+}
+
+#reservation-created h1 {
+  font-size: 4em;
+}
+
+#reservation-created p {
+  font-size: 2.5em;
+}
+
+@media (max-width: 991px), (max-height: 700px) {
+  #create-form {
+    margin-top: 20px;
+  }
+}
+
+#error-message {
+  display: none;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 10px;
+  background-color: #e74c3c;
+}
+
+#error-message p {
+  margin: 0;
+}
+
+.color-blue .container-button {
+  background-color: #448AFF;
+}
+
+.color-blue .container-button:before {
+  background-color: #448AFF;
+}
+
+.color-blue .w-item span {
+  color: #448AFF;
+}
+
+.w-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.w-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.w-container {
+  position: relative;
+  max-width: 100%;
+  margin: 60px 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.w-container .w-card {
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  color: #333;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0 0 30px;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.w-container .w-card .card-header {
+  overflow: hidden;
+  padding: 20px 0 0;
+}
+
+.w-container .w-card .card-header .w-title, .w-container .w-card .card-header .w-price {
+  position: relative;
+  z-index: 2;
+}
+
+.w-container .w-card .card-header .w-price {
+  font-size: 42px;
+  font-weight: 500;
+  padding: 1px 20px 20px;
+}
+
+.w-container .w-card .card-content {
+  padding: 20px;
+}
+
+.w-container .w-card .card-content .w-item {
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.w-container .w-card .card-content .w-item:last-child {
+  border-bottom: none;
+}
+
+.w-container .w-card .card-content .w-item span {
+  font-weight: 500;
+}
+
+.w-container .w-card .container-button {
+  position: relative;
+}
+
+.w-container .w-card .container-button .w-button {
+  position: relative;
+  display: block;
+  padding: 20px;
+  color: #fff;
+  font-weight: 400;
+  z-index: 2;
+  text-decoration: none;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.w-container .w-card .container-button:before, .w-container .w-card .container-button:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  border-radius: 50%;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.w-container .w-card .container-button:after {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.w-container .w-card .container-button:hover .w-button {
+  padding: 0px 20px 40px;
+}
+
+.w-container .w-card .container-button:hover:before {
+  top: -200px;
+  left: -50px;
+  width: 400px;
+  height: 400px;
+}
+
+.w-container .w-card .container-button:hover:after {
+  top: -200px;
+  left: -50px;
+  width: 400px;
+  height: 400px;
+}
+
+.w-container .w-card:hover {
+  z-index: 2;
+  margin: -20px 0 50px;
+}
+
+.w-container .w-card:hover .w-button {
+  opacity: 1;
+}
+
+select {
+  /*for firefox*/
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance: none;
+}
+
+/*for IE10*/
+select::-ms-expand {
+  display: none;
+}

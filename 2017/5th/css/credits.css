@@ -1,0 +1,26 @@
+.section-primary-color {
+  min-height: 100%;
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+#credits .well {
+  margin-top: 90px;
+}
+
+#credits p {
+  font-size: 1.25em;
+}
+
+#credits a {
+  color: #448AFF;
+}
+
+#credits-contents h2 {
+  text-align: center;
+}
+
+#credits-contents p {
+  text-align: left;
+  font-size: 1.1em;
+}
